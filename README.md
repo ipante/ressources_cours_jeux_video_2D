@@ -61,7 +61,7 @@ ___
 
 ## Autres
 
-Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
+Cette liste ne demande qu'à s'enrichir! Merci de [m'envoyer vos suggestions](mailto:isaac.pante@unil.ch) !
 
 ![image d'échange, sprites créés par Louiza](https://i.imgur.com/oPLxCuB.jpg)
 ©[Louiza](http://louiza.ch/) pour les sprites
