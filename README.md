@@ -1,4 +1,4 @@
-![image du cours](http://isaacpante.net/uploads/2019/08/cours_jv_unil_paysage.jpg)
+![image du cours](https://imgur.com/a/2AGeauY)
 
 # Développement de jeux vidéo 2D - Ressources
 
