@@ -1,0 +1,25 @@
+body {
+  background: black;
+  margin-left: 300px;
+}
+canvas {
+  border: 1px solid white;  
+}
+div {
+  margin : 10px;
+  font-size : 30pt;
+  color : white;
+}
+span{
+  margin : 10px;
+  color : white;
+  font-size : 30pt;
+}
+
+#legende{
+  margin-left : -5px;
+  text-align : center;
+  font-size : 17pt;
+  width : 300px;
+  padding : 1px;
+}
