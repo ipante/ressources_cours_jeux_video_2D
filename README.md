@@ -10,7 +10,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources internes
 
-* [**phaser_scenes**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
+* [**phaser_scenes**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
 * [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
 
 ## Liste des ressources externes
