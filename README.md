@@ -32,13 +32,15 @@ ___
 
 #### Logiciels
 
-##### Editeurs de code  & extensions
+##### Logiciels génériques de développement
 
-* Editer le code : [Visual Studio Code](https://code.visualstudio.com/)
-* Lancer un serveur local : [Extension live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-* Travailler à plusieurs sous VSCode : [Extension VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+* Editer du code : [Visual Studio Code](https://code.visualstudio.com/)
+* Lancer un serveur local (VSCode): [Extension live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+* Accéder directement aux librairies JS (VSCode) : [Extension CDNJS](https://marketplace.visualstudio.com/items?itemName=JakeWilson.vscode-cdnjs)
+* Coder collaborativement (VSCode) : [Extension VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+* Gérer votre espace Github : [Github Desktop](https://desktop.github.com/)
 
-##### Logiciels dédiés au jeu vidéo
+##### Logiciels spécifiques au jeu vidéo
 
 * Création de cartes : [Tiled](https://www.mapeditor.org/)
 * Création de Texture Atlas : [Free Texture Packer](http://free-tex-packer.com/)
