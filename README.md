@@ -26,7 +26,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Jeux complets (avec code source)
 
-* [Mario Bros!](https://github.com/nkholski/phaser3-es6-webpack)
+* [Mario Bros en Phaser](https://github.com/nkholski/phaser3-es6-webpack)
 
 ## Autres
 
