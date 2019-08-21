@@ -6,7 +6,7 @@ Retrouvez ici les différents projets d'illustration pédagogique mobilisés dan
 
 ## Informations sur l'enseignement
 
-Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Toutes les informations sur la validation et le nombre de crédits sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'à l'automne! Il sera à nouveau dispensé au printemps 2021.**
+Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Toutes les informations sur la validation et le nombre de crédits sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera dispensé au semestre de printemps à partir de l'année 2021.**
 
 ## Liste des ressources internes
 
