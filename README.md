@@ -22,4 +22,4 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
 ![image d'échange, sprites créés par Louiza](https://i.imgur.com/dBKrQKZ.jpg)
-©Louiza pour les sprites
+©[Louiza](http://louiza.ch/) pour les sprites
