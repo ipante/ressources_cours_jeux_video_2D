@@ -11,7 +11,7 @@ class Scene2 extends Phaser.Scene{
         // transformation du texte en bouton
         bouton.setInteractive();
         // ajout de l'événement
-        bouton.on('pointerdown', () => {
+        bouton.on('pointerdown', pointer => {
             // profitons-en pour récupérer
             // les coordonnées du click...
             let touchX = pointer.x;
