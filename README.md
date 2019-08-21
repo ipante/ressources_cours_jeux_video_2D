@@ -1,3 +1,5 @@
+[image du cours](http://isaacpante.net/wp-content/uploads/2019/02/cours_unil_insta-1.jpg)
+
 # Développement de jeux vidéo 2D - Ressources
 
 Retrouvez ici les différents projets d'illustration développés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
