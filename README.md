@@ -50,6 +50,13 @@ ___
 * Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $$
 * Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $$
 
+#### Moteurs de jeu
+
+* [Phaser.js (généraliste)](https://phaser.io/)
+* [Kontra.js (généraliste)](https://straker.github.io/kontra/)
+* [Twine 2 (récit interactif)](https://twinery.org/2/)
+* [Monogatari (visual novel)](https://monogatari.io/)
+
 ## Autres
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
