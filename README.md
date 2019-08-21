@@ -30,7 +30,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ___
 
-#### Logiciels
+### Logiciels
 
 ##### Logiciels génériques de développement informatique
 
@@ -50,7 +50,7 @@ ___
 * Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $
 * Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $
 
-#### Moteurs de jeu
+### Moteurs de jeu
 
 * [Phaser.js (généraliste)](https://phaser.io/)
 * [Kontra.js (généraliste)](https://straker.github.io/kontra/)
