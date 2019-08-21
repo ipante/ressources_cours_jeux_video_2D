@@ -15,7 +15,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources externes
 
-### Documentation officielle de Phaser
+#### Documentation officielle de Phaser
 
 * [Documentation de l'API](https://photonstorm.github.io/phaser3-docs/)
 * [Liste d'exemples](http://labs.phaser.io/)
@@ -23,6 +23,10 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 #### Tutoriels
 
 * [Recréer Asteroids en Kontra.js](https://medium.com/web-maker/making-asteroids-with-kontra-js-and-web-maker-95559d39b45f)
+
+#### Jeux complets (avec code source)
+
+* [Mario Bros!](https://github.com/nkholski/phaser3-es6-webpack)
 
 ## Autres
 
