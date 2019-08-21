@@ -32,7 +32,7 @@ ___
 
 #### Logiciels
 
-##### Logiciels génériques de développement
+##### Logiciels génériques de développement informatique
 
 * Editer du code : [Visual Studio Code](https://code.visualstudio.com/)
   * Lancer un serveur local (VSCode): [Extension live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
@@ -40,7 +40,7 @@ ___
   * Coder collaborativement (VSCode) : [Extension VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 * Gérer votre espace Github : [Github Desktop](https://desktop.github.com/)
 
-##### Logiciels spécifiques au jeu vidéo
+##### Logiciels spécifiques au développement de jeux vidéo
 
 * Création de cartes : [Tiled](https://www.mapeditor.org/)
 * Création de Texture Atlas : [Free Texture Packer](http://free-tex-packer.com/)
