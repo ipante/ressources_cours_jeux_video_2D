@@ -1,2 +1,7 @@
-# ressources_cours_jeux_video_2D
- Ressources pédagogiques pour le cours "Développement de jeux vidéo 2" dispensé par Isaac Pante à l'UNIL (SLI, Faculté des lettres)
+# Ressources pour le cours de jeux vidéo 2
+
+Retrouvez ici les différents projets d'illustration développés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8).
+
+## Liste des projets
+
+1. *phaser_scenes* : exemple simple de transition entre trois scènes avec et sans interaction utilisateur
