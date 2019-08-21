@@ -10,7 +10,8 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources internes
 
-1. **phaser_scenes** : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
+* **phaser_scenes** : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
+* **kontra_jump** : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
 
 ## Liste des ressources externes
 
