@@ -2,7 +2,7 @@
 
 # Développement de jeux vidéo 2D - Ressources
 
-Retrouvez ici les différents projets d'illustration pédagogique développés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
+Retrouvez ici les différents projets d'illustration pédagogique mobilisés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
 
 # Informations sur l'enseignement
 
