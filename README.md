@@ -46,9 +46,9 @@ ___
 * Création de Texture Atlas : [Free Texture Packer](http://free-tex-packer.com/)
 * Création d'Atlas (webservice) : [Atlas Packer Phaser 3](https://gammafp.github.io/atlas-packer-phaser/)
 * Pixellisation d'images : [Pixel Art Camera](https://itunes.apple.com/ch/app/pixel-art-camera/id1107180652?l=fr&mt=8)
-* Création de sprites : [Aseprite](https://www.aseprite.org/) | $$
-* Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $$
-* Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $$
+* Création de sprites : [Aseprite](https://www.aseprite.org/) | $
+* Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $
+* Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $
 
 #### Moteurs de jeu
 
