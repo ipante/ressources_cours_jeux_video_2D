@@ -50,12 +50,13 @@ ___
 * Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $
 * Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $
 
-### Moteurs de jeu
+### Moteurs de jeu (avec niveau de difficulté)
 
-* [Phaser.js (généraliste)](https://phaser.io/)
-* [Kontra.js (généraliste)](https://straker.github.io/kontra/)
-* [Twine 2 (récit interactif)](https://twinery.org/2/)
-* [Monogatari (visual novel)](https://monogatari.io/)
+* [Phaser.js (généraliste, intermédiaire)](https://phaser.io/)
+* [Kontra.js (généraliste, intermédiaire)](https://straker.github.io/kontra/)
+* [Construct 3 (généraliste, débutant à avancé)](https://www.construct.net/fr)
+* [Twine 2 (récit interactif, débutant)](https://twinery.org/2/)
+* [Monogatari (visual novel, débutant)](https://monogatari.io/)
 
 ## Autres
 
