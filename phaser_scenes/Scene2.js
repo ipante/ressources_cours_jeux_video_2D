@@ -12,9 +12,12 @@ class Scene2 extends Phaser.Scene{
         bouton.setInteractive();
         // ajout de l'événement
         bouton.on('pointerdown', () => {
-            // appel de Scene3.js, via le nom
-            // déclaré dans le constructeur de Scene3
-            this.scene.start('merci')
+            // profitons-en pour récupérer
+            // les coordonnées du click...
+            let touchX = pointer.x;
+            let touchY = pointer.y;
+            // et les passer à la scène 3
+            this.scene.start('merci',[touchX,touchY])
         },this);
     }
 }
