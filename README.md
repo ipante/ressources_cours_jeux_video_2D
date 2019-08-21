@@ -4,9 +4,9 @@
 
 Retrouvez ici les différents projets d'illustration pédagogique mobilisés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
 
-# Informations sur l'enseignement
+## Informations sur l'enseignement
 
-Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Toutes les informations sur la validation et le nombre de crédits sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8).
+Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Toutes les informations sur la validation et le nombre de crédits sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'à l'automne! Il sera à nouveau dispensé au printemps 2021.**
 
 ## Liste des ressources internes
 
