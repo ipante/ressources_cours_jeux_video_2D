@@ -26,7 +26,9 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Jeux complets (avec code source)
 
-* [Mario Bros en Phaser](https://github.com/nkholski/phaser3-es6-webpack)
+* [Memory (Phaser)](http://browsergameshub.com/phaser3-lessons-and-code-pt1)
+* [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
+* [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
 
 ___
 
