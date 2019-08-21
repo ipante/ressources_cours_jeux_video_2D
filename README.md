@@ -1,4 +1,4 @@
-![image du cours](https://imgur.com/a/2AGeauY)
+![image du cours](https://i.imgur.com/dBKrQKZ.jpg)
 
 # Développement de jeux vidéo 2D - Ressources
 
