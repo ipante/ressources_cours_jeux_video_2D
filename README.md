@@ -35,9 +35,9 @@ ___
 ##### Logiciels génériques de développement
 
 * Editer du code : [Visual Studio Code](https://code.visualstudio.com/)
-* Lancer un serveur local (VSCode): [Extension live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-* Accéder directement aux librairies JS (VSCode) : [Extension CDNJS](https://marketplace.visualstudio.com/items?itemName=JakeWilson.vscode-cdnjs)
-* Coder collaborativement (VSCode) : [Extension VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+  * Lancer un serveur local (VSCode): [Extension live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  * Accéder directement aux librairies JS (VSCode) : [Extension CDNJS](https://marketplace.visualstudio.com/items?itemName=JakeWilson.vscode-cdnjs)
+  * Coder collaborativement (VSCode) : [Extension VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 * Gérer votre espace Github : [Github Desktop](https://desktop.github.com/)
 
 ##### Logiciels spécifiques au jeu vidéo
