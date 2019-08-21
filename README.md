@@ -4,4 +4,4 @@ Retrouvez ici les différents projets d'illustration développés dans le cours 
 
 ## Liste des ressources
 
-1. *phaser_scenes* : exemple simple de transition entre trois scènes avec et sans interaction utilisateur
+1. **phaser_scenes** : exemple simple de transition entre trois scènes avec et sans interaction utilisateur
