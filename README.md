@@ -2,8 +2,12 @@
 
 # Développement de jeux vidéo 2D - Ressources
 
-Retrouvez ici les différents projets d'illustration développés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
+Retrouvez ici les différents projets d'illustration pédagogique développés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en section des [Sciences du Langage et de l'Information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
+
+# Informations sur l'enseignement
+
+Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Toutes les informations sur la validation et le nombre de crédits sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8).
 
 ## Liste des ressources
 
-1. **phaser_scenes** : exemple simple de transition entre trois scènes avec et sans interaction utilisateur (bonus : chargement de musique de fond et accélération de cette musique dans la scène finale)
+1. **phaser_scenes** : exemple simple de transition entre trois scènes avec et sans interaction utilisateur (bonus : chargement de musique de fond et accélération de cette musique dans la scène finale).
