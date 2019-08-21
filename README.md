@@ -63,17 +63,19 @@ ___
 
 ## Assets
 
-### Banque de sprites
+### Banques de sprites
 
 * [opengameart.org](https://opengameart.org/)
 * [Assets sur itch.io](https://itch.io/game-assets)
 * [The Spriters Resource](https://www.spriters-resource.com/)
 
-### Banque de sons
+### Banques de sons
 
 * [Soundtracks itch.io](https://itch.io/soundtracks/free)
 * [The sounds Resource](https://www.sounds-resource.com/)
 * [Bensound](https://www.bensound.com/)
+
+___
 
 ## Projets d'étudiant·e·s
 
