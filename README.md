@@ -1,4 +1,4 @@
-[image du cours](http://isaacpante.net/wp-content/uploads/2019/02/cours_unil_insta-1.jpg)
+![image du cours](http://isaacpante.net/wp-content/uploads/2019/02/cours_unil_insta-1.jpg)
 
 # Développement de jeux vidéo 2D - Ressources
 
