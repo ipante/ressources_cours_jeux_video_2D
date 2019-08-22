@@ -4,6 +4,7 @@ const config = {
     height : 400,
     pixelArt: true,
     backgroundColor : 'black',
+    // BONUS Arcade Physics
     // activation du moteur physique
     // pour la collision avec les bords
     physics : {
@@ -32,7 +33,7 @@ function preload(){
     this.load.image('vaisseau', 'vaisseau.png');
     this.load.image('fond','ruined_city.png');
     
-    // BONUS : chargement des polices en bitmap
+    // BONUS Bitmap : chargement des polices en bitmap
     // deux fichiers nécessaires, l'image (PNG)
     // et les coordonnées XML
     this.load.bitmapFont('police', 'police.png', 'police.xml');
@@ -42,14 +43,14 @@ function create(){
     // ajout du fond
     this.add.image(0,0,'fond').setOrigin(0,0);
     
-    // BONUS : chargement du texte, le dernier paramètre
+    // BONUS Bitmap : chargement du texte, le dernier paramètre
     // définit l'alignement (2 = droite)
     this.add.bitmapText(50, 50, 'police', `DEPLACEMENT AVEC SHIFT + AWSD
     \n\n, OU AVEC LES FLECHES`,10,2);
 
     // création du vaisseau : atention à ajouter PHYSICS ! 
     perso = this.physics.add.image(185, 185,'vaisseau')
-    // limitation du mouvement
+    // BONUS Physics : limitation du mouvement
     // permis par "arcade" dans "config"
     perso.setCollideWorldBounds(true);
     // mouvement discontinu peut être créé dans
