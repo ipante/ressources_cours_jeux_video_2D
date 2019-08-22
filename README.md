@@ -16,10 +16,11 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources externes
 
-#### Documentation officielle de Phaser
+#### Documentation officielle
 
-* [Documentation de l'API](https://photonstorm.github.io/phaser3-docs/)
-* [Liste d'exemples](http://labs.phaser.io/)
+* Phaser
+ * [Documentation de l'API](https://photonstorm.github.io/phaser3-docs/)
+ * [Liste d'exemples](http://labs.phaser.io/)
 
 #### Tutoriels
 
