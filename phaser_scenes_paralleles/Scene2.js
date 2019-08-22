@@ -22,7 +22,6 @@ class Scene2 extends Phaser.Scene{
             // modifier la position du second carré
             indicateur.x = (valeurs[0]/8)-32;
             indicateur.y = (valeurs[1]/8)-20;
-        });        
-        
+        })
     }
 }
