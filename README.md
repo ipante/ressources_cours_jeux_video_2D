@@ -20,7 +20,8 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 #### Documentation officielle
 
 * Phaser
-  * [Documentation de l'API](https://photonstorm.github.io/phaser3-docs/)
+  * [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
+  * [Documentation officielle de l'API](https://photonstorm.github.io/phaser3-docs/)
   * [Liste d'exemples](http://labs.phaser.io/)
 
 #### Tutoriels
