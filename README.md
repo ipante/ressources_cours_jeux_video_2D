@@ -2,7 +2,7 @@
 
 # Développement de jeux vidéo 2D - Ressources
 
-Retrouvez ici les différents projets d'illustration pédagogique mobilisés dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en Section des [sciences du langage et de l'information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
+Retrouvez ici les différents ressources pédagogique mobilisées dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en Section des [sciences du langage et de l'information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
 
 ## Informations sur l'enseignement
 
@@ -10,28 +10,43 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources internes
 
-* [**phaser_scenes_sequentielles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
-* [**phaser_scenes_paralleles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles) : exemple de scènes parallèles avec interaction ; le déplacement du pointeur dans la scène principale se répercute sur une "minimap" dessinée dans une autre scène.
-* [**phaser_input**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_input) : exemple de déplacement d'objet au clavier, coup par coup avec des combinaisons de touche ou de manière continue avec les curseurs *(**bonus** : ajout d'une police bitmap pour les instructions ; ajout d'un point d'arrêt contre les bords du monde avec physics : arcade)*.
-* [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
+1. [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
+2. [**phaser_scenes_sequentielles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
+3. [**phaser_scenes_paralleles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles) : exemple de scènes parallèles avec interaction ; le déplacement du pointeur dans la scène principale se répercute sur une "minimap" dessinée dans une autre scène.
+4. [**phaser_input**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_input) : exemple de déplacement d'objet au clavier, coup par coup avec des combinaisons de touche ou de manière continue avec les curseurs *(**bonus** : ajout d'une police bitmap pour les instructions ; ajout d'un point d'arrêt contre les bords du monde avec physics : arcade)*.
+5. [**phaser_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_jump) : réécriture de kontra-jump en Phaser; ajout de scènes.
 
 ## Liste des ressources externes
 
-#### Documentation officielle
+#### Documentation officielle de Phaser
 
-* Phaser
-  * [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
-  * [Documentation officielle de l'API](https://photonstorm.github.io/phaser3-docs/)
-  * [Liste d'exemples](http://labs.phaser.io/)
+* [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
+* [Documentation officielle (et brute) de l'API](https://photonstorm.github.io/phaser3-docs/)
+* [Liste d'exemples en Phaser 3](http://labs.phaser.io/)
 
-#### Tutoriels
+#### Tutoriels thématiques
 
+* Scènes
+  * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
+  * [Guide des scènes dans Phaser 3 (partie 1)](https://phaser.io/phaser3/devlog/119)
+  * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
+
+#### Tutoriels de jeux complets
+
+* [Créer un jeu Phaser complet en 13 vidéos de quelques minutes](https://www.youtube.com/playlist?list=PLDyH9Tk5ZdFzEu_izyqgPFtHJJXkc79no) par Luis Zuno
 * [Recréer Asteroids en Kontra.js](https://medium.com/web-maker/making-asteroids-with-kontra-js-and-web-maker-95559d39b45f)
+* [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec code source commenté
 
 #### Jeux complets (avec code source)
 
 * [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
 * [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
+
+#### Demande de support (Phaser)
+
+* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3)
+* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
+* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
 
 ___
 
@@ -60,8 +75,8 @@ ___
 * [Phaser.js](https://phaser.io/) : le plus célèbre des frameworks de développement de jeux vidéo en Javascript. Suppose une bonne connaissance de la programmation Javascript.
 * [Kontra.js](https://straker.github.io/kontra/) : le plus léger des moteurs de jeu en Javascript, développé pour la compétition [js13k](https://js13kgames.com/). Se limite au strict minimum des fonctions proposées par Phaser.js. 
 * [Construct 3](https://www.construct.net/fr) : webservice wysiwyg de développement web, il facilite grandement le développement de jeux vidéo Javascript. Reste qu'une connaissance de la programmation est nécessaire pour en tirer parti.  | $
-* [Twine 2](https://twinery.org/2/) : moteur de développement de récits interactifs. Twine 2 est disponible en version logicielle et sous forme de webservice. Facile d'accès, il offre aussi des possibilités de scriptage avancé via du Javascript (*Recommandé pour les débutant·e·s en programmation*).
-* [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (*Recommandé pour les débutant·e·s en programmation*).
+* [Twine 2](https://twinery.org/2/) : moteur de développement de récits interactifs. Twine 2 est disponible en version logicielle et sous forme de webservice. Facile d'accès, il offre aussi des possibilités de scriptage avancé via du Javascript (***Recommandé pour les débutant·e·s en programmation***).
+* [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
 
 ___
@@ -88,7 +103,7 @@ ___
 
 ## Varia
 
-* [Codes claviers](https://keycode.info/)
+* [Liste des codes clavier](https://keycode.info/)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
