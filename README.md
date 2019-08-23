@@ -30,6 +30,8 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
   * [Guide des scènes dans Phaser 3 (partie 1)](https://phaser.io/phaser3/devlog/119)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
+  * [exemple local : phaser_scenes_sequentielles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles)
+  * [exemple local : phaser_scenes_paralleles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles)
 
 #### Tutoriels de jeux complets
 
