@@ -28,6 +28,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 #### Tutoriels
 
 * [Recréer Asteroids en Kontra.js](https://medium.com/web-maker/making-asteroids-with-kontra-js-and-web-maker-95559d39b45f)
+* [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec leur code source
 
 #### Jeux complets (avec code source)
 
