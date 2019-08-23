@@ -27,6 +27,12 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Tutoriels thématiques
 
+* Les classes en ES6
+  * [Objets, méthodes et prototype (Ocean Digital)](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript#constructor-functions)
+  * [idem, autre tutoriel](https://javascript.info/class)
+  * [idem, autre tutoriel](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes)
+  * [idem, autre tutoriel](https://medium.com/@robertgrosse/how-es6-classes-really-work-and-how-to-build-your-own-fd6085eb326a)
+
 * Scènes
   * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
   * [Guide des scènes dans Phaser 3 (partie 1)](https://phaser.io/phaser3/devlog/119)
@@ -34,7 +40,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_scenes_paralleles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
   
-* Animations
+* Spritesheet & Animations
   * [Rapide introduction vidéo aux animations]()
   * [Tutoriel vidéo d'animations avec et sans texture atlas](https://www.youtube.com/watch?v=RrOGj6x5Y8I)
   * [TP : animation sans atlas](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_sans_atlas)
@@ -50,6 +56,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 * [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
 * [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
+* [A day in the life (Kontra)](https://js13kgames.com/entries/a-day-in-the-life)
 
 #### Demande de support (Phaser)
 
@@ -73,6 +80,7 @@ ___
 
 * Création de cartes : [Tiled](https://www.mapeditor.org/)
 * Création de Texture Atlas : [Free Texture Packer](http://free-tex-packer.com/)
+* Création de Texture Atlas : [Atlas Packer Phaser 3](https://gammafp.github.io/atlas-packer-phaser/)
 * Création d'Atlas (webservice) : [Atlas Packer Phaser 3](https://gammafp.github.io/atlas-packer-phaser/)
 * Pixellisation d'images : [Pixel Art Camera](https://itunes.apple.com/ch/app/pixel-art-camera/id1107180652?l=fr&mt=8)
 * Création de sprites : [Aseprite](https://www.aseprite.org/) | $
@@ -110,10 +118,27 @@ ___
 
 *Bientôt rempli par vos contributions !*
 
+___
+
+## Inspirations
+
+* Fiction interactive :  [Wardialler](https://nervoustestpilot.itch.io/wardialler)
+* Simulateur de pauvreté : [Spent](http://playspent.org/html/)
+* Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
+* Simulateur de gestion des données personnelles [Datak](https://www.datak.ch/#/play)
+
+## Livres
+
+* [Characteristics of Games](https://mitpress.mit.edu/books/characteristics-games)
+
 ## Varia
 
 * [Liste des codes clavier](https://keycode.info/)
+* [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
 * [Shoebox](https://renderhjs.net/shoebox/) : extraction d'images à partir d'une spritesheet
+* [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
+* [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
+* [Facebook Instant Game](https://phasertutorials.com/a-guide-to-using-the-facebook-instant-games-plugin-for-phaser-3-part-1/?a=13)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
