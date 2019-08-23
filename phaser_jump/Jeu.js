@@ -41,8 +41,10 @@ class Jeu extends Phaser.Scene{
             }
         })
 
-        // ajouter le texte pour le score
-        this.texte_score = this.add.bitmapText(10, 30, 'police', 'SCORE 0',15,2);        
+        // ajouter le texte pour le score et le highscore
+        this.texte_highscore = this.add.bitmapText(180, 30, 'police', `RECORD ${highscore}`,14,2);        
+        this.texte_score = this.add.bitmapText(10, 30, 'police', 'SCORE 0',13,2);        
+
 
         // activation des collisions
         // on préfère "overlap" pour désactiver
@@ -78,6 +80,11 @@ class Jeu extends Phaser.Scene{
             score++;
             // affichage du score
             this.texte_score.text = 'SCORE ' + score;
+            // éventuelle màj du highscore
+            if(score > highscore){
+                localStorage.setItem('highscore_pj',score);
+                this.texte_highscore.text = `RECORD ${score}`;
+            }
             // réinitialisation de la position du joueur
             this.joueur.x = 8;
             this.joueur.y = 590; 
