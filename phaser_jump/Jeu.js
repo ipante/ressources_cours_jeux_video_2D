@@ -45,7 +45,6 @@ class Jeu extends Phaser.Scene{
         this.texte_highscore = this.add.bitmapText(180, 30, 'police', `RECORD ${highscore}`,14,2);        
         this.texte_score = this.add.bitmapText(10, 30, 'police', 'SCORE 0',13,2);        
 
-
         // activation des collisions
         // on préfère "overlap" pour désactiver
         // les réactions physiques (rebond, etc.)
