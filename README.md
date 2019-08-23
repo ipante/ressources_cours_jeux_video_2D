@@ -43,7 +43,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_scenes_paralleles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
   
-* Spritesheet & Animations
+* Spritesheet, Animations & Tweens
   * [Rapide introduction vidéo aux spritesheets & aux animations](https://www.youtube.com/watch?v=U0K0YTifb1w&list=PLDyH9Tk5ZdFzEu_izyqgPFtHJJXkc79no&index=6&t=0s)
   * [Tutoriel vidéo d'animations avec et sans texture atlas](https://www.youtube.com/watch?v=RrOGj6x5Y8I)
   * [TP : animation sans atlas](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_sans_atlas)
