@@ -33,7 +33,8 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 #### Tutoriels thématiques
 
 * Scènes
-  * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/119)
+  * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
+  * [Guide des scènes dans Phaser 3 (partie 1)](https://phaser.io/phaser3/devlog/119)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
 
 #### Jeux complets (avec code source)
