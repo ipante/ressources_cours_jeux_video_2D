@@ -103,7 +103,7 @@ ___
 
 ## Varia
 
-* [Codes claviers](https://keycode.info/)
+* [Liste des codes clavier](https://keycode.info/)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
