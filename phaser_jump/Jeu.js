@@ -27,8 +27,8 @@ class Jeu extends Phaser.Scene{
         // générer autant d'obstacles que nécessaire
         for(let i = 0; i < n_obstacles; i++){
             let obstacle = this.physics.add.image(
-                20 * (Math.random() * 14),
-                20 * Math.random() * 28,
+                Phaser.Math.Between(0,280),
+                Phaser.Math.Between(40,550),
                 'ennemi_inactif'
             );
             // ajout de l'obstacle au groupe
@@ -94,8 +94,8 @@ class Jeu extends Phaser.Scene{
             // ajout de deux obstacles
             for(let i = 0; i < 2; i++){
                 let obstacle = this.physics.add.image(
-                    20 * Math.random() * 14,
-                    40 + (Math.ceil((Math.random() * 25)) * 20),
+                    Phaser.Math.Between(0,280),
+                    Phaser.Math.Between(40,550),
                     'ennemi_inactif'
                 );
                 // changement de teinte pour
