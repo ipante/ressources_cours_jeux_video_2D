@@ -29,7 +29,15 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * Scènes
   * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
   * [Guide des scènes dans Phaser 3 (partie 1)](https://phaser.io/phaser3/devlog/119)
+  * [TP : phaser_scenes_sequentielles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles)
+  * [TP : phaser_scenes_paralleles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
+  
+* Animations
+  * [Rapide introduction vidéo aux animations]()
+  * [Tutoriel vidéo d'animations avec et sans texture atlas](https://www.youtube.com/watch?v=RrOGj6x5Y8I)
+  * [TP : animation sans atlas]() *à faire*
+  * [TP : animation avec atlas]() *à faire*
 
 #### Tutoriels de jeux complets
 
@@ -104,6 +112,7 @@ ___
 ## Varia
 
 * [Liste des codes clavier](https://keycode.info/)
+* [Shoebox](https://renderhjs.net/shoebox/) : extraction d'images à partir d'une spritesheet
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
