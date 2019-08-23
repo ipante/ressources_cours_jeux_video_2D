@@ -18,22 +18,29 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 ## Liste des ressources externes
 
-#### Documentation officielle
+#### Documentation officielle de Phaser
 
-* Phaser
-  * [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
-  * [Documentation officielle de l'API](https://photonstorm.github.io/phaser3-docs/)
-  * [Liste d'exemples](http://labs.phaser.io/)
+* [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
+* [Documentation officielle (et brute) de l'API](https://photonstorm.github.io/phaser3-docs/)
+* [Liste d'exemples en Phaser 3](http://labs.phaser.io/)
 
 #### Tutoriels
 
+* [Créer un jeu Phaser complet en [13 vidéos de quelques minutes](https://www.youtube.com/playlist?list=PLDyH9Tk5ZdFzEu_izyqgPFtHJJXkc79no) par Luis Zuno
 * [Recréer Asteroids en Kontra.js](https://medium.com/web-maker/making-asteroids-with-kontra-js-and-web-maker-95559d39b45f)
-* [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec leur code source
+* [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec code source commenté
+
 
 #### Jeux complets (avec code source)
 
 * [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
 * [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
+
+#### Demande de support (Phaser)
+
+* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3)
+* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
+* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
 
 ___
 
