@@ -129,7 +129,7 @@ ___
 
 ## Livres
 
-* [Characteristics of Games](https://mitpress.mit.edu/books/characteristics-games)
+* George Skaff Elias, Richard Garfield and K. Robert Gutschera, [Characteristics of Games](https://mitpress.mit.edu/books/characteristics-games), MIT Press
 
 ## Varia
 
