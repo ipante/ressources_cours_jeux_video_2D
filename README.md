@@ -120,12 +120,11 @@ ___
 
 ___
 
-## Inspirations
+## Inspirations en médiation
 
-* Fiction interactive :  [Wardialler](https://nervoustestpilot.itch.io/wardialler)
 * Simulateur de pauvreté : [Spent](http://playspent.org/html/)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
-* Simulateur de gestion des données personnelles [Datak](https://www.datak.ch/#/play)
+* Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
 
 ## Livres
 
@@ -140,6 +139,7 @@ ___
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
 * [Facebook Instant Game](https://phasertutorials.com/a-guide-to-using-the-facebook-instant-games-plugin-for-phaser-3-part-1/?a=13)
+* Fiction interactive :  [Wardialler](https://nervoustestpilot.itch.io/wardialler)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
