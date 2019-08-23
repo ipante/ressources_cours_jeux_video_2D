@@ -104,6 +104,7 @@ ___
 ## Varia
 
 * [Liste des codes clavier](https://keycode.info/)
+* [Shoebox](https://renderhjs.net/shoebox/) : extraction d'images à partir d'une spritesheet
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
