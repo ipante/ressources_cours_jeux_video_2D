@@ -1,4 +1,3 @@
-// le nom de la Scene
 class Accueil extends Phaser.Scene{
     constructor(){
         // la clef d'accès à la scène
@@ -22,10 +21,12 @@ class Accueil extends Phaser.Scene{
         perso.fillStyle(0xff0000);
         perso.fillRect(0, 580, 20, 20);
 
-        // lancement du jeu au clic sur le bouton
-        bouton.on('pointerdown', () => {
-            this.scene.start('jeu')
-        },this);
+        // ajout de la touche "barre espace"
+        this.input.keyboard.on('keyup', e => {
+            if(e.keyCode == 32){
+                this.scene.start('jeu')
+            }
+        })
     }
 
 }

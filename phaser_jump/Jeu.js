@@ -50,11 +50,13 @@ class Jeu extends Phaser.Scene{
         // les réactions physiques (rebond, etc.)
         this.physics.add.overlap(this.groupe_obstacles,this.joueur,(o,j)=>{
             // si cet adversaire n'a pas déjà été touché
-            if(o.texture.key == 'ennemi_inactif'){
+            if(o.touche == undefined){
                 // augmenter le compteur d'impacts
                 compteur_impacts++;
                 // si le compte est bon
                 if(compteur_impacts == max_impacts){
+                    // arrêter la musique
+                    this.musique.stop();
                     // lancer la scène game over
                     this.scene.start('gameover');
                 }
@@ -63,6 +65,8 @@ class Jeu extends Phaser.Scene{
             o.texture.key = 'ennemi_actif';
             // coloration de l'objet
             o.setTint(0xff0000);
+            // ajout du statut touché
+            o.touche = true;
             // réinitialisation de la position du joueur
             j.x = 8;
             j.y = 590;           
@@ -91,7 +95,7 @@ class Jeu extends Phaser.Scene{
             for(let i = 0; i < 2; i++){
                 let obstacle = this.physics.add.image(
                     20 * Math.random() * 14,
-                    20 * Math.random() * 28,
+                    40 + (Math.ceil((Math.random() * 25)) * 20),
                     'ennemi_inactif'
                 );
                 // changement de teinte pour
