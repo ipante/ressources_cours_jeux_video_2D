@@ -51,15 +51,14 @@ class Jeu extends Phaser.Scene{
                     // lancer la scène game over
                     this.scene.start('gameover');
                 }
-                else{
-                    o.texture.key = 'ennemi_actif';
-                }
             }
+            // changement du statut de l'objet
+            o.texture.key = 'ennemi_actif';
             // coloration de l'objet
             o.setTint(0xff0000);
             // réinitialisation de la position du joueur
             j.x = 8;
-            j.y = 590;
+            j.y = 590;           
         });
     }
     
@@ -67,8 +66,22 @@ class Jeu extends Phaser.Scene{
         if(this.joueur.x>400){
             this.joueur.setVelocityX(-200); 
         }
+        // si le joueur gagne
         if(this.joueur.y<22){
-            console.log('gagné');; 
+            score++;
+            // réinitialisation de la position du joueur
+            this.joueur.x = 8;
+            this.joueur.y = 590; 
+            // ajout de deux obstacles
+            for(let i = 0; i < 2; i++){
+                let obstacle = this.physics.add.image(
+                    20 * Math.random() * 14,
+                    20 * Math.random() * 28,
+                    'ennemi_inactif'
+                );
+                // ajout de l'obstacle au groupe
+                this.groupe_obstacles.add(obstacle);
+            } 
         }
     }
 }

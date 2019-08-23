@@ -12,11 +12,7 @@ const config = {
     height : 600,
     backgroundColor : 'black',
     physics : {
-        default : 'arcade',
-        arcade : {
-            // affiche le mode debug
-            debug : true,
-        }
+        default : 'arcade'
     },
     scene : [Accueil,Jeu,GameOver]
 }
