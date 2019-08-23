@@ -83,6 +83,11 @@ function create(){
 function update(){  
     // définit la vitesse par défaut
     this.heros.setVelocity(0,0);
+    
+    // pour que le joueur ne bouge que sur les
+    // 4 directions, les conditions sont imbriquées
+    // en remplaçant les "else if" par des "if",
+    // les déplacements en diagonale deviennent possibles
     if (fleches.left.isDown)
     {
         // ce code doit être ajouté pour rétablir
