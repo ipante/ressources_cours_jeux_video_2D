@@ -6,9 +6,11 @@ class Jeu extends Phaser.Scene{
         this.load.image('joueur','assets/joueur.jpg');
         this.load.image('ennemi_inactif','assets/ennemi_inactif.jpg');
         this.load.audio('musique','assets/bensound-summer.mp3');
+        this.load.bitmapFont('police', 'assets/police.png', 'assets/police.xml');
     }
 
     create(){
+        // charger la musique
         this.musique = this.sound.add('musique');
         this.musique.play();
         // initialiser le score
@@ -25,7 +27,7 @@ class Jeu extends Phaser.Scene{
         // générer autant d'obstacles que nécessaire
         for(let i = 0; i < n_obstacles; i++){
             let obstacle = this.physics.add.image(
-                20 * Math.random() * 14,
+                20 * (Math.random() * 14),
                 20 * Math.random() * 28,
                 'ennemi_inactif'
             );
@@ -38,6 +40,10 @@ class Jeu extends Phaser.Scene{
                 this.joueur.y -= 20;
             }
         })
+
+        // ajouter le texte pour le score
+        this.texte_score = this.add.bitmapText(10, 30, 'police', 'SCORE 0',15,2);        
+
         // activation des collisions
         // on préfère "overlap" pour désactiver
         // les réactions physiques (rebond, etc.)
@@ -68,7 +74,10 @@ class Jeu extends Phaser.Scene{
         }
         // si le joueur gagne
         if(this.joueur.y<22){
+            // augmentation du score
             score++;
+            // affichage du score
+            this.texte_score.text = 'SCORE ' + score;
             // réinitialisation de la position du joueur
             this.joueur.x = 8;
             this.joueur.y = 590; 
@@ -79,6 +88,10 @@ class Jeu extends Phaser.Scene{
                     20 * Math.random() * 28,
                     'ennemi_inactif'
                 );
+                // changement de teinte pour
+                // faciliter l'identification
+                // des nouveaux obstacles
+                obstacle.setTint(0x8A2BE2);
                 // ajout de l'obstacle au groupe
                 this.groupe_obstacles.add(obstacle);
             } 
