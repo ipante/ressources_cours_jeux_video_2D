@@ -42,10 +42,13 @@ function create(){
         );
     });
     // retirer une balle à chaque clic sur une balle
+    // parcourir chaque balle...
     balles.children.iterate( b => {
-        // rendre chaque balle interactive
+        // rendre chaque balle interactive...
         b.setInteractive();
+        // ajouter un événement
         b.input.on('pointerover', (v) => {
+            // retirer la balle
             balles.killAndHide(v);
         })
     })
