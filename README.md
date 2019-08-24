@@ -105,7 +105,7 @@ ___
 
 ### Banques de sprites
 
-* [opengameart.org](https://opengameart.org/)
+* [Opengameart.org](https://opengameart.org/)
 * [Assets sur itch.io](https://itch.io/game-assets)
 * [The Spriters Resource](https://www.spriters-resource.com/)
 
@@ -134,7 +134,7 @@ ___
 * Théorie du jeu
   * Johan Huizinga, [*Homo Ludens*](https://fr.wikipedia.org/wiki/Homo_ludens) (1938)
 * Game Design
-  * George Skaff Elias, Richard Garfield and K. Robert Gutschera, *[Characteristics of Games]*(https://mitpress.mit.edu/books/characteristics-games), MIT Press (2012)
+  * George Skaff Elias, Richard Garfield and K. Robert Gutschera, [*Characteristics of Games*](https://mitpress.mit.edu/books/characteristics-games), MIT Press (2012)
 * Développement
   * Emanuelle Feronato, [HTML5 Cross Platform Game Development Using Phaser 3](https://gumroad.com/l/odKJf)
 
