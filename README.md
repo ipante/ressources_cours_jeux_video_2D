@@ -8,18 +8,18 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
-## Liste des ressources internes
+## Liste des travaux pratiques
 
 1. [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
 2. [**phaser_scenes_sequentielles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
 3. [**phaser_scenes_paralleles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles) : exemple de scènes parallèles avec interaction ; le déplacement du pointeur dans la scène principale se répercute sur une "minimap" dessinée dans une autre scène.
 4. [**phaser_input**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_input) : exemple de déplacement d'objet au clavier, coup par coup avec des combinaisons de touche ou de manière continue avec les curseurs *(**bonus** : ajout d'une police bitmap pour les instructions ; ajout d'un point d'arrêt contre les bords du monde avec physics : arcade)*.
-5. [**système physique**]() : TODO
+5. [**système physique (***exemple commenté***)**](https://labs.phaser.io/view.html?src=src\physics\arcade\sprite%20vs%20sprite.js) : un exemple tout simple de deux sprites qui rebondissent contre le monde et entre eux.
 6. [**phaser_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_jump) : réécriture de kontra-jump en Phaser; ajout de scènes.
 7. [**animations sans atlas**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_sans_atlas) : importation d'une spritesheet et création des animations pour les 4 points cardinaux.
 8. [**animations avec atlas et tweens**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_avec_atlas_et_tweens) : importation de deux spritesheet ainsi que d'un atlas JSON; les animations sont soumises à deux transformations (tweens) chaînées *(**bonus** : évocation de l'alternative "timeline")*.
-9. [**gestion de pool & génération "infinie"**]() : TODO
-10. [**phaser runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés. TO COMPLETE
+9. [**phaser_pool**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool) : création d'un pool, utilisation pour l'affichage et la suppression d'objets. **TO COMPLETE**
+10. [**phaser runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés. **TO COMPLETE**
 
 ## Liste des ressources externes
 
@@ -32,9 +32,9 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Demande de support (Phaser)
 
-* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3)
-* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
-* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
+* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3) : le meilleur endroit où poser une question spécifique au framework. Grande réactivité et information à la source.
+* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework) : questions sur le framework ainsi que sur Javascript en général.
+* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14) : un tutoriel vous manque? Demandez-le sur ce thread. Egalement un excellent lieu où retrouver une liste de tutoriels suggérés par les participant·e·s.
 
 #### Tutoriels thématiques
 
