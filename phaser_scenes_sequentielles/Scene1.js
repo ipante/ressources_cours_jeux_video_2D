@@ -25,6 +25,16 @@ class Scene1 extends Phaser.Scene{
             // appel de Scene2.js, via le nom
             // déclaré dans le constructeur de Scene2
             this.scene.start('accueil')
-        },8500)
+        },8500);
+        // nous pourrions aussi nous passer du
+        // Timeout en utilisant les transitions
+        // this.scene.transition({
+        //     target: 'accueil',
+        //     duration: 8500,
+        //     moveAbove: true
+        // });
+        // toutes les informations dans le devlog 120
+        // https://phaser.io/phaser3/devlog/120
+
     }
 }

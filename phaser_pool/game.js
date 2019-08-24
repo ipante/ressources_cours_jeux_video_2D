@@ -48,8 +48,9 @@ function create(){
         b.setInteractive();
         // ajouter un événement
         b.input.on('pointerover', (v) => {
+            console.log('test);')
             // retirer la balle
-            balles.killAndHide(v);
+            //balles.killAndHide(v);
         })
     })
 }
