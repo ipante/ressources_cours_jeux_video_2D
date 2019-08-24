@@ -12,8 +12,7 @@ const config = {
     },
     scene : {
         preload : preload,
-        create : create,
-        update : update
+        create : create
     }    
 }
 
@@ -26,11 +25,33 @@ function preload(){
 
 function create(){
     // définir un groupe d'objets actifs
-    let balles_actives = this.add.group();
-    // définit un réservoir
-    let reservoir = this.add.group();
-}    
+    let balles = this.add.group({
+        // définir l'élément par défaut
+        defaultKey: 'balle',
+        // limiter la taille du groupe
+        // et donc le nombre de balles
+        // qui pourront être affichées
+        maxSize: 10
+    });
 
-function update(){
-  
+    // ajouter une balle à chaque clic sur l'écran
+    this.input.on('pointerdown', () => {
+        balles.get(
+            Phaser.Math.Between(50,350),
+            Phaser.Math.Between(50,350),
+        );
+    });
+    // retirer une balle à chaque clic sur une balle
+    balles.children.iterate( b => {
+        // rendre chaque balle interactive
+        b.setInteractive();
+        b.input.on('pointerover', (v) => {
+            b.killAndHide(v);
+        })
+    })
 }
+
+/* exemples apparentés
+http://labs.phaser.io/edit.html?src=src/game%20objects/group/sprite%20pool.js
+
+*/
