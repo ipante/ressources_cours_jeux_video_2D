@@ -36,16 +36,22 @@ function create(){
 
     // ajouter une balle à chaque clic sur l'écran
     this.input.on('pointerdown', () => {
-        balles.get(
+        let balle = balles.get(
             Phaser.Math.Between(50,350),
             Phaser.Math.Between(50,350),
         );
+        // rendre la balle interactive
+        balle.setInteractive();
+        // balle.input.on('pointerover', (b) => {
+        //     // retirer la balle
+        //     balles.killAndHide(b);
+        // })
     });
     // retirer une balle à chaque clic sur une balle
     // parcourir chaque balle du groupe...
-    balles.children.iterate( b => {
-        // rendre chaque balle interactive...
-        b.setInteractive();
+    balles.children.iterate(b => {
+        // // rendre chaque balle interactive...
+        // b.setInteractive();
         // ajouter un événement
         b.input.on('pointerover', (v) => {
             console.log('test);')
