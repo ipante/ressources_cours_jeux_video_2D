@@ -24,9 +24,9 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Documentation officielle de Phaser
 
-* [Phaser Notes (documentation officielle mieux présentée)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
-* [Documentation officielle (et brute) de l'API](https://photonstorm.github.io/phaser3-docs/)
-* [Liste d'exemples en Phaser 3](http://labs.phaser.io/)
+* [Phaser Notes](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html) : la documentation officielle de l'API de Phaser 3 est souvent difficile à lire. Ces notes reprennent l'essentiel de la documentation sous une forme nettement plus adaptée.
+* [Documentation officielle de l'API](https://photonstorm.github.io/phaser3-docs/) : la documentation officielle (et brute) de Phaser 3.
+* [Liste d'exemples en Phaser 3](http://labs.phaser.io/) : des exemples classés par thématiques sur la plupart des composantes essentielles de Phaser 3.
 * [PhaserWorld](https://phaser.io/community/newsletter) : la newsletter de Phaser, soit la meilleur source de tutoriels et d'informations sur les évolutions du framework. Abonnez-vous pendant la durée de ce cours!
 
 #### Tutoriels thématiques
