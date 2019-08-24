@@ -43,6 +43,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_scenes_sequentielles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles)
   * [TP : phaser_scenes_paralleles](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_paralleles)
   * [Guide des scènes dans Phaser 3 (partie 2)](https://phaser.io/phaser3/devlog/121)
+  * [Ajouter des transitions à vos scènes](https://phaser.io/phaser3/devlog/120)
   
 * Spritesheet, Animations & Tweens
   * [Rapide introduction vidéo aux spritesheets & aux animations](https://www.youtube.com/watch?v=U0K0YTifb1w&list=PLDyH9Tk5ZdFzEu_izyqgPFtHJJXkc79no&index=6&t=0s)
