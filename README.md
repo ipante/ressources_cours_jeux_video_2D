@@ -18,7 +18,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 6. [**phaser_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_jump) : réécriture de kontra-jump en Phaser; ajout de scènes.
 7. [**animations sans atlas**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_sans_atlas) : importation d'une spritesheet et création des animations pour les 4 points cardinaux.
 8. [**animations avec atlas et tweens**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_avec_atlas_et_tweens) : importation de deux spritesheet ainsi que d'un atlas JSON; les animations sont soumises à deux transformations (tweens) chaînées *(**bonus** : évocation de l'alternative "timeline")*.
-9. [**gestion de pool & génération "infinie"**]() : TODO
+9. [**phaser_pool**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool) : création d'un pool, utilisation pour l'affichage et la suppression d'objets.
 10. [**phaser runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés. TO COMPLETE
 
 ## Liste des ressources externes
