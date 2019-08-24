@@ -46,7 +46,7 @@ function create(){
         // rendre chaque balle interactive
         b.setInteractive();
         b.input.on('pointerover', (v) => {
-            b.killAndHide(v);
+            balles.killAndHide(v);
         })
     })
 }
