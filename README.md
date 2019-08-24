@@ -8,7 +8,7 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
-## Liste des ressources internes
+## Liste des travaux pratiques
 
 1. [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
 2. [**phaser_scenes_sequentielles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
@@ -32,9 +32,9 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Demande de support (Phaser)
 
-* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3)
-* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
-* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
+* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3) : le meilleur endroit où poser une question spécifique au framework. Grande réactivité et information à la source.
+* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework) : questions sur le framework ainsi que sur Javascript en général.
+* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14) : un tutoriel vous manque? Demandez-le sur ce thread. Egalement un excellent lieu où retrouver une liste de tutoriels suggérés par les participant·e·s.
 
 #### Tutoriels thématiques
 
