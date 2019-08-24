@@ -29,6 +29,12 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Liste d'exemples en Phaser 3](http://labs.phaser.io/) : des exemples classés par thématiques sur la plupart des composantes essentielles de Phaser 3.
 * [PhaserWorld](https://phaser.io/community/newsletter) : la newsletter de Phaser, soit la meilleur source de tutoriels et d'informations sur les évolutions du framework. Abonnez-vous pendant la durée de ce cours!
 
+#### Demande de support (Phaser)
+
+* [Forums Phaser 3](https://phaser.discourse.group/c/phaser3)
+* [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
+* [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
+
 #### Tutoriels thématiques
 
 * Les classes en ES6
