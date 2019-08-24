@@ -124,7 +124,10 @@ class playGame extends Phaser.Scene{
             // ajouter la plateforme au groupe
             this.groupe_plateformes.add(plateforme);
         }
+        // ??
         plateforme.displayWidth = largeur_plateforme;
+        // générer une taille d'écart avec la plateforme
+        // suivante dans les proportions définies au départ
         this.distance_plateforme_suivante = Phaser.Math.Between(
             options.empan_apparition[0],
             options.empan_apparition[1]
@@ -159,9 +162,13 @@ class playGame extends Phaser.Scene{
 
         // recyclage de plateformes
         let distance_minimale = jeu.config.width;
+        // itérer sur les plateformes actives
         this.groupe_plateformes.getChildren().forEach(function(plateforme){
+            // ??
             let plateformeDistance = jeu.config.width - plateforme.x - plateforme.displayWidth / 2;
+            // ??
             distance_minimale = Math.min(distance_minimale, plateformeDistance);
+            // ??
             if(plateforme.x < - plateforme.displayWidth / 2){
                 // rendre la plateforme inactive et la cacher
                 this.groupe_plateformes.killAndHide(plateforme);
@@ -172,10 +179,13 @@ class playGame extends Phaser.Scene{
 
         // ajout de plateformes
         if(distance_minimale > this.distance_plateforme_suivante){
+            // générer une taille de plateforme aléatoire
+            // dans les proportions définies au départ
             let largeur_plateforme_suivante = Phaser.Math.Between(
                 options.empan_plateformes[0],
                 options.empan_plateformes[1]
             );
+            // générer une plateforme
             this.ajouter_plateforme(
                 largeur_plateforme_suivante,
                 jeu.config.width + largeur_plateforme_suivante / 2
