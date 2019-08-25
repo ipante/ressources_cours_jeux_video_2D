@@ -33,32 +33,32 @@ function create(){
         // qui pourront être affichées
         maxSize: 10
     });
-
+    // notez que l'on peut créer des éléments
+    // comme suit : balles.create(5);
+    
     // ajouter une balle à chaque clic sur l'écran
     this.input.on('pointerdown', () => {
-        let balle = balles.get(
-            Phaser.Math.Between(50,350),
-            Phaser.Math.Between(50,350),
-        );
-        // rendre la balle interactive
-        balle.setInteractive();
-        // balle.input.on('pointerover', (b) => {
-        //     // retirer la balle
-        //     balles.killAndHide(b);
-        // })
+        // si le réservoir n'est pas plein...
+        if(!balles.isFull()){
+            // on ajoute une balle
+            let balle = balles.get(
+                // avec un positionnement aléatoire
+                Phaser.Math.Between(50,350),
+                Phaser.Math.Between(50,350),
+            );
+            // on rend la balle interactive
+            balle.setInteractive();
+            // si on clique sur la balle...
+            balle.on('pointerover', b => {
+                // retirer la balle
+                balles.killAndHide(b);
+            })
+        }    
     });
-    // retirer une balle à chaque clic sur une balle
-    // parcourir chaque balle du groupe...
-    balles.children.iterate(b => {
-        // // rendre chaque balle interactive...
-        // b.setInteractive();
-        // ajouter un événement
-        b.input.on('pointerover', (v) => {
-            console.log('test);')
-            // retirer la balle
-            //balles.killAndHide(v);
-        })
-    })
+    // notez que l'on peut parcourir
+    // tous les éléments d'un réservoir
+    // comme suit :
+    // balles.children.iterate(function(){...})
 }
 
 /* exemples apparentés
