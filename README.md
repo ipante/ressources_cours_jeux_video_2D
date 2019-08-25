@@ -38,11 +38,12 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 
 #### Tutoriels thématiques
 
-* Les classes en ES6
-  * [Objets, méthodes et prototype (Ocean Digital)](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript#constructor-functions)
-  * [idem, autre tutoriel](https://javascript.info/class)
-  * [idem, autre tutoriel](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes)
-  * [idem, autre tutoriel](https://medium.com/@robertgrosse/how-es6-classes-really-work-and-how-to-build-your-own-fd6085eb326a)
+* Javascript pur
+  * [Typescript en 50 minutes](https://www.youtube.com/watch?v=WBPrJSw7yQA)
+  * [ES6 : Objets, méthodes et prototype (Ocean Digital)](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript#constructor-functions)
+  * [ES6, idem autre tutoriel](https://javascript.info/class)
+  * [ES6, idem, autre tutoriel](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes)
+  * [ES6, idem, autre tutoriel](https://medium.com/@robertgrosse/how-es6-classes-really-work-and-how-to-build-your-own-fd6085eb326a)
 
 * Scènes
   * [Rapide introduction vidéo aux scènes](https://youtu.be/gFXx7lgxK9A)
