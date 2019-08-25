@@ -60,7 +60,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : animation avec atlas et tweens](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_avec_atlas_et_tweens)
   
 * Partager votre jeu
-  * [Sur Facebook Instant Game](https://www.emanueleferonato.com/2018/03/28/how-to-integrate-facebook-instant-games-api-in-your-phaser-game/)
+  * [Sur Facebook Instant Game](https://www.emanueleferonato.com/2018/05/18/my-first-facebook-instant-game-has-been-released-play-risky-steps-on-facebook-and-learn-how-to-build-your-own-game/?fbclid=IwAR0aEOjH8H4kdQtodoxScc0VqyPrC6NADpR0WGCwA0ZzpXSHNDzgv7vGtWs)
 
 #### Tutoriels de jeux complets
 
