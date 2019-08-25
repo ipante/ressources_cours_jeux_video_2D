@@ -18,7 +18,7 @@ let options = {
     empan_plateformes: [50, 250],
     gravite_joueur: 900,
     force_saut: 400,
-    position_depart_joueur: 200,
+    position_depart_joueur: 100,
     sauts_max: 2
 }
 
@@ -94,7 +94,10 @@ class playGame extends Phaser.Scene{
         this.input.on("pointerdown", this.sauter, this);
     }
 
-    // les plateformes sont créées ou tirées du réservoir
+    // cette fonction se charge de prendre une plateforme
+    // du pool (ou d'en créer une), de définir sa largeur
+    // (calculée dans l'update) ainsi que l'écart entre
+    // les plateformes
     ajouter_plateforme(largeur_plateforme, position_x){
         let plateforme;
         // s'il y a des objets dans le pool...
@@ -124,7 +127,7 @@ class playGame extends Phaser.Scene{
             // ajouter la plateforme au groupe
             this.groupe_plateformes.add(plateforme);
         }
-        // ??
+
         plateforme.displayWidth = largeur_plateforme;
         // générer une taille d'écart avec la plateforme
         // suivante dans les proportions définies au départ
@@ -157,25 +160,31 @@ class playGame extends Phaser.Scene{
             // redémarrer le jeu
             this.scene.start("PlayGame");
         }
-        // ???
+        // placer le joueur au bon endroit
         this.joueur.x = options.position_depart_joueur;
 
         // recyclage de plateformes
+        // défintion de la distance minimale
         let distance_minimale = jeu.config.width;
         // itérer sur les plateformes actives
-        this.groupe_plateformes.getChildren().forEach(function(plateforme){
-            // ??
-            let plateformeDistance = jeu.config.width - plateforme.x - plateforme.displayWidth / 2;
-            // ??
-            distance_minimale = Math.min(distance_minimale, plateformeDistance);
-            // ??
+        this.groupe_plateformes.getChildren().forEach(plateforme =>{
+            // la distance entre les plateformes vaut
+            // la longueur du jeu - la position de la plateforme
+            // moins la moitié de la largeur de la plateforme
+            // faites varier ces paramètres pour bien comprendre
+            let distance_plateforme = jeu.config.width - plateforme.x - plateforme.displayWidth / 2;
+            // trouver le plus petit nombre entre
+            // la distance minimale et la distance de la
+            // plateforme
+            distance_minimale = Math.min(distance_minimale, distance_plateforme);
+            // si la plateforme est sortie de l'écran à gauche
             if(plateforme.x < - plateforme.displayWidth / 2){
                 // rendre la plateforme inactive et la cacher
                 this.groupe_plateformes.killAndHide(plateforme);
                 // retirer la plateforme
                 this.groupe_plateformes.remove(plateforme);
             }
-        }, this);
+        });
 
         // ajout de plateformes
         if(distance_minimale > this.distance_plateforme_suivante){

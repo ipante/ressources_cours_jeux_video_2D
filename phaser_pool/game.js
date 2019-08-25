@@ -31,7 +31,7 @@ function create(){
         // limiter la taille du groupe
         // et donc le nombre de balles
         // qui pourront être affichées
-        maxSize: 10
+        maxSize: 15
     });
     // notez que l'on peut créer des éléments
     // comme suit : balles.create(5);
