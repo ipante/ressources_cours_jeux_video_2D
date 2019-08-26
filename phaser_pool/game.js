@@ -48,10 +48,10 @@ function create(){
             );
             // on rend la balle interactive
             balle.setInteractive();
-            // si on clique sur la balle...
-            balle.on('pointerover', b => {
-                // retirer la balle
-                balles.killAndHide(b);
+            // si on passe sur la balle...
+            balle.on('pointerover', () => {
+                // retirer la balle du réservoir
+                balles.killAndHide(balle);
             })
         }    
     });
