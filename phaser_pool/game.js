@@ -48,6 +48,12 @@ function create(){
             );
             // on rend la balle interactive
             balle.setInteractive();
+            // on (ré)active la balle
+            // ces deux lignes sont rendues
+            // nécessaires par le "balles.killAndHide"
+            // de la ligne 68
+            balle.setActive(true);
+            balle.setVisible(true);
             // si on passe sur la balle...
             balle.on('pointerover', () => {
                 // retirer la balle du réservoir
