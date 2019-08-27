@@ -37,7 +37,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework) : questions sur le framework ainsi que sur Javascript en général.
 * [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14) : un tutoriel vous manque? Demandez-le sur ce thread. Egalement un excellent lieu où retrouver une liste de tutoriels suggérés par les participant·e·s.
 
-#### Tutoriels thématiques
+#### Ressources thématiques
 
 * Javascript pur
   * [Typescript en 50 minutes](https://www.youtube.com/watch?v=WBPrJSw7yQA)
