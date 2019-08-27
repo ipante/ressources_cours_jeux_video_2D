@@ -63,6 +63,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * Pool et cycle de vie des objets
   * [TP : phaser_pool_input](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_input)
   * [TP : phaser_pool_animation](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation)
+  * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
 * Partager votre jeu
   * Sur Facebook Instant Game
