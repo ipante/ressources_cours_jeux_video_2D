@@ -66,8 +66,3 @@ function create(){
     // comme suit :
     // balles.children.iterate(function(){...})
 }
-
-/* exemples apparentés
-http://labs.phaser.io/edit.html?src=src/game%20objects/group/sprite%20pool.js
-
-*/
