@@ -20,7 +20,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 8. [**animations avec atlas et tweens**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_animations_avec_atlas_et_tweens) : importation de deux spritesheet ainsi que d'un atlas JSON; les animations sont soumises à deux transformations (tweens) chaînées *(**bonus** : évocation de l'alternative "timeline")*.
 9. [**phaser_pool_input**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_input) : création d'un pool, utilisation pour l'affichage et la suppression d'objets.
 10. [**phaser_pool_animation**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation) : code de Richard Davey sur la génération de sprites animés tirés d'un pool.
-10. [**phaser runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés.
+10. [**phaser_runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés.
 
 ## Liste des ressources externes
 
