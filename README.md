@@ -150,10 +150,13 @@ ___
 
 ## Inspirations en médiation
 
+* [L'évolution de la confiance](https://ayowel.github.io/trust/) par [Nicky Case](https://ncase.me/)
 * Simulateur de pauvreté : [Spent](http://playspent.org/html/)
-* Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
+* [La sagesse et/ou la folie des foules](https://ncase.me/crowds/fr.html) par [Nicky Case](https://ncase.me/)
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
-* Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) 
+* Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
+* Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
+
 
 ## Livres
 
