@@ -125,6 +125,12 @@ ___
 * [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
 
+## Boilerplates Phaser 3
+
+* [Avec Brunch](https://github.com/samme/brunch-phaser)
+* [Avec Webpack](https://github.com/photonstorm/phaser3-project-template)
+* [Avec Webpack (Platformer)](https://github.com/nkholski/phaser3-es6-webpack)
+
 ___
 
 ## Assets
