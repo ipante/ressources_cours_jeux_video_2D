@@ -113,6 +113,7 @@ ___
 * Pixellisation d'images : [Pixel Art Camera](https://itunes.apple.com/ch/app/pixel-art-camera/id1107180652?l=fr&mt=8)
 * Création de sprites : [Aseprite](https://www.aseprite.org/) | $
 * Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $
+* Extraction d'images à partir d'une spritesheet : [Shoebox](https://renderhjs.net/shoebox/)
 * Eclairage de sprites : [Sprite illuminator](https://www.codeandweb.com/spriteilluminator) | $
 
 ### Moteurs de jeu recommandés
@@ -171,11 +172,8 @@ ___
 
 * [Liste des codes clavier](https://keycode.info/)
 * [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
-* [Shoebox](https://renderhjs.net/shoebox/) : extraction d'images à partir d'une spritesheet
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
-* [Facebook Instant Game](https://phasertutorials.com/a-guide-to-using-the-facebook-instant-games-plugin-for-phaser-3-part-1/?a=13)
-* Fiction interactive :  [Wardialler](https://nervoustestpilot.itch.io/wardialler)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
