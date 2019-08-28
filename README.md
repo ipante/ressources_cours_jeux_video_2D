@@ -151,9 +151,9 @@ ___
 
 ## Inspirations en médiation
 
-* [L'évolution de la confiance](https://ayowel.github.io/trust/) par [Nicky Case](https://ncase.me/)
+* La confiance en psychologie sociale : [L'évolution de la confiance](https://ayowel.github.io/trust/) par [Nicky Case](https://ncase.me/)
 * Simulateur de pauvreté : [Spent](http://playspent.org/html/)
-* [La sagesse et/ou la folie des foules](https://ncase.me/crowds/fr.html) par [Nicky Case](https://ncase.me/)
+* La vision du monde en psychologie sociale : [La sagesse et/ou la folie des foules](https://ncase.me/crowds/fr.html) par [Nicky Case](https://ncase.me/)
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
 * Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
