@@ -153,6 +153,7 @@ ___
 * Simulateur de pauvreté : [Spent](http://playspent.org/html/)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
+* Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) 
 
 ## Livres
 
