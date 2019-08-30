@@ -22,6 +22,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 10. [**phaser_pool_animation**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation) : code de Richard Davey sur la génération de sprites animés tirés d'un pool.
 11. [**phaser_runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés.
 12. [**phaser_boilerplate_webpack**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack) : installation d'un boilerplate phaser utilisant webpack ; ajout d'un module externe et importation de la fonction de ce dernier.
+13. [**phaser_plugin_global**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global) : écriture d'un plugin global.
 
 ## Liste des ressources externes
 
@@ -68,7 +69,11 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   
 * Intégration et écriture de plugins
   * [TP : création d'un projet à partir d'un Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
-  * TP : [phaser_plugin]() : TODO
+  * TP : [phaser_plugin_global](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global)
+  * [Documentation sur les types de plugin (scene et global)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/pluginsystem/)
+  * [Documentation complète sur le plugin mananger](https://photonstorm.github.io/phaser3-docs/Phaser.Plugins.PluginManager.html)
+  * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)  
+  
   
 * Partager votre jeu
   * Sur Facebook Instant Game
