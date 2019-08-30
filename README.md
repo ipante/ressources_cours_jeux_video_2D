@@ -175,7 +175,7 @@ ___
 * La vision du monde en psychologie sociale : [La sagesse et/ou la folie des foules](https://ncase.me/crowds/fr.html) par [Nicky Case](https://ncase.me/)
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
-* Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
+* Street Fighter autour de l'anxiété : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
 
 ## jeux singuliers (interface atypique)
 
