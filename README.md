@@ -176,11 +176,16 @@ ___
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
 * Street Fighter autour de l'anxiété : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
+* Simulateur de harcèlement journalistique (attention, Phaser 2!) : [Sorry to bother you](https://danhett.itch.io/sorry)
 
 ## jeux singuliers (interface atypique)
 
 * [Her story](http://www.herstorygame.com/) & [Telling lies](http://tellingliesgame.com/) : exploration d'une base de donnée vidéo à partir recherche textuelle
 * [Papa Sangre](https://www.youtube.com/watch?v=jxXwotksBdM) : orientation à l'aveugle
+
+## annuaires de jeux
+
+* [Jeux créés avec Phaser sur Itch.io](https://itch.io/games/made-with-phaser)
 
 
 ## Livres
