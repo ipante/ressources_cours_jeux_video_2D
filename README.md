@@ -66,7 +66,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
 * Intégration et écriture de plugins
-  * TP : création d'un projet à partir d'un [Boilerplate](https://github.com/photonstorm/phaser3-project-template)
+  * TP : création d'un projet à partir d'un [Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
   * TP : [phaser_plugin]() : TODO
   
 * Partager votre jeu
