@@ -66,7 +66,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
 * Intégration et écriture de plugins
- * TODO
+  * TODO
   
 * Partager votre jeu
   * Sur Facebook Instant Game
