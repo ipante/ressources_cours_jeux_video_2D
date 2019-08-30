@@ -65,6 +65,10 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_pool_animation](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation)
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
+* Intégration et écriture de plugins
+  * TP : création d'un projet à partir d'un [Boilerplate](https://github.com/photonstorm/phaser3-project-template)
+  * TP : [phaser_plugin]() : TODO
+  
 * Partager votre jeu
   * Sur Facebook Instant Game
     * [Documentation officielle de Facebook]()
@@ -125,6 +129,12 @@ ___
 * [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
 
+## Boilerplates Phaser 3
+
+* [Avec Brunch](https://github.com/samme/brunch-phaser)
+* [Avec Webpack](https://github.com/photonstorm/phaser3-project-template)
+* [Avec Webpack (Platformer)](https://github.com/nkholski/phaser3-es6-webpack)
+
 ___
 
 ## Assets
@@ -174,6 +184,7 @@ ___
 * [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
+* [Différents Plugins Phaser (interface, notamment)](https://github.com/rexrainbow/phaser3-rex-notes)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
