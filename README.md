@@ -160,7 +160,9 @@ ___
 
 ___
 
-## Inspirations en médiation
+## Inspirations
+
+## jeux de médiation
 
 * La confiance en psychologie sociale : [L'évolution de la confiance](https://ayowel.github.io/trust/) par [Nicky Case](https://ncase.me/)
 * Simulateur de pauvreté : [Spent](http://playspent.org/html/)
@@ -168,6 +170,11 @@ ___
 * Simulateur de gestion des données personnelles : [Datak](https://www.datak.ch/#/play)
 * Simulateur de banalité du mal : [Papers Please](https://papersplea.se/)
 * Adventures with anxiety : [Adventures with anxiety](https://ncase.me/anxiety-demo/) par [Nicky Case](https://ncase.me/)
+
+## jeux singuliers (interface atypique)
+
+* [Her story](http://www.herstorygame.com/) & [Telling lies](http://tellingliesgame.com/) : exploration d'une base de donnée vidéo à partir recherche textuelle
+* [Papa Sangre](https://www.youtube.com/watch?v=jxXwotksBdM) : orientation à l'aveugle
 
 
 ## Livres
