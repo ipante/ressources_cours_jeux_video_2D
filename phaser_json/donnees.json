@@ -1,0 +1,12 @@
+{
+    "positif" : [
+        "Je me sens bien.",
+        "C'est une belle journée !",
+        "Comme il fait beau !"
+    ],
+    "negatif" : [
+        "A quoi ça sert?",
+        "C'est moi ou ça se couvre?",
+        "Triste, c'est ça, je suis triste"
+    ]
+}
