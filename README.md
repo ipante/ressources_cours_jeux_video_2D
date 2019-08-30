@@ -67,13 +67,14 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_pool_animation](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation)
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
-* Intégration et écriture de plugins
+* Utilisation de webpack
   * [TP : création d'un projet à partir d'un Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
-  * TP : [phaser_plugin_global](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global)
+  
+* Intégrations de plugins  
+  * [TP : phaser_plugin_global](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global)
   * [Documentation sur les types de plugin (scene et global)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/pluginsystem/)
   * [Documentation complète sur le plugin mananger](https://photonstorm.github.io/phaser3-docs/Phaser.Plugins.PluginManager.html)
-  * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)  
-  
+  * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)    
   
 * Partager votre jeu
   * Sur Facebook Instant Game
