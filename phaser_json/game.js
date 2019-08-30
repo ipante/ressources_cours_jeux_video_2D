@@ -13,18 +13,21 @@ const config = {
 const jeu = new Phaser.Game(config);
 
 function preload(){
+  // charger une image
+  this.load.image('fond','fond.png');
   // charger les données JSON
   this.load.json('donnees','donnees.json');
 }
 
 function create(){
+  // afficher l'image
+  this.add.image(0,0,'fond').setOrigin(0,0);
   // récupérer les données dans le cache
   this.donnees = this.cache.json.get('donnees');
-  // this.couleur = new Phaser.Display.Color();
-  // console.log(this.couleur.random());
 }
 
 function update(){
+  // ajouter du texte à chaque frame
   this.add.text(
     Phaser.Math.Between(0,config.width),
     Phaser.Math.Between(0,config.height),
@@ -39,6 +42,6 @@ function update(){
 function tirer_phrase(mes_donnees){
     // 1. tirer l'humeur : positif ou négatif
     let mood = Phaser.Math.Between(0,1) === 0 ? 'negatif' : 'positif';
-    // 2. retourner une valeur aléatoire du tableau sélectionné
+    // 2. tirer au hasard une valeur du tableau
     return Phaser.Math.RND.pick(mes_donnees[mood]);
 }
