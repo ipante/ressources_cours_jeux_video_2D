@@ -65,6 +65,9 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_pool_animation](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation)
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
   
+* Intégration et écriture de plugins
+ * TODO
+  
 * Partager votre jeu
   * Sur Facebook Instant Game
     * [Documentation officielle de Facebook]()
@@ -180,6 +183,7 @@ ___
 * [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
+* [Différents Plugins Phaser (interface, notamment)](https://github.com/rexrainbow/phaser3-rex-notes)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
