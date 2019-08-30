@@ -23,6 +23,10 @@ const config = {
   height: 600,
   // ajout du plugin
   plugins: {
+    // la déclaration sous forme "global"
+    // crée une même instance du plugin
+    // pour tout le jeu ; chaque scène pourra
+    // ensuite l'invoquer (cf. documentation plus bas)
     global: [
         {
             // attention, ici c'est une chaîne
@@ -60,5 +64,9 @@ function create() {
   });
 }
 
-// documentation
+// documentation sur le système de plugin (scene et global)
 // https://rexrainbow.github.io/phaser3-rex-notes/docs/site/pluginsystem/
+// documentation sur le plugin mananger
+// https://photonstorm.github.io/phaser3-docs/Phaser.Plugins.PluginManager.html
+// liste des exemples spécifiques aux plugins
+// https://labs.phaser.io/index.html?dir=plugins/&q=
