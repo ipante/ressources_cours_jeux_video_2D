@@ -205,6 +205,7 @@ ___
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
 * [Différents Plugins Phaser (interface, notamment)](https://github.com/rexrainbow/phaser3-rex-notes)
+* Plugin pour touch joystick : [Nipple.js](https://yoannmoi.net/nipplejs/)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
