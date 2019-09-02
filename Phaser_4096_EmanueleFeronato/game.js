@@ -1,30 +1,30 @@
-var game;
-var optionsJeu = {
+let jeu;
+let optionsJeu = {
     largeurTuile: 200,
     vitesseInterpolation: 50,
     espacementTuile: 20,
     nomLocalStorage: "top4096score"
 }
-var LIGNE = 0;
-var COLONNE = 1;
+let LIGNE = 0;
+let COLONNE = 1;
 window.onload = function() {
-    var configJeu = {
+    let configJeu = {
        type: Phaser.CANVAS,
        width: optionsJeu.largeurTuile * 4 + optionsJeu.espacementTuile * 5,
        height: (optionsJeu.largeurTuile * 4 + optionsJeu.espacementTuile * 5) * 16 / 9,
        backgroundColor: 0xecf0f1,
-       scene: [preloadAssets, jouerJeu]
+       scene: [prechargerAssets, jouerJeu]
    };
-    game = new Phaser.Game(configJeu);
+    jeu = new Phaser.Game(configJeu);
     window.focus()
     redimensionner();
     window.addEventListener("resize", redimensionner, false);
 }
 
-var preloadAssets = new Phaser.Class({
+let prechargerAssets = new Phaser.Class({
     Extends: Phaser.Scene,
     initialize:
-    function preloadAssets(){
+    function prechargerAssets(){
         Phaser.Scene.call(this, {key: "PreloadAssets"});
     },
     preload: function(){
@@ -48,7 +48,7 @@ var preloadAssets = new Phaser.Class({
     }
 })
 
-var jouerJeu = new Phaser.Class({
+let jouerJeu = new Phaser.Class({
     Extends: Phaser.Scene,
     initialize:
     function jouerJeu(){
@@ -64,13 +64,13 @@ var jouerJeu = new Phaser.Class({
         // les TILES (tuiles de jeu) s'alignent dessus
         // les tuiles initiales sont créées
         // création d'un tableau à deux dimensions
-        for(var i = 0; i < 4; i++){
+        for(let i = 0; i < 4; i++){
             this.tableauTerrain[i] = [];
-            for(var j = 0; j < 4; j++){
+            for(let j = 0; j < 4; j++){
                 // ajouter la case "de fond" à l'écran
-                var spot = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "spot")
+                let spot = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "spot")
                 // ajouter le contneu de la case
-                var tile = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "tiles");
+                let tile = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "tiles");
                 // rendre chaque tuile invisible
                 tile.alpha = 0;
                 tile.visible = 0;
@@ -85,7 +85,7 @@ var jouerJeu = new Phaser.Class({
             }
         }
         // ajout de l'interface
-        var boutonRestart = this.add.sprite(this.destinationTuile(3, COLONNE), this.destinationTuile(0, LIGNE) - 200, "restart");
+        let boutonRestart = this.add.sprite(this.destinationTuile(3, COLONNE), this.destinationTuile(0, LIGNE) - 200, "restart");
         boutonRestart.setInteractive();
         boutonRestart.on("pointerdown", function(){
             this.scene.start("JouerJeu");
@@ -93,9 +93,9 @@ var jouerJeu = new Phaser.Class({
         this.add.sprite(this.destinationTuile(1, COLONNE), this.destinationTuile(0, LIGNE) - 200, "scorepanel");
         this.add.sprite(this.destinationTuile(1, COLONNE), this.destinationTuile(0, LIGNE) - 270, "scorelabels");
         this.add.sprite(10, 5, "gametitle").setOrigin(0, 0);
-        var howTo = this.add.sprite(game.config.width, 5, "howtoplay");
+        let howTo = this.add.sprite(jeu.config.width, 5, "howtoplay");
         howTo.setOrigin(1, 0);
-        var logo = this.add.sprite(game.config.width / 2, game.config.height, "logo");
+        let logo = this.add.sprite(jeu.config.width / 2, jeu.config.height, "logo");
         logo.setOrigin(0.5, 1);
         logo.setInteractive();
         logo.on("pointerdown", function(){
@@ -116,32 +116,32 @@ var jouerJeu = new Phaser.Class({
         this.sonAugmentation = this.sound.add("grow");
     },
     finSwipe: function(e){
-        var tempsSwipe = e.upTime - e.downTime;
-        var swipe = new Phaser.Geom.Point(e.upX - e.downX, e.upY - e.downY);
-        var swipeMagnitude = Phaser.Geom.Point.GetMagnitude(swipe);
-        var swipeNormal = new Phaser.Geom.Point(swipe.x / swipeMagnitude, swipe.y / swipeMagnitude);
+        let tempsSwipe = e.upTime - e.downTime;
+        let swipe = new Phaser.Geom.Point(e.upX - e.downX, e.upY - e.downY);
+        let swipeMagnitude = Phaser.Geom.Point.GetMagnitude(swipe);
+        let swipeNormal = new Phaser.Geom.Point(swipe.x / swipeMagnitude, swipe.y / swipeMagnitude);
         if(swipeMagnitude > 20 && tempsSwipe < 1000 && (Math.abs(swipeNormal.y) > 0.8 || Math.abs(swipeNormal.x) > 0.8)){
-            var children = this.groupeTerrain.getChildren();
+            let children = this.groupeTerrain.getChildren();
             if(swipeNormal.x > 0.8) {
-                for (var i = 0; i < children.length; i++){
-                    children[i].depth = game.config.width - children[i].x;
+                for (let i = 0; i < children.length; i++){
+                    children[i].depth = jeu.config.width - children[i].x;
                 }
                 this.gererMouvement(0, 1);
             }
             if(swipeNormal.x < -0.8) {
-                for (var i = 0; i < children.length; i++){
+                for (let i = 0; i < children.length; i++){
                     children[i].depth = children[i].x;
                 }
                 this.gererMouvement(0, -1);
             }
             if(swipeNormal.y > 0.8) {
-                for (var i = 0; i < children.length; i++){
-                    children[i].depth = game.config.height - children[i].y;
+                for (let i = 0; i < children.length; i++){
+                    children[i].depth = jeu.config.height - children[i].y;
                 }
                 this.gererMouvement(1, 0);
             }
             if(swipeNormal.y < -0.8) {
-                for (var i = 0; i < children.length; i++){
+                for (let i = 0; i < children.length; i++){
                     children[i].depth = children[i].y;
                 }
                 this.gererMouvement(-1, 0);
@@ -149,24 +149,24 @@ var jouerJeu = new Phaser.Class({
         }
     },
     ajouterTuile: function(){
-        var emptyTiles = [];
-        for(var i = 0; i < 4; i++){
-            for(var j = 0; j < 4; j++){
+        let tableauTuilesVides = [];
+        for(let i = 0; i < 4; i++){
+            for(let j = 0; j < 4; j++){
                 if(this.tableauTerrain[i][j].valeurTuile == 0){
-                    emptyTiles.push({
-                        row: i,
-                        col: j
+                    tableauTuilesVides.push({
+                        ligne: i,
+                        colonne: j
                     })
                 }
             }
         }
-        if(emptyTiles.length > 0){
-            var tuileChoisie = Phaser.Utils.Array.GetRandomElement(emptyTiles);
-            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].valeurTuile = 1;
-            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile.visible = true;
-            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile.setFrame(0);
+        if(tableauTuilesVides.length > 0){
+            let tuileChoisie = Phaser.Utils.Array.GetRandomElement(tableauTuilesVides);
+            this.tableauTerrain[tuileChoisie.ligne][tuileChoisie.colonne].valeurTuile = 1;
+            this.tableauTerrain[tuileChoisie.ligne][tuileChoisie.colonne].spriteTuile.visible = true;
+            this.tableauTerrain[tuileChoisie.ligne][tuileChoisie.colonne].spriteTuile.setFrame(0);
             this.tweens.add({
-                targets: [this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile],
+                targets: [this.tableauTerrain[tuileChoisie.ligne][tuileChoisie.colonne].spriteTuile],
                 alpha: 1,
                 duration: optionsJeu.vitesseInterpolation,
                 // une fois les animations achevées...
@@ -179,33 +179,33 @@ var jouerJeu = new Phaser.Class({
 	},
     gererTouche: function(e){
         if(this.peutBouger){
-            var children = this.groupeTerrain.getChildren();
+            let children = this.groupeTerrain.getChildren();
             switch(e.code){
                 case "KeyA":
                 case "ArrowLeft":
-                    for (var i = 0; i < children.length; i++){
+                    for (let i = 0; i < children.length; i++){
                         children[i].depth = children[i].x;
                     }
                     this.gererMouvement(0, -1);
                     break;
                 case "KeyD":
                 case "ArrowRight":
-                    for (var i = 0; i < children.length; i++){
-                        children[i].depth = game.config.width - children[i].x;
+                    for (let i = 0; i < children.length; i++){
+                        children[i].depth = jeu.config.width - children[i].x;
                     }
                     this.gererMouvement(0, 1);
                     break;
                 case "KeyW":
                 case "ArrowUp":
-                    for (var i = 0; i < children.length; i++){
+                    for (let i = 0; i < children.length; i++){
                         children[i].depth = children[i].y;
                     }
                     this.gererMouvement(-1, 0);
                     break;
                 case "KeyS":
                 case "ArrowDown":
-                    for (var i = 0; i < children.length; i++){
-                        children[i].depth = game.config.height - children[i].y;
+                    for (let i = 0; i < children.length; i++){
+                        children[i].depth = jeu.config.height - children[i].y;
                     }
                     this.gererMouvement(1, 0);
                     break;
@@ -214,17 +214,17 @@ var jouerJeu = new Phaser.Class({
     },
     gererMouvement: function(deltaRow, deltaCol){
         this.peutBouger = false;
-        var qqchABouge = false;
+        let qqchABouge = false;
         this.movingTiles = 0;
-        var scoreMouvements = 0;
-        for(var i = 0; i < 4; i++){
-            for(var j = 0; j < 4; j++){
-                var colAObserver = deltaCol == 1 ? (4 - 1) - j : j;
-                var ligneAObserver = deltaRow == 1 ? (4 - 1) - i : i;
-                var valeurTuile = this.tableauTerrain[ligneAObserver][colAObserver].valeurTuile;
+        let scoreMouvements = 0;
+        for(let i = 0; i < 4; i++){
+            for(let j = 0; j < 4; j++){
+                let colAObserver = deltaCol == 1 ? (4 - 1) - j : j;
+                let ligneAObserver = deltaRow == 1 ? (4 - 1) - i : i;
+                let valeurTuile = this.tableauTerrain[ligneAObserver][colAObserver].valeurTuile;
                 if(valeurTuile != 0){
-                    var colSteps = deltaCol;
-                    var rowSteps = deltaRow;
+                    let colSteps = deltaCol;
+                    let rowSteps = deltaRow;
                     while(this.estDansLePlateau(ligneAObserver + rowSteps, colAObserver + colSteps) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == 0){
                         colSteps += deltaCol;
                         rowSteps += deltaRow;
@@ -267,31 +267,31 @@ var jouerJeu = new Phaser.Class({
             }
         }
     },
-    moveTile: function(tile, row, col, distance, changeNumber){
+    moveTile: function(tile, ligne, colonne, distance, changeNumber){
         this.movingTiles ++;
         this.tweens.add({
             targets: [tile.spriteTuile],
-            x: this.destinationTuile(col, COLONNE),
-            y: this.destinationTuile(row, LIGNE),
+            x: this.destinationTuile(colonne, COLONNE),
+            y: this.destinationTuile(ligne, LIGNE),
             duration: optionsJeu.vitesseInterpolation * distance,
             onComplete: function(tween){
                 tween.parent.scene.movingTiles --;
                 if(changeNumber){
-                    tween.parent.scene.transformTile(tile, row, col);
+                    tween.parent.scene.transformerTuile(tile, ligne, colonne);
                 }
                 if(tween.parent.scene.movingTiles == 0){
                     tween.parent.scene.texteScore.text = tween.parent.scene.score.toString();
                     tween.parent.scene.texteMeilleurScore.text = tween.parent.scene.bestScore.toString();
-                    tween.parent.scene.resetTiles();
+                    tween.parent.scene.reinitialiserTuiles();
                     tween.parent.scene.ajouterTuile();
                 }
             }
         })
     },
-    transformTile: function(tile, row, col){
+    transformerTuile: function(tile, ligne, colonne){
         this.sonAugmentation.play();
         this.movingTiles ++;
-        tile.spriteTuile.setFrame(this.tableauTerrain[row][col].valeurTuile - 1);
+        tile.spriteTuile.setFrame(this.tableauTerrain[ligne][colonne].valeurTuile - 1);
         this.tweens.add({
             targets: [tile.spriteTuile],
             scaleX: 1.1,
@@ -304,15 +304,15 @@ var jouerJeu = new Phaser.Class({
                 if(tween.parent.scene.movingTiles == 0){
                     tween.parent.scene.texteScore.text = tween.parent.scene.score.toString();
                     tween.parent.scene.texteMeilleurScore.text = tween.parent.scene.bestScore.toString();
-                    tween.parent.scene.resetTiles();
+                    tween.parent.scene.reinitialiserTuiles();
                     tween.parent.scene.ajouterTuile();
                 }
             }
         })
     },
-    resetTiles: function(){
-        for(var i = 0; i < 4; i++){
-            for(var j = 0; j < 4; j++){
+    reinitialiserTuiles: function(){
+        for(let i = 0; i < 4; i++){
+            for(let j = 0; j < 4; j++){
                 this.tableauTerrain[i][j].peutAugmenter = true;
                 this.tableauTerrain[i][j].spriteTuile.x = this.destinationTuile(j, COLONNE);
                 this.tableauTerrain[i][j].spriteTuile.y = this.destinationTuile(i, LIGNE);
@@ -328,20 +328,21 @@ var jouerJeu = new Phaser.Class({
             }
         }
     },
-    estDansLePlateau: function(row, col){
-        return (row >= 0) && (col >= 0) && (row < 4) && (col < 4);
+    estDansLePlateau: function(ligne, colonne){
+        return (ligne >= 0) && (colonne >= 0) && (ligne < 4) && (colonne < 4);
     },
     destinationTuile: function(pos, axis){
-        var offset = (axis == LIGNE) ? (game.config.height - game.config.width) / 2 : 0;
+        let offset = (axis == LIGNE) ? (jeu.config.height - jeu.config.width) / 2 : 0;
         return pos * (optionsJeu.largeurTuile + optionsJeu.espacementTuile) + optionsJeu.largeurTuile / 2 + optionsJeu.espacementTuile + offset;
     }
 });
+// fonction de redimensionnement de la page
 function redimensionner() {
-    var canvas = document.querySelector("canvas");
-    var largeurFenetre = window.innerWidth;
-    var hauteurFenetre = window.innerHeight;
-    var ratioFenetre = largeurFenetre / hauteurFenetre;
-    var ratioJeu = game.config.width / game.config.height;
+    let canvas = document.querySelector("canvas");
+    let largeurFenetre = window.innerWidth;
+    let hauteurFenetre = window.innerHeight;
+    let ratioFenetre = largeurFenetre / hauteurFenetre;
+    let ratioJeu = jeu.config.width / jeu.config.height;
     if(ratioFenetre < ratioJeu){
         canvas.style.width = largeurFenetre + "px";
         canvas.style.height = (largeurFenetre / ratioJeu) + "px";
