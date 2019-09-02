@@ -13,12 +13,12 @@ window.onload = function() {
        width: optionsJeu.largeurTuile * 4 + optionsJeu.espacementTuile * 5,
        height: (optionsJeu.largeurTuile * 4 + optionsJeu.espacementTuile * 5) * 16 / 9,
        backgroundColor: 0xecf0f1,
-       scene: [preloadAssets, playGame]
+       scene: [preloadAssets, jouerJeu]
    };
     game = new Phaser.Game(configJeu);
     window.focus()
-    resize();
-    window.addEventListener("resize", resize, false);
+    redimensionner();
+    window.addEventListener("resize", redimensionner, false);
 }
 
 var preloadAssets = new Phaser.Class({
@@ -44,15 +44,15 @@ var preloadAssets = new Phaser.Class({
         this.load.audio("grow", ["assets/sounds/grow.ogg", "assets/sounds/grow.mp3"]);
     },
     create: function(){
-        this.scene.start("PlayGame");
+        this.scene.start("JouerJeu");
     }
 })
 
-var playGame = new Phaser.Class({
+var jouerJeu = new Phaser.Class({
     Extends: Phaser.Scene,
     initialize:
-    function playGame(){
-        Phaser.Scene.call(this, {key: "PlayGame"});
+    function jouerJeu(){
+        Phaser.Scene.call(this, {key: "JouerJeu"});
     },
     create: function(){
         this.tableauTerrain = [];
@@ -68,9 +68,9 @@ var playGame = new Phaser.Class({
             this.tableauTerrain[i] = [];
             for(var j = 0; j < 4; j++){
                 // ajouter la case "de fond" à l'écran
-                var spot = this.add.sprite(this.tileDestination(j, COLONNE), this.tileDestination(i, LIGNE), "spot")
+                var spot = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "spot")
                 // ajouter le contneu de la case
-                var tile = this.add.sprite(this.tileDestination(j, COLONNE), this.tileDestination(i, LIGNE), "tiles");
+                var tile = this.add.sprite(this.destinationTuile(j, COLONNE), this.destinationTuile(i, LIGNE), "tiles");
                 // rendre chaque tuile invisible
                 tile.alpha = 0;
                 tile.visible = 0;
@@ -78,20 +78,20 @@ var playGame = new Phaser.Class({
                 this.groupeTerrain.add(tile);
                 this.tableauTerrain[i][j] = {
                     // valeur initiale : 0 vaut "aucune"
-                    tileValue: 0,
-                    tileSprite: tile,
-                    canUpgrade: true
+                    valeurTuile: 0,
+                    spriteTuile: tile,
+                    peutAugmenter: true
                 }
             }
         }
         // ajout de l'interface
-        var restartButton = this.add.sprite(this.tileDestination(3, COLONNE), this.tileDestination(0, LIGNE) - 200, "restart");
-        restartButton.setInteractive();
-        restartButton.on("pointerdown", function(){
-            this.scene.start("PlayGame");
+        var boutonRestart = this.add.sprite(this.destinationTuile(3, COLONNE), this.destinationTuile(0, LIGNE) - 200, "restart");
+        boutonRestart.setInteractive();
+        boutonRestart.on("pointerdown", function(){
+            this.scene.start("JouerJeu");
         }, this)
-        this.add.sprite(this.tileDestination(1, COLONNE), this.tileDestination(0, LIGNE) - 200, "scorepanel");
-        this.add.sprite(this.tileDestination(1, COLONNE), this.tileDestination(0, LIGNE) - 270, "scorelabels");
+        this.add.sprite(this.destinationTuile(1, COLONNE), this.destinationTuile(0, LIGNE) - 200, "scorepanel");
+        this.add.sprite(this.destinationTuile(1, COLONNE), this.destinationTuile(0, LIGNE) - 270, "scorelabels");
         this.add.sprite(10, 5, "gametitle").setOrigin(0, 0);
         var howTo = this.add.sprite(game.config.width, 5, "howtoplay");
         howTo.setOrigin(1, 0);
@@ -101,58 +101,58 @@ var playGame = new Phaser.Class({
         logo.on("pointerdown", function(){
             window.location.href = "http://www.emanueleferonato.com/"
         });
-        this.scoreText = this.add.bitmapText(this.tileDestination(0, COLONNE) - 80, this.tileDestination(0, LIGNE) - 225, "font", "0");
-        this.bestScoreText = this.add.bitmapText(this.tileDestination(2, COLONNE) - 190, this.tileDestination(0, LIGNE) - 225, "font", this.bestScore.toString());
-        this.input.keyboard.on("keydown", this.handleKey, this);
+        this.texteScore = this.add.bitmapText(this.destinationTuile(0, COLONNE) - 80, this.destinationTuile(0, LIGNE) - 225, "font", "0");
+        this.texteMeilleurScore = this.add.bitmapText(this.destinationTuile(2, COLONNE) - 190, this.destinationTuile(0, LIGNE) - 225, "font", this.bestScore.toString());
+        this.input.keyboard.on("keydown", this.gererTouche, this);
         
         // interdire le mouvement
-        this.canMove = false;
+        this.peutBouger = false;
         // ajouter 2 tuiles
-        this.addTile();
-        this.addTile();
+        this.ajouterTuile();
+        this.ajouterTuile();
         // éléments d'interaction
-        this.input.on("pointerup", this.endSwipe, this);
-        this.moveSound = this.sound.add("move");
-        this.growSound = this.sound.add("grow");
+        this.input.on("pointerup", this.finSwipe, this);
+        this.sonMouvement = this.sound.add("move");
+        this.sonAugmentation = this.sound.add("grow");
     },
-    endSwipe: function(e){
-        var swipeTime = e.upTime - e.downTime;
+    finSwipe: function(e){
+        var tempsSwipe = e.upTime - e.downTime;
         var swipe = new Phaser.Geom.Point(e.upX - e.downX, e.upY - e.downY);
         var swipeMagnitude = Phaser.Geom.Point.GetMagnitude(swipe);
         var swipeNormal = new Phaser.Geom.Point(swipe.x / swipeMagnitude, swipe.y / swipeMagnitude);
-        if(swipeMagnitude > 20 && swipeTime < 1000 && (Math.abs(swipeNormal.y) > 0.8 || Math.abs(swipeNormal.x) > 0.8)){
+        if(swipeMagnitude > 20 && tempsSwipe < 1000 && (Math.abs(swipeNormal.y) > 0.8 || Math.abs(swipeNormal.x) > 0.8)){
             var children = this.groupeTerrain.getChildren();
             if(swipeNormal.x > 0.8) {
                 for (var i = 0; i < children.length; i++){
                     children[i].depth = game.config.width - children[i].x;
                 }
-                this.handleMove(0, 1);
+                this.gererMouvement(0, 1);
             }
             if(swipeNormal.x < -0.8) {
                 for (var i = 0; i < children.length; i++){
                     children[i].depth = children[i].x;
                 }
-                this.handleMove(0, -1);
+                this.gererMouvement(0, -1);
             }
             if(swipeNormal.y > 0.8) {
                 for (var i = 0; i < children.length; i++){
                     children[i].depth = game.config.height - children[i].y;
                 }
-                this.handleMove(1, 0);
+                this.gererMouvement(1, 0);
             }
             if(swipeNormal.y < -0.8) {
                 for (var i = 0; i < children.length; i++){
                     children[i].depth = children[i].y;
                 }
-                this.handleMove(-1, 0);
+                this.gererMouvement(-1, 0);
             }
         }
     },
-    addTile: function(){
+    ajouterTuile: function(){
         var emptyTiles = [];
         for(var i = 0; i < 4; i++){
             for(var j = 0; j < 4; j++){
-                if(this.tableauTerrain[i][j].tileValue == 0){
+                if(this.tableauTerrain[i][j].valeurTuile == 0){
                     emptyTiles.push({
                         row: i,
                         col: j
@@ -161,24 +161,24 @@ var playGame = new Phaser.Class({
             }
         }
         if(emptyTiles.length > 0){
-            var chosenTile = Phaser.Utils.Array.GetRandomElement(emptyTiles);
-            this.tableauTerrain[chosenTile.row][chosenTile.col].tileValue = 1;
-            this.tableauTerrain[chosenTile.row][chosenTile.col].tileSprite.visible = true;
-            this.tableauTerrain[chosenTile.row][chosenTile.col].tileSprite.setFrame(0);
+            var tuileChoisie = Phaser.Utils.Array.GetRandomElement(emptyTiles);
+            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].valeurTuile = 1;
+            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile.visible = true;
+            this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile.setFrame(0);
             this.tweens.add({
-                targets: [this.tableauTerrain[chosenTile.row][chosenTile.col].tileSprite],
+                targets: [this.tableauTerrain[tuileChoisie.row][tuileChoisie.col].spriteTuile],
                 alpha: 1,
                 duration: optionsJeu.vitesseInterpolation,
                 // une fois les animations achevées...
                 onComplete: function(tween){
                     // on autorise le mouvement
-                    tween.parent.scene.canMove = true;
+                    tween.parent.scene.peutBouger = true;
                 },
             });
         }
 	},
-    handleKey: function(e){
-        if(this.canMove){
+    gererTouche: function(e){
+        if(this.peutBouger){
             var children = this.groupeTerrain.getChildren();
             switch(e.code){
                 case "KeyA":
@@ -186,65 +186,65 @@ var playGame = new Phaser.Class({
                     for (var i = 0; i < children.length; i++){
                         children[i].depth = children[i].x;
                     }
-                    this.handleMove(0, -1);
+                    this.gererMouvement(0, -1);
                     break;
                 case "KeyD":
                 case "ArrowRight":
                     for (var i = 0; i < children.length; i++){
                         children[i].depth = game.config.width - children[i].x;
                     }
-                    this.handleMove(0, 1);
+                    this.gererMouvement(0, 1);
                     break;
                 case "KeyW":
                 case "ArrowUp":
                     for (var i = 0; i < children.length; i++){
                         children[i].depth = children[i].y;
                     }
-                    this.handleMove(-1, 0);
+                    this.gererMouvement(-1, 0);
                     break;
                 case "KeyS":
                 case "ArrowDown":
                     for (var i = 0; i < children.length; i++){
                         children[i].depth = game.config.height - children[i].y;
                     }
-                    this.handleMove(1, 0);
+                    this.gererMouvement(1, 0);
                     break;
             }
         }
     },
-    handleMove: function(deltaRow, deltaCol){
-        this.canMove = false;
-        var somethingMoved = false;
+    gererMouvement: function(deltaRow, deltaCol){
+        this.peutBouger = false;
+        var qqchABouge = false;
         this.movingTiles = 0;
-        var moveScore = 0;
+        var scoreMouvements = 0;
         for(var i = 0; i < 4; i++){
             for(var j = 0; j < 4; j++){
-                var colToWatch = deltaCol == 1 ? (4 - 1) - j : j;
-                var rowToWatch = deltaRow == 1 ? (4 - 1) - i : i;
-                var tileValue = this.tableauTerrain[rowToWatch][colToWatch].tileValue;
-                if(tileValue != 0){
+                var colAObserver = deltaCol == 1 ? (4 - 1) - j : j;
+                var ligneAObserver = deltaRow == 1 ? (4 - 1) - i : i;
+                var valeurTuile = this.tableauTerrain[ligneAObserver][colAObserver].valeurTuile;
+                if(valeurTuile != 0){
                     var colSteps = deltaCol;
                     var rowSteps = deltaRow;
-                    while(this.isInsideBoard(rowToWatch + rowSteps, colToWatch + colSteps) && this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].tileValue == 0){
+                    while(this.isInsideBoard(ligneAObserver + rowSteps, colAObserver + colSteps) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == 0){
                         colSteps += deltaCol;
                         rowSteps += deltaRow;
                     }
-                    if(this.isInsideBoard(rowToWatch + rowSteps, colToWatch + colSteps) && (this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].tileValue == tileValue) && this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].canUpgrade && this.tableauTerrain[rowToWatch][colToWatch].canUpgrade && tileValue < 12){
-                        this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].tileValue ++;
-                        moveScore += Math.pow(2, this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].tileValue);
-                        this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].canUpgrade = false;
-                        this.tableauTerrain[rowToWatch][colToWatch].tileValue = 0;
-                        this.moveTile(this.tableauTerrain[rowToWatch][colToWatch], rowToWatch + rowSteps, colToWatch + colSteps, Math.abs(rowSteps + colSteps), true);
-                        somethingMoved = true;
+                    if(this.isInsideBoard(ligneAObserver + rowSteps, colAObserver + colSteps) && (this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == valeurTuile) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].peutAugmenter && this.tableauTerrain[ligneAObserver][colAObserver].peutAugmenter && valeurTuile < 12){
+                        this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile ++;
+                        scoreMouvements += Math.pow(2, this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile);
+                        this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].peutAugmenter = false;
+                        this.tableauTerrain[ligneAObserver][colAObserver].valeurTuile = 0;
+                        this.moveTile(this.tableauTerrain[ligneAObserver][colAObserver], ligneAObserver + rowSteps, colAObserver + colSteps, Math.abs(rowSteps + colSteps), true);
+                        qqchABouge = true;
                     }
                     else{
                         colSteps = colSteps - deltaCol;
                         rowSteps = rowSteps - deltaRow;
                         if(colSteps != 0 || rowSteps != 0){
-                            this.tableauTerrain[rowToWatch + rowSteps][colToWatch + colSteps].tileValue = tileValue;
-                            this.tableauTerrain[rowToWatch][colToWatch].tileValue = 0;
-                            this.moveTile(this.tableauTerrain[rowToWatch][colToWatch], rowToWatch + rowSteps, colToWatch + colSteps, Math.abs(rowSteps + colSteps), false);
-                            somethingMoved = true;
+                            this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile = valeurTuile;
+                            this.tableauTerrain[ligneAObserver][colAObserver].valeurTuile = 0;
+                            this.moveTile(this.tableauTerrain[ligneAObserver][colAObserver], ligneAObserver + rowSteps, colAObserver + colSteps, Math.abs(rowSteps + colSteps), false);
+                            qqchABouge = true;
                         }
                     }
                 }
@@ -254,13 +254,13 @@ var playGame = new Phaser.Class({
         // ce mouvement est inutile
         // il faut pouvoir jouer à nouveau
         // pour ne pas bloquer le jeu
-        if(!somethingMoved){
+        if(!qqchABouge){
             // on autorise le mouvement
-            this.canMove = true;
+            this.peutBouger = true;
         }
         else{
-            this.moveSound.play();
-            this.score += moveScore;
+            this.sonMouvement.play();
+            this.score += scoreMouvements;
             if(this.score > this.bestScore){
                 this.bestScore = this.score;
                 localStorage.setItem(optionsJeu.nomLocalStorage, this.bestScore);
@@ -270,9 +270,9 @@ var playGame = new Phaser.Class({
     moveTile: function(tile, row, col, distance, changeNumber){
         this.movingTiles ++;
         this.tweens.add({
-            targets: [tile.tileSprite],
-            x: this.tileDestination(col, COLONNE),
-            y: this.tileDestination(row, LIGNE),
+            targets: [tile.spriteTuile],
+            x: this.destinationTuile(col, COLONNE),
+            y: this.destinationTuile(row, LIGNE),
             duration: optionsJeu.vitesseInterpolation * distance,
             onComplete: function(tween){
                 tween.parent.scene.movingTiles --;
@@ -280,20 +280,20 @@ var playGame = new Phaser.Class({
                     tween.parent.scene.transformTile(tile, row, col);
                 }
                 if(tween.parent.scene.movingTiles == 0){
-                    tween.parent.scene.scoreText.text = tween.parent.scene.score.toString();
-                    tween.parent.scene.bestScoreText.text = tween.parent.scene.bestScore.toString();
+                    tween.parent.scene.texteScore.text = tween.parent.scene.score.toString();
+                    tween.parent.scene.texteMeilleurScore.text = tween.parent.scene.bestScore.toString();
                     tween.parent.scene.resetTiles();
-                    tween.parent.scene.addTile();
+                    tween.parent.scene.ajouterTuile();
                 }
             }
         })
     },
     transformTile: function(tile, row, col){
-        this.growSound.play();
+        this.sonAugmentation.play();
         this.movingTiles ++;
-        tile.tileSprite.setFrame(this.tableauTerrain[row][col].tileValue - 1);
+        tile.spriteTuile.setFrame(this.tableauTerrain[row][col].valeurTuile - 1);
         this.tweens.add({
-            targets: [tile.tileSprite],
+            targets: [tile.spriteTuile],
             scaleX: 1.1,
             scaleY: 1.1,
             duration: optionsJeu.vitesseInterpolation,
@@ -302,10 +302,10 @@ var playGame = new Phaser.Class({
             onComplete: function(tween){
                 tween.parent.scene.movingTiles --;
                 if(tween.parent.scene.movingTiles == 0){
-                    tween.parent.scene.scoreText.text = tween.parent.scene.score.toString();
-                    tween.parent.scene.bestScoreText.text = tween.parent.scene.bestScore.toString();
+                    tween.parent.scene.texteScore.text = tween.parent.scene.score.toString();
+                    tween.parent.scene.texteMeilleurScore.text = tween.parent.scene.bestScore.toString();
                     tween.parent.scene.resetTiles();
-                    tween.parent.scene.addTile();
+                    tween.parent.scene.ajouterTuile();
                 }
             }
         })
@@ -313,17 +313,17 @@ var playGame = new Phaser.Class({
     resetTiles: function(){
         for(var i = 0; i < 4; i++){
             for(var j = 0; j < 4; j++){
-                this.tableauTerrain[i][j].canUpgrade = true;
-                this.tableauTerrain[i][j].tileSprite.x = this.tileDestination(j, COLONNE);
-                this.tableauTerrain[i][j].tileSprite.y = this.tileDestination(i, LIGNE);
-                if(this.tableauTerrain[i][j].tileValue > 0){
-                    this.tableauTerrain[i][j].tileSprite.alpha = 1;
-                    this.tableauTerrain[i][j].tileSprite.visible = true;
-                    this.tableauTerrain[i][j].tileSprite.setFrame(this.tableauTerrain[i][j].tileValue - 1);
+                this.tableauTerrain[i][j].peutAugmenter = true;
+                this.tableauTerrain[i][j].spriteTuile.x = this.destinationTuile(j, COLONNE);
+                this.tableauTerrain[i][j].spriteTuile.y = this.destinationTuile(i, LIGNE);
+                if(this.tableauTerrain[i][j].valeurTuile > 0){
+                    this.tableauTerrain[i][j].spriteTuile.alpha = 1;
+                    this.tableauTerrain[i][j].spriteTuile.visible = true;
+                    this.tableauTerrain[i][j].spriteTuile.setFrame(this.tableauTerrain[i][j].valeurTuile - 1);
                 }
                 else{
-                    this.tableauTerrain[i][j].tileSprite.alpha = 0;
-                    this.tableauTerrain[i][j].tileSprite.visible = false;
+                    this.tableauTerrain[i][j].spriteTuile.alpha = 0;
+                    this.tableauTerrain[i][j].spriteTuile.visible = false;
                 }
             }
         }
@@ -331,12 +331,12 @@ var playGame = new Phaser.Class({
     isInsideBoard: function(row, col){
         return (row >= 0) && (col >= 0) && (row < 4) && (col < 4);
     },
-    tileDestination: function(pos, axis){
+    destinationTuile: function(pos, axis){
         var offset = (axis == LIGNE) ? (game.config.height - game.config.width) / 2 : 0;
         return pos * (optionsJeu.largeurTuile + optionsJeu.espacementTuile) + optionsJeu.largeurTuile / 2 + optionsJeu.espacementTuile + offset;
     }
 });
-function resize() {
+function redimensionner() {
     var canvas = document.querySelector("canvas");
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
