@@ -225,11 +225,11 @@ var jouerJeu = new Phaser.Class({
                 if(valeurTuile != 0){
                     var colSteps = deltaCol;
                     var rowSteps = deltaRow;
-                    while(this.isInsideBoard(ligneAObserver + rowSteps, colAObserver + colSteps) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == 0){
+                    while(this.estDansLePlateau(ligneAObserver + rowSteps, colAObserver + colSteps) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == 0){
                         colSteps += deltaCol;
                         rowSteps += deltaRow;
                     }
-                    if(this.isInsideBoard(ligneAObserver + rowSteps, colAObserver + colSteps) && (this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == valeurTuile) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].peutAugmenter && this.tableauTerrain[ligneAObserver][colAObserver].peutAugmenter && valeurTuile < 12){
+                    if(this.estDansLePlateau(ligneAObserver + rowSteps, colAObserver + colSteps) && (this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile == valeurTuile) && this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].peutAugmenter && this.tableauTerrain[ligneAObserver][colAObserver].peutAugmenter && valeurTuile < 12){
                         this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile ++;
                         scoreMouvements += Math.pow(2, this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].valeurTuile);
                         this.tableauTerrain[ligneAObserver + rowSteps][colAObserver + colSteps].peutAugmenter = false;
@@ -328,7 +328,7 @@ var jouerJeu = new Phaser.Class({
             }
         }
     },
-    isInsideBoard: function(row, col){
+    estDansLePlateau: function(row, col){
         return (row >= 0) && (col >= 0) && (row < 4) && (col < 4);
     },
     destinationTuile: function(pos, axis){
@@ -338,16 +338,16 @@ var jouerJeu = new Phaser.Class({
 });
 function redimensionner() {
     var canvas = document.querySelector("canvas");
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    var windowRatio = windowWidth / windowHeight;
-    var gameRatio = game.config.width / game.config.height;
-    if(windowRatio < gameRatio){
-        canvas.style.width = windowWidth + "px";
-        canvas.style.height = (windowWidth / gameRatio) + "px";
+    var largeurFenetre = window.innerWidth;
+    var hauteurFenetre = window.innerHeight;
+    var ratioFenetre = largeurFenetre / hauteurFenetre;
+    var ratioJeu = game.config.width / game.config.height;
+    if(ratioFenetre < ratioJeu){
+        canvas.style.width = largeurFenetre + "px";
+        canvas.style.height = (largeurFenetre / ratioJeu) + "px";
     }
     else{
-        canvas.style.width = (windowHeight * gameRatio) + "px";
-        canvas.style.height = windowHeight + "px";
+        canvas.style.width = (hauteurFenetre * ratioJeu) + "px";
+        canvas.style.height = hauteurFenetre + "px";
     }
 }
