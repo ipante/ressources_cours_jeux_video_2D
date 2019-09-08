@@ -136,6 +136,8 @@ ___
 * [Twine 2](https://twinery.org/2/) : moteur de développement de récits interactifs. Twine 2 est disponible en version logicielle et sous forme de webservice. Facile d'accès, il offre aussi des possibilités de scriptage avancé via du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
+* [Script-8](https://script-8.github.io/) : un développemnt pur web ! Assets, son, musique et logique de jeu peuvent être créés directement dans Script-8, à l'instar de Pico-8, dont ce moteur s'inspire largement.
+* [Bitmelo](https://bitmelo.com/) : un développement pur web à l'instar de Script 8. Bitmelo propose également un éditeur de carte.
 
 ## Boilerplates Phaser 3
 
