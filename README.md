@@ -202,6 +202,7 @@ ___
 
 ## Varia
 
+* Laboratoire de réécriture de jeu vidéo : vendredi 22 novembre 2019
 * [Liste des codes clavier](https://keycode.info/)
 * [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
