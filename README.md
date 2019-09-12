@@ -8,6 +8,8 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
+*Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 !*
+
 ## Liste des travaux pratiques
 
 1. [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
@@ -202,7 +204,6 @@ ___
 
 ## Varia
 
-* Laboratoire de réécriture de jeu vidéo : vendredi 22 novembre 2019
 * [Liste des codes clavier](https://keycode.info/)
 * [Optimiser le chargement des assets](https://jwiese.eu/en/blog/2018/04/phaser-3-loading-screen-asset-organization/)
 * [L'aléatoire dans les jeux](https://remysharp.com/2019/08/06/predictably-random)
