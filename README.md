@@ -8,7 +8,7 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
-*Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 !*
+*Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 ! [Inscriptions ouvertes](http://isaacpante.net/une-game-jam-en-lettres/)*
 
 ## Liste des travaux pratiques
 
@@ -201,6 +201,11 @@ ___
   * George Skaff Elias, Richard Garfield and K. Robert Gutschera, [*Characteristics of Games*](https://mitpress.mit.edu/books/characteristics-games), MIT Press (2012)
 * Développement
   * Emanuelle Feronato, [HTML5 Cross Platform Game Development Using Phaser 3](https://gumroad.com/l/odKJf)
+
+## Evénements
+
+* 24-26.10.19 : Colloque international [les langages du jeu vidéo](http://wp.unil.ch/culture-videoludique)
+* 22 novembre 19 : [laboratoire de réécriture de jeu vidéo](http://isaacpante.net/une-game-jam-en-lettres/)
 
 ## Varia
 
