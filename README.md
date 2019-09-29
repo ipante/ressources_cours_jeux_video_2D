@@ -216,6 +216,7 @@ ___
 * [Apprendre js13k en 4 vidéos](https://gamedevacademy.org/js13kgames-tutorial-video-series/)
 * [Différents Plugins Phaser (interface, notamment)](https://github.com/rexrainbow/phaser3-rex-notes)
 * [Tutoriels Twine](https://www.youtube.com/watch?v=iKFZhIHD7Xk&list=PLklITFhXtPCCKadv-0Gcbqoj3OCev695D)
+* [Tutoriel d'un RTS 3D en moins de 13k](https://phoboslab.org/log/2019/09/voidcall-making-of)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
