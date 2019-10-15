@@ -220,7 +220,7 @@ ___
 * [Tutoriels Twine](https://www.youtube.com/watch?v=iKFZhIHD7Xk&list=PLklITFhXtPCCKadv-0Gcbqoj3OCev695D)
 * [Tutoriel d'un RTS 3D en moins de 13k](https://phoboslab.org/log/2019/09/voidcall-making-of)
 * [Un excellent post-mortem de XyCore pour le js13k](https://64mega.github.io/js13k-2019-recap.html)
-* <span style="color:red">NEW :</span>[Mario Kart en pur CSS](https://vimeo.com/364369506)
+* [Mario Kart en pur CSS](https://vimeo.com/364369506)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
