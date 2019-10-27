@@ -70,7 +70,11 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [TP : phaser_pool_input](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_input)
   * [TP : phaser_pool_animation](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation)
   * [TP : phaser_runner](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner)
-  
+
+* Cartes
+  * [Vidéo : créer une carte avec Tiled](https://www.youtube.com/watch?v=2_x1dOvgF1E)
+  * [Vidéo : intégrer la carte à un jeu Phaser](https://www.youtube.com/watch?v=uznkhVMbVr8)
+
 * Utilisation de webpack
   * [TP : création d'un projet à partir d'un Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
   
