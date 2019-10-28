@@ -1,0 +1,146 @@
+{ "height":14,
+ "infinite":false,
+ "layers":[
+        {
+         "data":"QAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAA==",
+         "encoding":"base64",
+         "height":14,
+         "id":2,
+         "name":"fond",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":8,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":"DQAAAEAAAAANAAAADQAAAA0AAAANAAAADgAAAA0AAAAMAAAAFQAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAFIAAAAEAAAAUgAAAFIAAABSAAAARQAAAEoAAABMAAAACgAAAAQAAAAKAAAACgAAAAsAAABRAAAARQAAAEoAAAAaAAAABAAAABoAAAAaAAAAGwAAAAAAAABJAAAABwAAAEEAAAAEAAAAQgAAAEIAAABCAAAAQwAAAEkAAABKAAAASQAAAAcAAAAHAAAAJQAAAEoAAABLAAAASQAAAAcAAABRAAAAUgAAAFIAAABFAAAABwAAAEwAAABNAAAAJQAAAEEAAABDAAAAGAAAAEkAAAAHAAAASgAAAAcAAABKAAAAUQAAAFMAAAAAAAAAUQAAAAQAAAAHAAAABwAAAEQAAAALAAAAFwAAAAAAAAAPAAAABAAAAFIAAABSAAAAUwAAABMAAABBAAAAQgAAAEIAAAAEAAAAQgAAAEIAAABDAAAAEwAAAEkAAAAlAAAABwAAAAcAAAAHAAAASgAAAEsAAAAbAAAASQAAAAcAAAAHAAAABwAAACUAAAAHAAAASwAAAA==",
+         "encoding":"base64",
+         "height":14,
+         "id":1,
+         "name":"couche1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":8,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":3,
+         "name":"couche_objets",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":4,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.2.5",
+ "tileheight":16,
+ "tilesets":[
+        {
+         "columns":8,
+         "firstgid":1,
+         "image":"..\/..\/..\/..\/..\/Downloads\/OldAdelaide.bmp",
+         "imageheight":256,
+         "imagewidth":128,
+         "margin":0,
+         "name":"OldAdelaide",
+         "spacing":0,
+         "terrains":[
+                {
+                 "name":"Herbe",
+                 "tile":0
+                }, 
+                {
+                 "name":"porte",
+                 "properties":[
+                        {
+                         "name":"ferme",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"texte",
+                         "type":"string",
+                         "value":"C'est ferm\u00e9 !"
+                        }],
+                 "tile":0
+                }],
+         "tilecount":128,
+         "tileheight":16,
+         "tiles":[
+                {
+                 "id":20,
+                 "terrain":[1, 1, 1, 1]
+                }, 
+                {
+                 "id":64,
+                 "terrain":[-1, -1, -1, 0]
+                }, 
+                {
+                 "id":65,
+                 "terrain":[-1, -1, 0, 0]
+                }, 
+                {
+                 "id":66,
+                 "terrain":[-1, -1, 0, -1]
+                }, 
+                {
+                 "id":67,
+                 "terrain":[0, 0, 0, -1]
+                }, 
+                {
+                 "id":68,
+                 "terrain":[0, 0, -1, 0]
+                }, 
+                {
+                 "id":72,
+                 "terrain":[-1, 0, -1, 0]
+                }, 
+                {
+                 "id":73,
+                 "terrain":[0, 0, 0, 0]
+                }, 
+                {
+                 "id":74,
+                 "terrain":[0, -1, 0, -1]
+                }, 
+                {
+                 "id":75,
+                 "terrain":[0, -1, 0, 0]
+                }, 
+                {
+                 "id":76,
+                 "terrain":[-1, 0, 0, 0]
+                }, 
+                {
+                 "id":80,
+                 "terrain":[-1, 0, -1, -1]
+                }, 
+                {
+                 "id":81,
+                 "terrain":[0, 0, -1, -1]
+                }, 
+                {
+                 "id":82,
+                 "terrain":[0, -1, -1, -1]
+                }, 
+                {
+                 "id":124,
+                 "terrain":[1, 1, 1, 1]
+                }],
+         "tilewidth":16
+        }],
+ "tilewidth":16,
+ "type":"map",
+ "version":1.2,
+ "width":8
+}

@@ -106,7 +106,7 @@ class playGame extends Phaser.Scene{
             plateforme = this.reservoir_plateformes.getFirst();
             // le positionner au bon endroit
             plateforme.x = position_x;
-            // définit la plateforme comme active
+            // définir la plateforme comme active
             plateforme.active = true;
             // rendre visible la plateforme
             plateforme.visible = true;
