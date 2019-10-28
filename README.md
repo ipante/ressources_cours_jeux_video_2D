@@ -76,6 +76,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
   * [Vidéo : intégrer la carte à un jeu Phaser](https://www.youtube.com/watch?v=uznkhVMbVr8)
   * [Tutoriel : créer une carte avec Tiled](https://stackabuse.com/phaser-3-and-tiled-building-a-platformer/)
   * [Tutoriel : ajouter une carte avec Tiled et gérer la physique avec Matter.js](https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6)
+  * [Tutoriel : créer des cartes dynamiques](https://itnext.io/modular-game-worlds-in-phaser-3-tilemaps-2-dynamic-platformer-3d68e73d494a)
 
 * Utilisation de webpack
   * [TP : création d'un projet à partir d'un Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
