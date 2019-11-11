@@ -8,8 +8,8 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
-*Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 ! [Inscriptions ouvertes](http://isaacpante.net/une-game-jam-en-lettres/)
-*[Liste des jeux en cours de développement](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)*
+* Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 ! [Inscriptions ouvertes](http://isaacpante.net/une-game-jam-en-lettres/)
+* [Liste des jeux en cours de développement](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)*
 
 ## Liste des travaux pratiques
 
