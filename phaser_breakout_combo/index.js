@@ -92,8 +92,8 @@ const Breakout = new Phaser.Class({
         this.sound.play('casse');
         this.combo++;
         if(this.combo>3){
-            this.camera.setBackgroundColor('rgba(255, 0, 0, 0.5)');
-            let n = Phaser.Math.Between(0, this.briquesMortes.length-1); 
+            this.camera.setBackgroundColor('rgba(0, 255, 0, 0.3)');
+            let n = Phaser.Math.Between(0, this.briquesMortes.length); 
             this.briquesMortes[n].enableBody(false, 0, 0, true, true);
             this.briquesMortes.splice(n,1);
             this.sound.play('pop');       
@@ -151,6 +151,7 @@ const Breakout = new Phaser.Class({
     {
         if (this.balle.y > 600)
         {
+            this.camera.setBackgroundColor('rgba(0, 0, 0, 0)');
             this.vies--;
             if(this.vies == 0){
                 this.sound.play('gameOver');
