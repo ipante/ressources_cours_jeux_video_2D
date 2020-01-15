@@ -8,7 +8,6 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Première séance le 23 septembre 2019. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). **Attention, en 2019, ce cours ne sera dispensé qu'au semestre d'automne! Il sera  ensuite dispensé – dès 2021 – chaque semestre de printemps.**
 
-* Un laboratoire de réécriture de jeu vidéo est prévu le 22 novembre 2019 ! [Inscriptions ouvertes](http://isaacpante.net/une-game-jam-en-lettres/)
 * [Liste des jeux en cours de développement](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)*
 
 ## Liste des travaux pratiques
@@ -27,6 +26,10 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 12. [**phaser_runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés.
 13. [**phaser_boilerplate_webpack**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack) : installation d'un boilerplate phaser utilisant webpack ; ajout d'un module externe et importation de la fonction de ce dernier.
 14. [**phaser_plugin_global**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global) : écriture d'un plugin global.
+
+## Code source du laboratoire de réécriture de JV
+
+* [Breakout](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout_manette)
 
 ## Liste des ressources externes
 
@@ -110,6 +113,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
 * [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
 * [A day in the life (Kontra)](https://js13kgames.com/entries/a-day-in-the-life)
+* [Breakout](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout_manette)
 
 #### Demande de support (Phaser)
 
