@@ -103,6 +103,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Recréer Asteroids en Kontra.js](https://medium.com/web-maker/making-asteroids-with-kontra-js-and-web-maker-95559d39b45f)
 * [Création d'un Broughlike en pur JS](https://nluqo.github.io/broughlike-tutorial/stage0.html)
 * [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec code source commenté
+* [Créer un Tetris en pur JS](https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057)
 
 #### Jeux complets (avec code source)
 
@@ -230,6 +231,7 @@ ___
 * [Tutoriel d'un RTS 3D en moins de 13k](https://phoboslab.org/log/2019/09/voidcall-making-of)
 * [Un excellent post-mortem de XyCore pour le js13k](https://64mega.github.io/js13k-2019-recap.html)
 * [Mario Kart en pur CSS](https://vimeo.com/364369506)
+* [Les jeux vidéo et l'accessibilité](https://www.24a11y.com/2019/game-accessibility-and-the-web/)
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
