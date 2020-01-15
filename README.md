@@ -28,6 +28,10 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 13. [**phaser_boilerplate_webpack**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack) : installation d'un boilerplate phaser utilisant webpack ; ajout d'un module externe et importation de la fonction de ce dernier.
 14. [**phaser_plugin_global**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global) : écriture d'un plugin global.
 
+## Code source du laboratoire de réécriture de JV
+
+* [Breakout](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout_manette)
+
 ## Liste des ressources externes
 
 #### Documentation officielle de Phaser
@@ -110,6 +114,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Bunny game (Phaser)](http://www.emanueleferonato.com/2018/04/28/super-mario-who-html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics-updated-to-phaser-3-6-0/)
 * [Mario Bros (Phaser)](https://github.com/nkholski/phaser3-es6-webpack)
 * [A day in the life (Kontra)](https://js13kgames.com/entries/a-day-in-the-life)
+* [Breakout](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout_manette)
 
 #### Demande de support (Phaser)
 
