@@ -5,11 +5,15 @@ window.onload = function() {
         type: Phaser.AUTO,
         width: 420,
         height: 735,
+        parent: "game-container",
+        // scale : NONE,
+        // zoom : 1,
         scene: playGame,
         backgroundColor: 0x444444,
-        physics: {
-            default: "arcade"
-        }
+        // scale: {
+        //     mode: Phaser.Scale.FIT,
+        //     autoCenter: Phaser.Scale.CENTER_BOTH,
+        // }
     }
     jeu = new Phaser.Game(gameConfig);
     window.focus();
@@ -36,12 +40,12 @@ class playGame extends Phaser.Scene{
         // du tileset défini dans "Tiled"
         let terrain = carte.addTilesetImage('OldAdelaide','image_tileset');
         //carte.setBaseTileSize(82,82);
-        carte.getTilesWithinWorldXY(1334,750,30,30)
+        // carte.getTilesWithinWorldXY(1334,750,30,30)
         // créer les layers
         // attention : les premiers paramètres sont les noms
         // des layers définis dans "Tiled"
-        let fond = carte.createStaticLayer('fond',[terrain],0,0).setDepth(-1).setScale(3.27);
-        let couche1 = carte.createStaticLayer('couche1',[terrain],0,0).setScale(3.27);
+        let fond = carte.createStaticLayer('fond',[terrain],0,0).setDepth(-1)//.setScale(3.27);
+        let couche1 = carte.createStaticLayer('couche1',[terrain],0,0)//.setScale(3.27);
     }
     update(){
 

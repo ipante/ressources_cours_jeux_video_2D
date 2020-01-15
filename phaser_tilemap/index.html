@@ -2,23 +2,28 @@
 <html>
 	<head>
         <style type = "text/css">
-            body{
-                background: #000000;
-                padding: 0px;
-                margin: 0px;
-            }
-            canvas{
-                display:block;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+html,
+body,
+#game-container {
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-container>canvas {
+  border-radius: 5px;
+}
         </style>
-        <script src = "phaser.min.js"></script>
-        <script src = "game.js"></script>
     </head>
 	<body>
+        <div id="game-container"></div>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.20.1/dist/phaser.min.js"></script>    
 	</body>
 </html>
