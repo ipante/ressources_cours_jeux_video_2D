@@ -1,4 +1,4 @@
-![image du cours](https://ucarecdn.com/22a0a69b-689f-46c9-866b-57650f31fde9/)
+![image du cours](https://i.imgur.com/dBKrQKZ.jpg)
 
 # Développement de jeux vidéo 2D - Ressources
 
