@@ -140,6 +140,7 @@ ___
 * Création de Texture Atlas : [Atlas Packer Phaser 3](https://gammafp.github.io/atlas-packer-phaser/)
 * Création d'Atlas (webservice) : [Atlas Packer Phaser 3](https://gammafp.github.io/atlas-packer-phaser/)
 * Pixellisation d'images : [Pixel Art Camera](https://itunes.apple.com/ch/app/pixel-art-camera/id1107180652?l=fr&mt=8)
+* Outil de rotoscopie en Pixel Art : [Paint of Persia](https://dunin.itch.io/ptop)
 * Création de sprites : [Piskel](https://www.piskelapp.com/)
 * Création de sprites : [Aseprite](https://www.aseprite.org/) | $
 * Création de sprites (iPad) : [Pixen](https://itunes.apple.com/us/app/pixen-pixel-art-editor/id1161880215?mt=8) | $
@@ -148,14 +149,21 @@ ___
 
 ### Moteurs de jeu recommandés
 
+#### Environnements génériques
+
 * [Phaser.js](https://phaser.io/) : le plus célèbre des frameworks de développement de jeux vidéo en Javascript. Suppose une bonne connaissance de la programmation Javascript.
 * [Kontra.js](https://straker.github.io/kontra/) : le plus léger des moteurs de jeu en Javascript, développé pour la compétition [js13k](https://js13kgames.com/). Se limite au strict minimum des fonctions proposées par Phaser.js. 
 * [Construct 3](https://www.construct.net/fr) : webservice wysiwyg de développement web, il facilite grandement le développement de jeux vidéo Javascript. Reste qu'une connaissance de la programmation est nécessaire pour en tirer parti.  | $
-* [Twine 2](https://twinery.org/2/) : moteur de développement de récits interactifs. Twine 2 est disponible en version logicielle et sous forme de webservice. Facile d'accès, il offre aussi des possibilités de scriptage avancé via du Javascript (***Recommandé pour les débutant·e·s en programmation***).
-* [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 * [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
 * [Script-8](https://script-8.github.io/) : un développemnt pur web ! Assets, son, musique et logique de jeu peuvent être créés directement dans Script-8, à l'instar de Pico-8, dont ce moteur s'inspire largement.
 * [Bitmelo](https://bitmelo.com/) : un développement pur web à l'instar de Script 8. Bitmelo propose également un éditeur de carte.
+* [Stage.js](http://piqnt.com/stage.js/) : une librairie pour le développement de JV2D multiplateforme en HTML5.
+
+#### Fictions interactives & Visual novel
+
+* [Twine 2](https://twinery.org/2/) : moteur de développement de récits interactifs. Twine 2 est disponible en version logicielle et sous forme de webservice. Facile d'accès, il offre aussi des possibilités de scriptage avancé via du Javascript (***Recommandé pour les débutant·e·s en programmation***).
+* [Inky](https://www.inklestudios.com/ink/) : Puissant outil de fiction interactive textuelle exploitant le langage ink. Autorise des exportations web et JSON (***Recommandé pour les débutant·e·s en programmation***).
+* [Monogatari](https://monogatari.io/) : moteur de développement de visual novels. Facilite la prise en charge des dialogues et l'affichage des différentes scènes. Facile d'accès, il offre des possibilités d'animation et de scriptage avancés via du CSS et du Javascript (***Recommandé pour les débutant·e·s en programmation***).
 
 ## Boilerplates Phaser 3
 
@@ -211,7 +219,6 @@ ___
 
 * [Jeux créés avec Phaser sur Itch.io](https://itch.io/games/made-with-phaser)
 
-
 ## Livres
 
 * Théorie du jeu
@@ -225,6 +232,7 @@ ___
 
 * 24-26.10.19 : Colloque international [les langages du jeu vidéo](http://wp.unil.ch/culture-videoludique)
 * 22 novembre 19 : [laboratoire de réécriture de jeu vidéo](http://isaacpante.net/une-game-jam-en-lettres/)
+* 11 et 19.01.2020 : Evénement ["Press Start"](https://agenda.unil.ch/display/1574934317830) à l'Espace Arlaud dans le cadre des JOJ.
 
 ## Varia
 
