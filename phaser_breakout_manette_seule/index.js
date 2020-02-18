@@ -17,7 +17,9 @@ const Breakout = new Phaser.Class({
 
     Extends: Phaser.Scene,
 
-    initialize: function Breakout ()
+    initialize:
+
+    function Breakout ()
     {
         Phaser.Scene.call(this, { key: 'breakout' });
 
@@ -28,9 +30,6 @@ const Breakout = new Phaser.Class({
         this.vies = 3;
         this.score = 0;
         this.texteScore;
-        this.combo = 0;
-        this.briquesMortes = [];
-        this.camera;
 
         this.curseurs;
     },
@@ -43,13 +42,10 @@ const Breakout = new Phaser.Class({
         this.load.audio('casse', 'assets/sons/casse.mp3');
         this.load.audio('gameOver', 'assets/sons/gameOver.mp3');
         this.load.audio('viePerdue', 'assets/sons/viePerdue.m4a');
-        this.load.audio('pop', 'assets/sons/pop.mp3');
-        this.load.audio('combo', 'assets/sons/combo.mp3');
     },
 
     create: function ()
     {
-        this.camera = this.cameras.add(0, 0, 800, 600);
         this.physics.world.setBoundsCollision(true, true, true, false);
 
         this.briques = this.physics.add.staticGroup({
@@ -76,36 +72,18 @@ const Breakout = new Phaser.Class({
             this.manette = pad;
         }, this);
 
-        // activation des curseurs clavier
-        this.curseurs = this.input.keyboard.createCursorKeys();
-
     },
 
     contactBrique: function (balle, brick)
     {
-        brick.disableBody(true, true);
-        this.briquesMortes.push(brick);
+        brick.disableBody(true, true);      
         this.score += 10;
         this.texteScore.setText(`SCORE : ${this.score}`);
         this.sound.play('casse');
-        this.combo++;
-        if(this.combo>2){
-            this.camera.setBackgroundColor('rgba(0, 255, 0, 0.3)');
-            let n = Phaser.Math.Between(0, this.briquesMortes.length-1); 
-            this.briquesMortes[n].enableBody(false, 0, 0, true, true);
-            this.briquesMortes.splice(n,1);
-            this.sound.play('pop');       
-        }
-        if(this.briquesMortes.length === 59){
-            this.texteVictoire = this.add.text(300, 250, `${this.score}`, { font: '60px Courier'});
-            // time.delayedCall(6000, this.reinitialiserNiveau());
-        }      
     },
 
     contactPalet: function (balle, palet)
     {
-        this.combo = 0;
-        this.camera.setBackgroundColor('rgba(0, 0, 0, 0)');
         this.sound.play('rebond');
         var diff = 0;
 
@@ -127,7 +105,6 @@ const Breakout = new Phaser.Class({
 
     reinitialiserBalle: function ()
     {
-        this.combo = 0;
         this.balle.setVelocity(0);
         this.balle.setPosition(this.palet.x, 500);
         this.balle.setData('surLePalet', true);
@@ -153,7 +130,6 @@ const Breakout = new Phaser.Class({
     {
         if (this.balle.y > 600)
         {
-            this.camera.setBackgroundColor('rgba(0, 0, 0, 0)');
             this.vies--;
             if(this.vies == 0){
                 this.sound.play('gameOver');
@@ -194,32 +170,6 @@ const Breakout = new Phaser.Class({
                 }
             }
         }
-        // gestion des curseurs
-        else{
-            if (this.curseurs.left.isDown)
-            {
-                this.palet.x = Phaser.Math.Clamp(this.palet.x-8, 52, 748);
-                if (this.balle.getData('surLePalet'))
-                {
-                    this.balle.x = this.palet.x;
-                }                 
-            }
-            else if (this.curseurs.right.isDown)
-            {
-                this.palet.x = Phaser.Math.Clamp(this.palet.x+8, 52, 748);
-                if (this.balle.getData('surLePalet'))
-                {
-                    this.balle.x = this.palet.x;
-                }                 
-            }
-            else if (this.curseurs.up.isDown){
-                if (this.balle.getData('surLePalet'))
-                {
-                    this.balle.setVelocity(-75, -300);
-                    this.balle.setData('surLePalet', false);
-                }
-            }            
-        }
     }
 
 });
@@ -231,7 +181,7 @@ const config = {
     input : {
         gamepad : true
     },
-    scene: [Breakout],
+    scene: [ Breakout ],
     physics: {
         default: 'arcade'
     }
