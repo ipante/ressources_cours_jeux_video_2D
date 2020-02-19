@@ -181,7 +181,7 @@ ___
 * [Assets sur itch.io](https://itch.io/game-assets)
 * [The Spriters Resource](https://www.spriters-resource.com/)
 
-### Banques de sons
+### Banques audio
 
 * [Soundtracks itch.io](https://itch.io/soundtracks/free)
 * [The sounds Resource](https://www.sounds-resource.com/)
