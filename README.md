@@ -158,6 +158,7 @@ ___
 * [Script-8](https://script-8.github.io/) : un développemnt pur web ! Assets, son, musique et logique de jeu peuvent être créés directement dans Script-8, à l'instar de Pico-8, dont ce moteur s'inspire largement.
 * [Bitmelo](https://bitmelo.com/) : un développement pur web à l'instar de Script 8. Bitmelo propose également un éditeur de carte.
 * [Stage.js](http://piqnt.com/stage.js/) : une librairie pour le développement de JV2D multiplateforme en HTML5.
+* [VoxelSpace](https://github.com/s-macke/VoxelSpace) : un algorithme de rendu pour générer des mondes en 2.5D.
 
 #### Fictions interactives & Visual novel
 
