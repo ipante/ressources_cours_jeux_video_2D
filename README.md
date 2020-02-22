@@ -159,6 +159,7 @@ ___
 * [Bitmelo](https://bitmelo.com/) : un développement pur web à l'instar de Script 8. Bitmelo propose également un éditeur de carte.
 * [Stage.js](http://piqnt.com/stage.js/) : une librairie pour le développement de JV2D multiplateforme en HTML5.
 * [VoxelSpace](https://github.com/s-macke/VoxelSpace) : un algorithme de rendu pour générer des mondes en 2.5D.
+* [Hex engine](https://github.com/suchipi/hex-engine) : un pur moteur JS inspiré de React encore en développement, à surveiller de près.
 
 #### Fictions interactives & Visual novel
 
