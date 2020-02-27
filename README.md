@@ -182,6 +182,7 @@ ___
 * [Opengameart.org](https://opengameart.org/)
 * [Assets sur itch.io](https://itch.io/game-assets)
 * [The Spriters Resource](https://www.spriters-resource.com/)
+* [Banque de personnages à assembler](https://www.openpeeps.com/)
 
 ### Banques audio
 
