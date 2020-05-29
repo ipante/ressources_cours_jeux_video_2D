@@ -108,6 +108,7 @@ Dispensé au SA2019, toutes les deux semaines, de 16h15 à 18h en salle 5183. Pr
 * [Site d'Emanuelle Feronato](https://www.emanueleferonato.com/) : près de 200 jeux avec code source commenté
 * [Créer un Tetris en pur JS](https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057)
 * [Créer un infinite Jumper](https://ourcade.co/books/infinite-jumper-phaser3/)
+* [Créer un très simple "dinojump" en pur JS](https://www.youtube.com/watch?v=bG2BmmYr9NQ)
 
 #### Jeux complets (avec code source)
 
