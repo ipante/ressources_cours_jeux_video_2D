@@ -11,7 +11,7 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 ## Informations sur l'enseignement
 
-Dispensé au SP2021, chaque semaine semaines, de 16h15 à 17h45 en ligne. Première séance le 22 février 2021. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). 
+Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séance le 22 février 2021. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). 
 
 * [Liste des jeux développés en 2019](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)*
 
