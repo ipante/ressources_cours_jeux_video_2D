@@ -29,8 +29,8 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
 3. [Cloner le répertoire LikeLike-online (Code > Github Desktop)](https://github.com/molleindustria/likelike-online)
 4. Ouvrir le répertoire Github/likelike-online sous VS Code
 5. Ouvrir un Terminal sous VS Code
-6. npm install
-7. node server.js
+6. Taper dans le terminal : npm install
+7. Taper dans le terminal : node server.js
 8. Aller sur http://localhost:3000 (ou autre port indiqué)
 
 ## Liste des travaux pratiques
