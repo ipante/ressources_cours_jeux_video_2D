@@ -21,6 +21,7 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
 
 * [Github LikeLike](https://github.com/molleindustria/likelike-online)
 * [DMC Workshop Zone](https://researching-gamemaking.glitch.me/) et [présentation](https://twitter.com/BRKeogh/status/1354349810589921282?s=20)
+* [Likelike version ETHZ](http://www.toniz.ch/)
 
 ### Installation locale & lancement de serveur
 
