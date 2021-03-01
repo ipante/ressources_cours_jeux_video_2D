@@ -3,7 +3,7 @@
 # Lien Zoom & serveur Discord
 
 * [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
-* [Lien Discord](https://discord.gg/hwgdtytD)
+* [Lien Discord (mis à jour!)](https://discord.gg/MGQ2dSCH)
 
 # Développement de jeux vidéo 2D - Ressources
 
