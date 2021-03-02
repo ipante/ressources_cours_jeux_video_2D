@@ -2,8 +2,9 @@
 
 # Lien Zoom & serveur Discord
 
+* &#E29CA8;[Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/zvPPE1mtKuFzkQ9MfBUY4dU6dHs92HS1G71kXrOp)
 * [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
-* [Lien Discord (mis à jour!)](https://discord.gg/MGQ2dSCH)
+* [Lien Discord](https://discord.gg/MGQ2dSCH)
 
 # Développement de jeux vidéo 2D - Ressources
 
