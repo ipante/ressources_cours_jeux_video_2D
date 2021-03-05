@@ -2,7 +2,7 @@
 
 # Lien Zoom & serveur Discord
 
-* :sparkle: [Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/zvPPE1mtKuFzkQ9MfBUY4dU6dHs92HS1G71kXrOp)
+* :sparkle: [Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/GlnYrpciZkAVR8MrX8WsHgdnJAN-Lej9pnLKELuz)
 * [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
 * [Lien Discord](https://discord.gg/MGQ2dSCH)
 
