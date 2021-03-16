@@ -4,7 +4,7 @@
 
 * :sparkle: [Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/GlnYrpciZkAVR8MrX8WsHgdnJAN-Lej9pnLKELuz)
 * [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
-* [Lien Discord](https://discord.gg/MGQ2dSCH)
+* [Lien Discord] mis à jour : (https://discord.gg/rs8bCgwx)
 
 # Développement de jeux vidéo 2D - Ressources
 
