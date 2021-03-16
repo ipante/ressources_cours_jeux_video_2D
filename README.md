@@ -37,6 +37,7 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
 
 ## Liste des travaux pratiques
 
+0. [**Phaser Breakout**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout) : code commenté d'un Breakout en JS
 1. [**kontra_jump**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/kontra_jump) : exemple de jeu complet en kontra.js; interaction utilisateur, exemple de saut "cran par cran", génération aléatoire d'obstacles et cycle de vie des sprites *(**bonus** : stockage et récupération du highScore dans le localStorage)*
 2. [**phaser_json**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_json) : importation de données au format JSON et affichage aléatoire.
 3. [**phaser_scenes_sequentielles**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_scenes_sequentielles) : exemple simple de transition entre trois scènes avec et sans interaction utilisateur; chaque scène dispose de sa propre classe écrite dans des fichiers distincts; des données sont transmises entre les scènes 2 et 3 *(**bonus** : chargement de musique de fond et accélération de cette musique dans la scène finale)*.
