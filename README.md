@@ -61,8 +61,8 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
 
 #### Documentation officielle de Phaser
 
+* [Documentation officielle de l'API](https://newdocs.phaser.io/docs/3.54.0) : la documentation officielle révisée de Phaser 3.54.
 * [Phaser Notes](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html) : la documentation officielle de l'API de Phaser 3 est souvent difficile à lire. Ces notes reprennent l'essentiel de la documentation sous une forme nettement plus adaptée.
-* [Documentation officielle de l'API](https://photonstorm.github.io/phaser3-docs/) : la documentation officielle (et brute) de Phaser 3.
 * [Liste d'exemples en Phaser 3](http://labs.phaser.io/) : des exemples classés par thématiques sur la plupart des composantes essentielles de Phaser 3.
 * [PhaserWorld](https://phaser.io/community/newsletter) : la newsletter de Phaser, soit la meilleur source de tutoriels et d'informations sur les évolutions du framework. Abonnez-vous pendant la durée de ce cours!
 
@@ -116,7 +116,7 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
   * [TP : phaser_plugin_global](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global)
   * [Documentation sur les types de plugin (scene et global)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/pluginsystem/)
   * [Documentation complète sur le plugin mananger](https://photonstorm.github.io/phaser3-docs/Phaser.Plugins.PluginManager.html)
-  * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)    
+  * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)
   
 * Partager votre jeu
   * Sur Facebook Instant Game
