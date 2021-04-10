@@ -190,6 +190,7 @@ ___
 * [VoxelSpace](https://github.com/s-macke/VoxelSpace) : un algorithme de rendu pour générer des mondes en 2.5D.
 * [Hex engine](https://github.com/suchipi/hex-engine) : un pur moteur JS inspiré de React encore en développement, à surveiller de près.
 * [24 a 2](https://github.com/jamesroutley/24a2) : un moteur de jeu JS pour des jeux dans une grille de 24 par 24. 
+* [Kaboom js](https://kaboomjs.com/)
 
 #### Fictions interactives & Visual novel
 
