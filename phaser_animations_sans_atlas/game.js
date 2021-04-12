@@ -35,7 +35,7 @@ function preload(){
 
 function create(){
     // ajout du sprite d'origine
-    this.heros = this.physics.add.sprite(100,100,'heros',12);
+    this.heros = this.physics.add.sprite(200,200,'heros',12);
     // ajout de la physique
     this.heros.setBounce(0.2);
     this.heros.setCollideWorldBounds(true);
@@ -77,7 +77,6 @@ function create(){
     // création des curseurs pour le
     // mouvement continu dans update()
     fleches = this.input.keyboard.createCursorKeys();
-
 }    
 
 function update(){  
@@ -116,12 +115,5 @@ function update(){
     {
         this.heros.setVelocityY(100);
         this.heros.anims.play('bas',true);
-    }
-    // ATTENTION! LE CODE QUI SUIT PRODUIT UNE
-    // ERREUR : préférer la ligne 88
-    // else
-    // {
-    //     this.heros.setVelocity(0,0);
-    // }
-    
+    }    
 }
