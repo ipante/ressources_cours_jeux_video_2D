@@ -38,6 +38,7 @@ function create(){
     
     // ajouter une balle à chaque clic sur l'écran
     this.input.on('pointerdown', () => {
+        console.log("!balles.isFull()",balles.isFull());
         // si le réservoir n'est pas plein...
         if(!balles.isFull()){
             // on ajoute une balle
@@ -51,7 +52,7 @@ function create(){
             // on (ré)active la balle
             // ces deux lignes sont rendues
             // nécessaires par le "balles.killAndHide"
-            // de la ligne 68
+            // de la ligne 60
             balle.setActive(true);
             balle.setVisible(true);
             // si on passe sur la balle...
@@ -59,6 +60,20 @@ function create(){
                 // retirer la balle du réservoir
                 balles.killAndHide(balle);
             })
+        }
+        else{
+            // ici on ne crée plus de balles
+            // on les repositionne une à une
+            let compteur = 0;
+            console.log("balles",balles);
+            balles.children.iterate((b,i) =>{
+                if(b.visible == false && compteur == 0){
+                    b.setVisible(true);
+                    b.x = Phaser.Math.Between(50,350);
+                    b.y = Phaser.Math.Between(50,350);
+                    compteur++;
+                }
+            });
         }    
     });
     // notez que l'on peut parcourir
