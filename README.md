@@ -117,6 +117,7 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
   * [Documentation sur les types de plugin (scene et global)](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/pluginsystem/)
   * [Documentation complète sur le plugin mananger](https://photonstorm.github.io/phaser3-docs/Phaser.Plugins.PluginManager.html)
   * [Liste des exemples spécifiques aux plugins](https://labs.phaser.io/index.html?dir=plugins/&q=)
+  * [Exemple de plugin pour la gestion des grilles (grid engine)](https://github.com/Annoraaq/grid-engine)
   
 * Partager votre jeu
   * Sur Facebook Instant Game
