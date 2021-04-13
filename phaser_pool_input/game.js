@@ -65,12 +65,12 @@ function create(){
             // ici on ne crée plus de balles
             // on les repositionne une à une
             let compteur = 0;
-            console.log("balles",balles);
-            balles.children.iterate((b,i) =>{
-                if(b.visible == false && compteur == 0){
-                    b.setVisible(true);
-                    b.x = Phaser.Math.Between(50,350);
-                    b.y = Phaser.Math.Between(50,350);
+            // console.log("balles",balles);
+            balles.children.iterate(balle_courante =>{
+                if(balle_courante.visible == false && compteur == 0){
+                    balle_courante.setVisible(true);
+                    balle_courante.x = Phaser.Math.Between(50,350);
+                    balle_courante.y = Phaser.Math.Between(50,350);
                     compteur++;
                 }
             });
