@@ -44,8 +44,8 @@ class playGame extends Phaser.Scene{
         // créer les layers
         // attention : les premiers paramètres sont les noms
         // des layers définis dans "Tiled"
-        let fond = carte.createStaticLayer('fond',[terrain],0,0).setDepth(-1)//.setScale(3.27);
-        let couche1 = carte.createStaticLayer('couche1',[terrain],0,0)//.setScale(3.27);
+        let fond = carte.createStaticLayer('fond',[terrain],0,0).setDepth(-1).setScale(3.27);
+        let couche1 = carte.createStaticLayer('couche1',[terrain],0,0).setScale(3.27);
     }
     update(){
 
