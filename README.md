@@ -109,6 +109,7 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
   * [Tutoriel : créer des cartes dynamiques](https://itnext.io/modular-game-worlds-in-phaser-3-tilemaps-2-dynamic-platformer-3d68e73d494a)
   * [Tutoriel : changement de pièce](http://www.geekwagon.net/index.php/2019/room-changing-phaser3-titled/)
   * [Tutoriel : importer des cartes et définir des collisions par exclusion](https://baraujo.net/integrating-tiled-maps-with-phaser/)
+  * [Exemple d'utilisation de carte sous Phaser](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_tilemap)
 
 * Utilisation de webpack
   * [TP : création d'un projet à partir d'un Boilerplate](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack)
