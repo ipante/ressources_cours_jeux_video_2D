@@ -1,66 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="8" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
- <tileset firstgid="1" name="OldAdelaide" tilewidth="16" tileheight="16" tilecount="128" columns="8">
-  <image source="../Downloads/OldAdelaide.bmp" width="128" height="256"/>
-  <terraintypes>
-   <terrain name="Herbe" tile="0"/>
-   <terrain name="porte" tile="0">
-    <properties>
-     <property name="ferme" type="bool" value="true"/>
-     <property name="texte" value="C'est fermé !"/>
-    </properties>
-   </terrain>
-  </terraintypes>
-  <tile id="20" terrain="1,1,1,1"/>
-  <tile id="64" terrain=",,,0"/>
-  <tile id="65" terrain=",,0,0"/>
-  <tile id="66" terrain=",,0,"/>
-  <tile id="67" terrain="0,0,0,"/>
-  <tile id="68" terrain="0,0,,0"/>
-  <tile id="72" terrain=",0,,0"/>
-  <tile id="73" terrain="0,0,0,0"/>
-  <tile id="74" terrain="0,,0,"/>
-  <tile id="75" terrain="0,,0,0"/>
-  <tile id="76" terrain=",0,0,0"/>
-  <tile id="80" terrain=",0,,"/>
-  <tile id="81" terrain="0,0,,"/>
-  <tile id="82" terrain="0,,,"/>
-  <tile id="124" terrain="1,1,1,1"/>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="8" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="DesertSands" tilewidth="16" tileheight="16" tilecount="78" columns="13">
+  <image source="../Downloads/DesertSands.png" width="208" height="96"/>
+  <tile id="67">
+   <properties>
+    <property name="pieces" type="int" value="13"/>
+   </properties>
+  </tile>
  </tileset>
- <layer id="2" name="fond" width="8" height="14" locked="1">
-  <data encoding="csv">
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,64,64,64,64,64,64,
-64,64,65,66,66,66,66,67,
-64,64,73,74,74,74,74,75,
-64,64,81,82,82,82,82,83
-</data>
- </layer>
  <layer id="1" name="Tile Layer 1" width="8" height="14">
-  <data encoding="csv">
-13,64,13,13,13,13,14,13,
-12,21,12,12,12,12,12,12,
-82,4,82,82,82,69,74,76,
-10,4,10,10,11,81,69,74,
-26,4,26,26,27,0,73,7,
-65,4,66,66,66,67,73,74,
-73,7,7,37,74,75,73,7,
-81,82,82,69,7,76,77,37,
-65,67,24,73,7,74,7,74,
-81,83,0,81,4,7,7,68,
-11,23,0,15,4,82,82,83,
-19,65,66,66,4,66,66,67,
-19,73,37,7,7,7,74,75,
-27,73,7,7,7,37,7,75
-</data>
+  <data encoding="base64">
+   DQAAAA0AAAANAAAADQAAAAEAAAACAAAAAwAAAAQAAAANAAAADQAAAA0AAAANAAAAGwAAAA8AAAAQAAAAEQAAAA0AAAA9AAAADQAAAA0AAAAbAAAACgAAAAwAAAAeAAAADQAAAA0AAAANAAAAMAAAABsAAAAXAAAAGQAAABEAAAANAAAADQAAAD0AAAANAAAAGwAAAEIAAABCAAAAEQAAAA0AAAAwAAAADQAAAA0AAAAbAAAAFwAAABkAAAARAAAADQAAAA0AAAANAAAAPQAAABsAAABCAAAAQgAAABEAAAANAAAAPQAAAA0AAAANAAAAGwAAABcAAAAZAAAAEQAAAAEAAAACAAAAAgAAAAIAAAAgAAAAQgAAAEIAAAARAAAAGwAAAAYAAAAHAAAABgAAAAcAAABBAAAAGQAAABEAAAAbAAAAFwAAABgAAAAYAAAAGAAAABgAAAAZAAAAEQAAABsAAAAXAAAAGAAAABgAAAAYAAAAGAAAABkAAAARAAAAGwAAACQAAAAlAAAAJQAAACUAAAAlAAAAJgAAAB4AAAAoAAAAKQAAACoAAAAqAAAAKgAAACkAAAAqAAAAKwAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="objets" width="8" height="14">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE0AAABOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
  </layer>
 </map>

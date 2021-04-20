@@ -1,26 +1,23 @@
-{ "height":14,
+{"compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"carte.json"
+        }
+    },
+ "height":14,
  "infinite":false,
  "layers":[
         {
-         "data":"QAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAA==",
-         "encoding":"base64",
-         "height":14,
-         "id":2,
-         "name":"fond",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":8,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "data":"DQAAAEAAAAANAAAADQAAAA0AAAANAAAADgAAAA0AAAAMAAAAFQAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAFIAAAAEAAAAUgAAAFIAAABSAAAARQAAAEoAAABMAAAACgAAAAQAAAAKAAAACgAAAAsAAABRAAAARQAAAEoAAAAaAAAABAAAABoAAAAaAAAAGwAAAAAAAABJAAAABwAAAEEAAAAEAAAAQgAAAEIAAABCAAAAQwAAAEkAAABKAAAASQAAAAcAAAAHAAAAJQAAAEoAAABLAAAASQAAAAcAAABRAAAAUgAAAFIAAABFAAAABwAAAEwAAABNAAAAJQAAAEEAAABDAAAAGAAAAEkAAAAHAAAASgAAAAcAAABKAAAAUQAAAFMAAAAAAAAAUQAAAAQAAAAHAAAABwAAAEQAAAALAAAAFwAAAAAAAAAPAAAABAAAAFIAAABSAAAAUwAAABMAAABBAAAAQgAAAEIAAAAEAAAAQgAAAEIAAABDAAAAEwAAAEkAAAAlAAAABwAAAAcAAAAHAAAASgAAAEsAAAAbAAAASQAAAAcAAAAHAAAABwAAACUAAAAHAAAASwAAAA==",
+         "compression":"",
+         "data":"DQAAAA0AAAANAAAADQAAAAEAAAACAAAAAwAAAAQAAAANAAAADQAAAA0AAAANAAAAGwAAAA8AAAA4AAAAEQAAAA0AAAA9AAAADQAAAA0AAAAbAAAACgAAAAwAAAAeAAAADQAAAA0AAAANAAAAMAAAABsAAAAXAAAAGQAAABEAAAANAAAADQAAAD0AAAANAAAAGwAAAEIAAABCAAAAEQAAAA0AAAAwAAAADQAAAA0AAAAbAAAAFwAAABkAAAARAAAADQAAAA0AAAANAAAAPQAAABsAAABCAAAAQgAAABEAAAANAAAAPQAAAA0AAAANAAAAGwAAABcAAAAZAAAAEQAAAAEAAAACAAAAAgAAAAIAAAAgAAAAQgAAAEIAAAARAAAAGwAAAAYAAAAHAAAABgAAAAcAAABBAAAAGQAAABEAAAAbAAAAFwAAABgAAAAYAAAAGAAAABgAAAAZAAAAEQAAABsAAAAXAAAAGAAAABgAAAAYAAAAGAAAABkAAAARAAAAGwAAACQAAAAlAAAAJQAAACUAAAAlAAAAJgAAAB4AAAAoAAAAKQAAACoAAAAqAAAAKgAAACkAAAAqAAAAKwAAAA==",
          "encoding":"base64",
          "height":14,
          "id":1,
-         "name":"couche1",
-         "opacity":1,
+         "name":"fond",
+         "opacity":0.99,
          "type":"tilelayer",
          "visible":true,
          "width":8,
@@ -28,13 +25,16 @@
          "y":0
         }, 
         {
-         "draworder":"topdown",
-         "id":3,
-         "name":"couche_objets",
-         "objects":[],
+         "compression":"",
+         "data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE0AAABOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+         "encoding":"base64",
+         "height":14,
+         "id":2,
+         "name":"objets",
          "opacity":1,
-         "type":"objectgroup",
+         "type":"tilelayer",
          "visible":true,
+         "width":8,
          "x":0,
          "y":0
         }],
@@ -42,105 +42,34 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.2.5",
+ "tiledversion":"1.5.0",
  "tileheight":16,
  "tilesets":[
         {
-         "columns":8,
+         "columns":13,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/..\/Downloads\/OldAdelaide.bmp",
-         "imageheight":256,
-         "imagewidth":128,
+         "image":"..\/..\/..\/Downloads\/DesertSands.png",
+         "imageheight":96,
+         "imagewidth":208,
          "margin":0,
-         "name":"OldAdelaide",
+         "name":"DesertSands",
          "spacing":0,
-         "terrains":[
-                {
-                 "name":"Herbe",
-                 "tile":0
-                }, 
-                {
-                 "name":"porte",
-                 "properties":[
-                        {
-                         "name":"ferme",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"texte",
-                         "type":"string",
-                         "value":"C'est ferm\u00e9 !"
-                        }],
-                 "tile":0
-                }],
-         "tilecount":128,
+         "tilecount":78,
          "tileheight":16,
          "tiles":[
                 {
-                 "id":20,
-                 "terrain":[1, 1, 1, 1]
-                }, 
-                {
-                 "id":64,
-                 "terrain":[-1, -1, -1, 0]
-                }, 
-                {
-                 "id":65,
-                 "terrain":[-1, -1, 0, 0]
-                }, 
-                {
-                 "id":66,
-                 "terrain":[-1, -1, 0, -1]
-                }, 
-                {
                  "id":67,
-                 "terrain":[0, 0, 0, -1]
-                }, 
-                {
-                 "id":68,
-                 "terrain":[0, 0, -1, 0]
-                }, 
-                {
-                 "id":72,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":73,
-                 "terrain":[0, 0, 0, 0]
-                }, 
-                {
-                 "id":74,
-                 "terrain":[0, -1, 0, -1]
-                }, 
-                {
-                 "id":75,
-                 "terrain":[0, -1, 0, 0]
-                }, 
-                {
-                 "id":76,
-                 "terrain":[-1, 0, 0, 0]
-                }, 
-                {
-                 "id":80,
-                 "terrain":[-1, 0, -1, -1]
-                }, 
-                {
-                 "id":81,
-                 "terrain":[0, 0, -1, -1]
-                }, 
-                {
-                 "id":82,
-                 "terrain":[0, -1, -1, -1]
-                }, 
-                {
-                 "id":124,
-                 "terrain":[1, 1, 1, 1]
+                 "properties":[
+                        {
+                         "name":"pieces",
+                         "type":"int",
+                         "value":13
+                        }]
                 }],
          "tilewidth":16
         }],
  "tilewidth":16,
  "type":"map",
- "version":1.2,
+ "version":1.5,
  "width":8
 }
