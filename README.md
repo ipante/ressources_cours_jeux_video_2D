@@ -50,8 +50,9 @@ Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séan
 10. [**phaser_pool_input**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_input) : création d'un pool, utilisation pour l'affichage et la suppression d'objets.
 11. [**phaser_pool_animation**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_pool_animation) : code de Richard Davey sur la génération de sprites animés tirés d'un pool.
 12. [**phaser_runner**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_runner) : un jeu complet d'Emanuele Feronato qui illustre l'utilisation de "pool" pour créer un infinite runner ; les identifiants ont été francisés pour faciliter la compréhension et des commentaires ajoutés.
-13. [**phaser_boilerplate_webpack**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack) : installation d'un boilerplate phaser utilisant webpack ; ajout d'un module externe et importation de la fonction de ce dernier.
-14. [**phaser_plugin_global**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global) : écriture d'un plugin global.
+13. [**phaser tilemap**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_tilemap) : importation de tilemap avec deux layers; la carte tire partie du ScaleManager pour s'adapter à l'écran.
+14. [**phaser_boilerplate_webpack**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_boilerplate_webpack) : installation d'un boilerplate phaser utilisant webpack ; ajout d'un module externe et importation de la fonction de ce dernier.
+15. [**phaser_plugin_global**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_plugin_global) : écriture d'un plugin global.
 
 ## Code source du laboratoire de réécriture de JV
 
