@@ -1,4 +1,5 @@
-import Phaser from '../lib/phaser.js'
+import Phaser from '../lib/phaser.js';
+import Carrot from '../game/Carrot.js'
 
 export default class Game extends Phaser.Scene
 {
@@ -23,6 +24,7 @@ export default class Game extends Phaser.Scene
         this.load.image('background', 'assets/bg_layer1.png');
         this.load.image('platform', 'assets/ground_grass.png');
         this.load.image('bunny-stand','assets/bunny1_stand.png');
+        this.load.image('carrot', 'assets/carrot.png');
 
         this.cursors = this.input.keyboard.createCursorKeys()
     }
@@ -62,13 +64,22 @@ export default class Game extends Phaser.Scene
         this.cameras.main.startFollow(this.player);
         // limiter la caméra à un tunnel vertical
         this.cameras.main.setDeadzone(this.scale.width * 1.5);
+
+        // ajout des carottes
+        // The physics group will create 
+        // Phaser.Physics.Arcade.Sprite instances by default
+        // Specifying classType lets us change that.
+        this.carrots = this.physics.add.group({
+            classType : Carrot
+        })
+        this.carrots.get(240,320,'carrot');
     }
 
     update(){
         const touchingDown = this.player.body.touching.down;
 
         if(touchingDown){
-            this.player.setVelocityY(-300);
+            this.player.setVelocityY(-700);
         }
 
         // left and right input logic
