@@ -20,8 +20,13 @@ let gameConfig = {
     }
 }
 
-let jeu = new Phaser.Game(gameConfig);
+// définition des variables globales
+// celles qui devront quitter une fonction
+// exemple : se retrouver dans create & update
 let heros;
+let curseurs;
+
+let jeu = new Phaser.Game(gameConfig);
 
 function preload(){
         // charger le tileset
@@ -34,8 +39,14 @@ function preload(){
             frameWidth : 98,
             frameHeight : 101
         })
-        // charger le sol
+        // charger le sol sous forme d'image
         this.load.image('sol','assets/sol.png');
+        // charle le sol sous fomre de spritesheet
+        this.load.spritesheet("donjon","assets/DesertSands.png",{
+            // dimensions de chaque sprite
+            frameWidth : 16,
+            frameHeight : 16
+        })        
 }
 
 function create(){
@@ -104,7 +115,7 @@ function create(){
         })      
         // création des curseurs pour le
         // mouvement continu dans update()
-        fleches = this.input.keyboard.createCursorKeys();
+        curseurs = this.input.keyboard.createCursorKeys();
 
         //this.heros.body.offset.x = 16;
         this.physics.add.collider(this.heros,murs,function(){
@@ -113,10 +124,18 @@ function create(){
 
         this.plateformes = this.physics.add.staticGroup();
         for (let i = 0 ; i < 5 ; i++){
-            const x = 72;
+            const x = 24;
             const y = 72+i*16;
             const plateforme = this.plateformes.create(x,y,'sol');
             const body = plateforme.body;
+            this.tweens.add({
+                targets: plateforme,
+                x: 136,
+                duration: 3000,
+                ease: 'Linear',
+                yoyo : true,
+                loop : -1
+            });
             body.updateFromGameObject();
             this.physics.add.overlap(this.plateformes,this.heros,function(){
                 console.log('ok');
@@ -132,7 +151,7 @@ function update(){
         // 4 directions, les conditions sont imbriquées
         // en remplaçant les "else if" par des "if",
         // les déplacements en diagonale deviennent possibles
-        if (fleches.left.isDown && !this.heros.isMoving)
+        if (curseurs.left.isDown && !this.heros.isMoving)
         {
             this.heros.isMoving = true;
             // ce code doit être ajouté pour rétablir
@@ -150,7 +169,7 @@ function update(){
                 this.heros.setVelocity(0,0);
             },200);
         }
-        else if (fleches.right.isDown && !this.heros.isMoving)
+        else if (curseurs.right.isDown && !this.heros.isMoving)
         {
             this.heros.isMoving = true;
             // notre SpriteSheet n'a pas d'images
@@ -163,20 +182,20 @@ function update(){
                 this.heros.setVelocity(0,0);
             },200);
         }
-        else if (fleches.up.isDown && !this.heros.isMoving)
+        else if (curseurs.up.isDown && !this.heros.isMoving)
         {
             this.heros.isMoving = true;
-            this.heros.setVelocityY(-1000);
+            this.heros.setVelocityY(-970);
             this.heros.anims.play('haut',true);
             setTimeout(()=>{
                 this.heros.isMoving = false
                 this.heros.setVelocity(0,0);
             },200);
         }
-        else if (fleches.down.isDown && !this.heros.isMoving)
+        else if (curseurs.down.isDown && !this.heros.isMoving)
         {
             this.heros.isMoving = true;
-            this.heros.setVelocityY(1000);
+            this.heros.setVelocityY(970);
             this.heros.anims.play('bas',true);
             setTimeout(()=>{
                 this.heros.isMoving = false
