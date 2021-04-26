@@ -1,19 +1,20 @@
 let gameConfig = {
     type: Phaser.AUTO,
-    parent: "game-container",
+    parent: "conteneur",
     zoom : 0.8, // ajuster le zoom pour la netteté
     scale: { // le scale manager pour le calibrage
-        parent: 'game-container',
+        parent: 'conteneur',
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width : 160, // soit 16*8
-        height : 320 // soit 16*14
+        width : 160, // soit 16*10
+        height : 320 // soit 16*20
     },
     physics: {
         default: 'arcade',
         debug : true
     },
     scene : {
+        // les trois fonctions appelées
         preload : preload,
         create : create,
         update : update
@@ -40,13 +41,7 @@ function preload(){
             frameHeight : 101
         })
         // charger le sol sous forme d'image
-        this.load.image('sol','assets/sol.png');
-        // charle le sol sous fomre de spritesheet
-        this.load.spritesheet("donjon","assets/DesertSands.png",{
-            // dimensions de chaque sprite
-            frameWidth : 16,
-            frameHeight : 16
-        })        
+        this.load.image('sol','assets/sol.png');      
 }
 
 function create(){
@@ -122,22 +117,34 @@ function create(){
             console.log("collision","collision");
         })
 
+        // création de plateformes aléatoires
         this.plateformes = this.physics.add.staticGroup();
-        for (let i = 0 ; i < 5 ; i++){
-            const x = 24;
-            const y = 72+i*16;
-            const plateforme = this.plateformes.create(x,y,'sol');
+        for (let i = 0 ; i < 12 ; i++){
+            const gauche = Math.round(Math.random());
+            let px;
+            let tx;
+            if(gauche){
+                px = 16;
+                tx = 128;
+            }
+            else{
+                px = 128;
+                tx = 16;                
+            }
+            const x = px;
+            const y = 64+i*16;
+            const plateforme = this.plateformes.create(x,y,'sol').setOrigin(0,0);
             const body = plateforme.body;
             this.tweens.add({
                 targets: plateforme,
-                x: 136,
-                duration: 3000,
+                x: tx,
+                duration: 5000,
                 ease: 'Linear',
                 yoyo : true,
                 loop : -1
             });
             body.updateFromGameObject();
-            this.physics.add.overlap(this.plateformes,this.heros,function(){
+            this.physics.add.overlap(this.heros,this.plateformes,function(){
                 console.log('ok');
             });
         }
@@ -203,8 +210,4 @@ function update(){
             },200);
         }  
 
-}
-
-function test(){
-    console.log('test');
 }
