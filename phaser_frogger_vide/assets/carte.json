@@ -1,12 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "format":"tmx",
-         "target":"carte.tmx"
-        }
-    },
  "height":20,
  "infinite":false,
  "layers":[
@@ -48,7 +40,7 @@
         {
          "columns":13,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/..\/Desktop\/phaser_tiled\/assets\/DesertSands.png",
+         "image":"..\/..\/..\/..\/Desktop\/phaser_tiled\/assets\/DesertSands.png",
          "imageheight":96,
          "imagewidth":208,
          "margin":0,

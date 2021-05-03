@@ -143,10 +143,10 @@ function create(){
                 yoyo : true,
                 loop : -1
             });
-            body.updateFromGameObject();
-            this.physics.add.overlap(this.heros,this.plateformes,function(){
-                console.log('ok');
-            });
+            // body.updateFromGameObject();
+            // this.physics.add.overlap(this.heros,this.plateformes,function(){
+            //     console.log('ok');
+            // });
         }
 }
 

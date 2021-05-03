@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="10" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
- <editorsettings>
-  <export target="carte.tmx" format="tmx"/>
- </editorsettings>
  <tileset firstgid="1" name="DesertSands" tilewidth="16" tileheight="16" tilecount="78" columns="13">
   <image source="../../../../../Desktop/phaser_tiled/assets/DesertSands.png" width="208" height="96"/>
   <tile id="0">
