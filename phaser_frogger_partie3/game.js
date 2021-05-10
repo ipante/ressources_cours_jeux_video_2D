@@ -1,3 +1,5 @@
+//import SwipePlugin from 'phaser3-swipe-plugin';
+
 let gameConfig = {
     type: Phaser.AUTO,
     parent: "conteneur",
@@ -20,7 +22,21 @@ let gameConfig = {
         preload : preload,
         create : create,
         update : update
-    }
+    },
+    // plugins: {
+    //     global: [
+    //         {
+    //         key: 'SwipePlugin',
+    //         plugin: SwipePlugin,
+    //         start: true,
+    //         // custom options
+    //         data: {
+    //             // you can give your value for min offset
+    //             offset: 100
+    //         }
+    //         }
+    //     ]
+    // }
 }
 
 // définition des variables globales
@@ -49,6 +65,14 @@ function preload(){
 }
 
 function create(){
+
+        this.input.on('touchstart', pointer => {
+            let touchX = pointer.x;
+            let touchY = pointer.y;
+            console.log(touchX,touchY);
+        });
+
+
         // charger la carte
         const carte = this.add.tilemap('carte_json');
         // lier le tileset
@@ -159,9 +183,11 @@ function create(){
                 h.body.velocityX = p.body.velocityX;
             }
         });
+        PhaserGUIAction(this);
 }
 
 function update(){
+        
 
         // définit la vitesse par défaut
         // heros.setVelocity(0,0) ou

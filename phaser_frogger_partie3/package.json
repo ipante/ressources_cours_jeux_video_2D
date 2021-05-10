@@ -1,0 +1,14 @@
+{
+  "name": "phaser_frogger_partie3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser3-swipe-plugin": "^1.0.6"
+  }
+}
