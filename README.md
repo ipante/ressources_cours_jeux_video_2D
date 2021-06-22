@@ -233,6 +233,7 @@ ___
 * ["Limited"](https://github.com/Sergenti/limited) : jeu de sensibilisation à l'épuisement des ressources naturelles.
 * ["Cooking for the king"](https://github.com/Aubrays/cooking-for-the-king) : jeu de sensibilisation à la diététique médiévale.
 * ["MuseeX"](https://github.com/raphaelgarnier/museeX) : fiction interactive de médiation en histoire de l'art.
+* ["Isolation"](https://github.com/SLI-UNIL/Isolation) : un jeu sur la déprivation sensorielle (Loris Rimaz)
 
 ___
 
