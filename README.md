@@ -234,7 +234,7 @@ ___
 * ["Cooking for the king"](https://github.com/Aubrays/cooking-for-the-king) et son [archive](https://github.com/SLI-UNIL/cooking-for-the-king) : jeu de sensibilisation à la diététique médiévale.
 * ["MuseeX"](https://github.com/raphaelgarnier/museeX) et son [archive](https://github.com/SLI-UNIL/museeX) : fiction interactive de médiation en histoire de l'art (Raphaël Garnier).
 * ["Isolation"](https://github.com/SLI-UNIL/Isolation) : un jeu sur la déprivation sensorielle (Loris Rimaz)
-* [en attente]() et son [archive]() : un visual novel de simulateur d'entretien en sciences sociales (Clémence Danesi et Antonin Wayss)
+* [en attente]() et son [archive]() : un visual novel de simulateur d'entretien en sciences sociales (Clémence Danesi et Antonin Wyss)
 
 ___
 
