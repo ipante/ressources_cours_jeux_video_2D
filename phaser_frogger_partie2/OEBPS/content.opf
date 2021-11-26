@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<meta name="generator" content="Adobe InDesign 16.1" />
+		<meta name="cover" content="x1.png" />
+		<dc:title>LaCouronneetlesvirus_EPUB_2</dc:title>
+		<dc:creator></dc:creator>
+		<dc:subject></dc:subject>
+		<dc:description></dc:description>
+		<dc:publisher></dc:publisher>
+		<dc:date>2021-02-12T07:12:37Z</dc:date>
+		<dc:source></dc:source>
+		<dc:relation></dc:relation>
+		<dc:coverage></dc:coverage>
+		<dc:rights></dc:rights>
+		<dc:language>fr-FR</dc:language>
+		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml" />
+		<item id="LaCouronneetlesvirus_08_02_2021" href="LaCouronneetlesvirus_08_02_2021.xhtml" media-type="application/xhtml+xml" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="ArialHebrew.ttc" href="font/ArialHebrew.ttc" media-type="application/x-font-ttf" />
+		<item id="Calibri.ttf" href="font/Calibri.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="Graphik-Regular.otf" href="font/Graphik-Regular.otf" media-type="application/vnd.ms-opentype" />
+		<item id="Graphik-Semibold.otf" href="font/Graphik-Semibold.otf" media-type="application/vnd.ms-opentype" />
+		<item id="LucidaGrande.ttc" href="font/LucidaGrande.ttc" media-type="application/x-font-ttf" />
+		<item id="PlantinMTPro-Bold.otf" href="font/PlantinMTPro-Bold.otf" media-type="application/vnd.ms-opentype" />
+		<item id="PlantinMTPro-BoldItalic.otf" href="font/PlantinMTPro-BoldItalic.otf" media-type="application/vnd.ms-opentype" />
+		<item id="PlantinMTPro-Italic.otf" href="font/PlantinMTPro-Italic.otf" media-type="application/vnd.ms-opentype" />
+		<item id="PlantinMTPro-Regular.otf" href="font/PlantinMTPro-Regular.otf" media-type="application/vnd.ms-opentype" />
+		<item id="ZapfDingbatsITC.ttf" href="font/ZapfDingbatsITC.ttf" media-type="application/x-font-ttf" />
+		<item id="x1.png" href="image/1.png" media-type="image/png" />
+		<item id="x03_HET.jpg" href="image/03_HET.jpg" media-type="image/jpeg" />
+		<item id="Agent.png" href="image/Agent.png" media-type="image/png" />
+		<item id="BB.png" href="image/BB.png" media-type="image/png" />
+		<item id="Beijing.jpg" href="image/Beijing.jpg" media-type="image/jpeg" />
+		<item id="Couronne.jpg" href="image/Couronne.jpg" media-type="image/jpeg" />
+		<item id="Einstein.png" href="image/Einstein.png" media-type="image/png" />
+		<item id="Emojje_masque.png" href="image/Emojje_masque.png" media-type="image/png" />
+		<item id="Emojjes_sourire.png" href="image/Emojjes_sourire.png" media-type="image/png" />
+		<item id="Emojjes_triste.png" href="image/Emojjes_triste.png" media-type="image/png" />
+		<item id="Emojjes.png" href="image/Emojjes.png" media-type="image/png" />
+		<item id="EspritAmeCorps.png" href="image/EspritAmeCorps.png" media-type="image/png" />
+		<item id="Hebreu.png" href="image/Hebreu.png" media-type="image/png" />
+		<item id="indifference.png" href="image/indifference.png" media-type="image/png" />
+		<item id="Li_3.jpg" href="image/Li_3.jpg" media-type="image/jpeg" />
+		<item id="Li_31.jpg" href="image/Li_31.jpg" media-type="image/jpeg" />
+		<item id="Li_32.jpg" href="image/Li_32.jpg" media-type="image/jpeg" />
+		<item id="Li_Ying.jpg" href="image/Li_Ying.jpg" media-type="image/jpeg" />
+		<item id="logoStAugustin_niv_gris.png" href="image/logoStAugustin_niv_gris.png" media-type="image/png" />
+		<item id="Passages.jpg" href="image/Passages.jpg" media-type="image/jpeg" />
+		<item id="Peur.png" href="image/Peur.png" media-type="image/png" />
+		<item id="Shafique_Keshavjee.jpg" href="image/Shafique_Keshavjee.jpg" media-type="image/jpeg" />
+		<item id="YinYang.png" href="image/YinYang.png" media-type="image/png" />
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover" linear="no" />
+		<itemref idref="LaCouronneetlesvirus_08_02_2021" />
+	</spine>
+	<guide>
+		<reference type="cover" href="cover.xhtml" title="Cover" />
+		<reference type="toc" href="LaCouronneetlesvirus_08_02_2021.xhtml#_idContainer110" title="Table of Contents" />
+	</guide>
+</package>
