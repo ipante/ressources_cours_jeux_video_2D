@@ -6,13 +6,17 @@
 * [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
 * [Lien Discord] mis à jour : (https://discord.gg/rs8bCgwx)
 
+# Formulaire d'annonce de projet
+
+Les projets doivent être annoncés au travers du formulaire ci-après : https://bit.ly/projet-jv2d.
+
 # Développement de jeux vidéo 2D - Ressources
 
 Retrouvez ici les différents ressources pédagogique mobilisées dans le cours [Développement de jeux vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8) dispensé par [Isaac Pante](http://isaacpante.net) en Section des [sciences du langage et de l'information](http://unil.ch/sli) de l'[Université de Lausanne](http://unil.ch).
 
 ## Informations sur l'enseignement
 
-Dispensé au SP2021, chaque semaine, de 16h15 à 17h45 en ligne. Première séance le 22 février 2021. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). 
+Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8). 
 
 * [Liste des jeux développés en 2019](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)*
 
