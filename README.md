@@ -233,6 +233,7 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 
 ## Projets d'étudiant·e·s
 
+- ["That House](https://github.com/AnteJR/That_House) et son [archive](https://github.com/openscienceunil/That_House) : une aventure textuelle codée "from scratch" sur les phases du deuil par Joël Rimaz.
 -  ["Limited"](https://github.com/Sergenti/limited) et son [archive](https://github.com/SLI-UNIL/Limited) : jeu de sensibilisation à l'épuisement des ressources naturelles.
 -  ["Cooking for the king"](https://github.com/Aubrays/cooking-for-the-king) et son [archive](https://github.com/SLI-UNIL/cooking-for-the-king) : jeu de sensibilisation à la diététique médiévale.
 -  ["MuseeX"](https://github.com/raphaelgarnier/museeX) et son [archive](https://github.com/SLI-UNIL/museeX) : fiction interactive de médiation en histoire de l'art (Raphaël Garnier).
