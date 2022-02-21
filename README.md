@@ -10,7 +10,7 @@
 
 # Formulaire d'annonce de projet
 
-Les projets doivent être annoncés au travers du formulaire en ligne ci-après : https://bit.ly/projet-jv2d. Pour un aperçu global avant remplissage, vous pouvez consulter [une version complète au format PDF](varia/formulaire_annonce_jeu_video_cours_jv2d.pdf).
+Les projets doivent être annoncés au travers du formulaire en ligne ci-après : https://bit.ly/projet-jv2d. Pour un aperçu global avant remplissage, vous pouvez consulter [une version complète au format PDF](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/formulaire_annonce_jeu_video_cours_jv2d.pdf).
 
 # Développement de jeux vidéo 2D - Ressources
 
