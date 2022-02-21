@@ -215,7 +215,7 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 
 ## Projets d'étudiant·e·s
 
-- ["That House](https://github.com/AnteJR/That_House) et son [archive](https://github.com/openscienceunil/That_House) : une aventure textuelle codée "from scratch" sur les phases du deuil par Joël Rimaz.
+- ["That House](https://github.com/AnteJR/That_House) sur [itch.io](https://jrante.itch.io/that-house) et son [archive](https://github.com/openscienceunil/That_House) : une aventure textuelle codée "from scratch" sur les phases du deuil par Joël Rimaz.
 - ["La bataille de Salesbières](https://github.com/heaspery/la-bataille-de-salesbieres) et son [archive]() : une visual novel éducative basée sur la littérature française médiévale par Mathilde Ançay, jouable sur [itch.io](https://heaspery.itch.io/la-bataille-de-salesbieres)
 -  ["Limited"](https://github.com/Sergenti/limited) et son [archive](https://github.com/SLI-UNIL/Limited) : jeu de sensibilisation à l'épuisement des ressources naturelles par Florian Rieder.
 -  ["Cooking for the king"](https://github.com/Aubrays/cooking-for-the-king) et son [archive](https://github.com/SLI-UNIL/cooking-for-the-king) : jeu de sensibilisation à la diététique médiévale.
