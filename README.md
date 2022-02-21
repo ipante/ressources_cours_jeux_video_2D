@@ -2,9 +2,11 @@
 
 # Lien Zoom & serveur Discord
 
--  :sparkle: [Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/GlnYrpciZkAVR8MrX8WsHgdnJAN-Lej9pnLKELuz)
+<!--
+-  :sparkle: [Lien vers le plan et les vidéos du cours](https://share.mindmanager.com/#publish/GlnYrpciZkAVR8MrX8WsHgdnJAN-Lej9pnLKELuz) -->
 -  [Lien Zoom : https://unil.zoom.us/my/isaacpante](https://unil.zoom.us/my/isaacpante)
--  [Lien Discord] mis à jour : (https://discord.gg/rs8bCgwx)
+-  [Lien Discord] mis à jour : (https://discord.gg/eg5NNq3c)
+-  [Lien vers les informations générales : https://bit.ly/cours-ip](https://bit.ly/cours-ip)
 
 # Formulaire d'annonce de projet
 
