@@ -20,27 +20,6 @@ Retrouvez ici les différents ressources pédagogique mobilisées dans le cours 
 
 Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations sur la validation, le nombre de crédits ECTS, les prérequis et les plans autorisés sont disponibles sur [la page de l'enseignement](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=73011&v_ueid=174&v_langue=8).
 
--  [Liste des jeux développés en 2019](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)\*
-
-## Projet ANTHROPOLE
-
-### Ressources
-
--  [Github LikeLike](https://github.com/molleindustria/likelike-online)
--  [DMC Workshop Zone](https://researching-gamemaking.glitch.me/) et [présentation](https://twitter.com/BRKeogh/status/1354349810589921282?s=20)
--  [Likelike version ETHZ](http://www.toniz.ch/)
-
-### Installation locale & lancement de serveur
-
-1. [Installation de node](https://nodejs.org/en/download/)
-2. [Installation de Github Desktop](https://desktop.github.com/)
-3. [Cloner le répertoire LikeLike-online (Code > Github Desktop)](https://github.com/molleindustria/likelike-online)
-4. Ouvrir le répertoire Github/likelike-online sous VS Code
-5. Ouvrir un Terminal sous VS Code
-6. Taper dans le terminal : npm install
-7. Taper dans le terminal : node server.js
-8. Aller sur http://localhost:3000 (ou autre port indiqué)
-
 ## Liste des travaux pratiques
 
 0. [**Phaser Breakout**](https://github.com/ipante/ressources_cours_jeux_video_2D/tree/master/phaser_breakout) : code commenté d'un Breakout en JS
@@ -189,7 +168,8 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 
 #### Environnements génériques
 
--  [Phaser.js](https://phaser.io/) : le plus célèbre des frameworks de développement de jeux vidéo en Javascript. Suppose une bonne connaissance de la programmation Javascript.
+-  [Kaboom js](https://kaboomjs.com/)
+-  [Phaser.js](https://phaser.io/) : le plus célèbre des frameworks de développement de jeux vidéo en Javascript. Suppose une bonne connaissance de la programmation Javascript. Plus puissant (et plus lourd) que Kaboom.
 -  [Kontra.js](https://straker.github.io/kontra/) : le plus léger des moteurs de jeu en Javascript, développé pour la compétition [js13k](https://js13kgames.com/). Se limite au strict minimum des fonctions proposées par Phaser.js.
 -  [Construct 3](https://www.construct.net/fr) : webservice wysiwyg de développement web, il facilite grandement le développement de jeux vidéo Javascript. Reste qu'une connaissance de la programmation est nécessaire pour en tirer parti. | $
 -  [Unity](https://unity.com/fr) : le plus célèbre des environnements de développement de jeux vidéo. La difficulté de la prise en main dépend de la complexité de votre projet et des sommes investies dans différents kits d'assets. A recommander aux étudiant·e·s les plus chevronné·e·s. | $
@@ -199,7 +179,7 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 -  [VoxelSpace](https://github.com/s-macke/VoxelSpace) : un algorithme de rendu pour générer des mondes en 2.5D.
 -  [Hex engine](https://github.com/suchipi/hex-engine) : un pur moteur JS inspiré de React encore en développement, à surveiller de près.
 -  [24 a 2](https://github.com/jamesroutley/24a2) : un moteur de jeu JS pour des jeux dans une grille de 24 par 24.
--  [Kaboom js](https://kaboomjs.com/)
+-  [Bitsy game maker](https://ledoux.itch.io/bitsy)
 
 #### Fictions interactives & Visual novel
 
@@ -294,6 +274,33 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 -  [Un excellent post-mortem de XyCore pour le js13k](https://64mega.github.io/js13k-2019-recap.html)
 -  [Mario Kart en pur CSS](https://vimeo.com/364369506)
 -  [Les jeux vidéo et l'accessibilité](https://www.24a11y.com/2019/game-accessibility-and-the-web/)
+
+***
+
+### Zone d'archives
+
+-  [Liste des jeux développés en 2019](https://docs.google.com/spreadsheets/d/13LCtmN9BV--MkqaHLbGGi5XGz1IbeXiJ-h4sMzdzrHQ/edit?usp=sharing)\*
+
+## Projet Anthropole
+
+### Ressources projet Anthropole
+
+-  [Github LikeLike](https://github.com/molleindustria/likelike-online)
+-  [DMC Workshop Zone](https://researching-gamemaking.glitch.me/) et [présentation](https://twitter.com/BRKeogh/status/1354349810589921282?s=20)
+-  [Likelike version ETHZ](http://www.toniz.ch/)
+
+### Installation locale & lancement de serveur
+
+1. [Installation de node](https://nodejs.org/en/download/)
+2. [Installation de Github Desktop](https://desktop.github.com/)
+3. [Cloner le répertoire LikeLike-online (Code > Github Desktop)](https://github.com/molleindustria/likelike-online)
+4. Ouvrir le répertoire Github/likelike-online sous VS Code
+5. Ouvrir un Terminal sous VS Code
+6. Taper dans le terminal : npm install
+7. Taper dans le terminal : node server.js
+8. Aller sur http://localhost:3000 (ou autre port indiqué)
+
+***
 
 Cette liste ne demande qu'à s'enrichir! Merci d'envoyer vos suggestions à [Isaac Pante](mailto:isaac.pante@unil.ch).
 
