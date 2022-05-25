@@ -1,154 +1,77 @@
 kaboom({
-	scale: 4,
-	clearColor: [0, 0, 0],
-})
+   //    scale: 4,
+   //    background: [0, 0, 0],
+});
 
 // https://opengameart.org/content/pug-rework
 loadSpriteAtlas("pug_frogger.png", {
-	"hero": {
-		"x": 128,
-		"y": 196,
-		"width": 144,
-		"height": 28,
-		"sliceX": 9,
-		"anims": {
-			"idle": {
-				"from": 0,
-				"to": 3,
-				"speed": 3,
-				"loop": true
-			},
-			"run": {
-				"from": 4,
-				"to": 7,
-				"speed": 10,
-				"loop": true
-			},
-			"hit": 8
-		}
-	},
-	"ogre": {
-		"x": 16,
-		"y": 320,
-		"width": 256,
-		"height": 32,
-		"sliceX": 8,
-		"anims": {
-			"idle": {
-				"from": 0,
-				"to": 3,
-				"speed": 3,
-				"loop": true
-			},
-			"run": {
-				"from": 4,
-				"to": 7,
-				"speed": 10,
-				"loop": true
-			}
-		}
-	},
-	"floor": {
-		"x": 16,
-		"y": 64,
-		"width": 48,
-		"height": 48,
-		"sliceX": 3,
-		"sliceY": 3
-	},
-	"chest": {
-		"x": 304,
-		"y": 304,
-		"width": 48,
-		"height": 16,
-		"sliceX": 3,
-		"anims": {
-			"open": {
-				"from": 0,
-				"to": 2,
-				"speed": 20,
-				"loop": false
-			},
-			"close": {
-				"from": 2,
-				"to": 0,
-				"speed": 20,
-				"loop": false
-			}
-		}
-	},
-	"sword": {
-		"x": 322,
-		"y": 81,
-		"width": 12,
-		"height": 30
-	},
-	"wall": {
-		"x": 16,
-		"y": 16,
-		"width": 16,
-		"height": 16
-	},
-	"wall_top": {
-		"x": 16,
-		"y": 0,
-		"width": 16,
-		"height": 16
-	},
-	"wall_left": {
-		"x": 16,
-		"y": 128,
-		"width": 16,
-		"height": 16
-	},
-	"wall_right": {
-		"x": 0,
-		"y": 128,
-		"width": 16,
-		"height": 16
-	},
-	"wall_topleft": {
-		"x": 32,
-		"y": 128,
-		"width": 16,
-		"height": 16
-	},
-	"wall_topright": {
-		"x": 48,
-		"y": 128,
-		"width": 16,
-		"height": 16
-	},
-	"wall_botleft": {
-		"x": 32,
-		"y": 144,
-		"width": 16,
-		"height": 16
-	},
-	"wall_botright": {
-		"x": 48,
-		"y": 144,
-		"width": 16,
-		"height": 16
-	},
-})
+   pug: {
+      x: 0,
+      y: 0,
+      width: 32,
+      height: 32,
+      sliceX: 3,
+      sliceY: 4,
+      anims: {
+         idle: {
+            from: 0,
+            to: 2,
+            speed: 1,
+            loop: true,
+         },
+         haut: {
+            from: 0,
+            to: 2,
+            speed: 3,
+            loop: true,
+         },
+         droite: {
+            from: 3,
+            to: 5,
+            speed: 3,
+            loop: true,
+         },
+         bas: {
+            from: 6,
+            to: 8,
+            speed: 3,
+            loop: true,
+         },
+         gauche: {
+            from: 9,
+            to: 11,
+            speed: 3,
+            loop: true,
+         },
+      },
+   },
+});
 
 // floor
-addLevel([
-	"xxxxxxxxxx",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-	"          ",
-], {
-	width: 16,
-	height: 16,
-	" ": () => [
-		sprite("floor", { frame: ~~rand(0, 8) }),
-	],
-})
+// const niveau = addLevel(
+//    [
+//       "xxxxxxxxxxx",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//       "           ",
+//    ],
+//    {
+//       width: 32,
+//       height: 32,
+//       " ": () => add[sprite("pug")],
+//    }
+// );
+
+const pug = add([
+   sprite("pug", { anim: "idle" }),
+   pos(200, 200),
+   area({ width: 32, height: 32, offset: vec2(0, 0) }),
+   solid(),
+   origin("center"),
+]);
