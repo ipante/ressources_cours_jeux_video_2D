@@ -18,7 +18,7 @@ let vitesseMax = 200;
 // chargement des assets
 loadRoot("assets/");
 loadSprite("cockpit", "cocpkit.png");
-const moteur = loadSound("moteur", "space-sound-109576.mp3");
+let moteur = loadSound("moteur", "space-sound-109576.mp3");
 
 // sauvegarder une donnée en localStorage
 
@@ -96,14 +96,8 @@ onUpdate("etoile", (e) => {
 });
 
 onUpdate(() => {
-   if (vitesse > 0 && carburant > 0) {
-      play("moteur", {
-         volume: mapc(vitesse, 0, vitesseMax, 0, 1),
-         loop: true,
-      });
-      console.log(vitesse);
-   } else {
-      // stop("moteur");
+   if (vitesse == 0 || carburant == 0) {
+      stop("moteur");
    }
 });
 
@@ -112,6 +106,11 @@ onKeyPress("up", () => {
       vitesse += 10;
       carburant -= dt() * 5;
       compteurVitesse.text = vitesse;
+
+      play("moteur", {
+         volume: mapc(vitesse, 0, vitesseMax, 0, 1),
+         loop: true,
+      });
    }
 });
 
@@ -122,3 +121,26 @@ onKeyPress("down", () => {
       compteurVitesse.text = vitesse;
    }
 });
+
+// sauvegarder écran
+onKeyPress("p", () => {
+   let imageEncodee = screenshot();
+   navigator.clipboard
+      .writeText(imageEncodee)
+      .then(() => {
+         console.log("Text copié dans le presse-papier !");
+         // télécharger l'image
+         sauvegarderImage(imageEncodee, "vers-l'infini-et-au-dela");
+      })
+      .catch((err) => {
+         console.log("Erreur", err);
+      });
+});
+
+// sauvegarder l'image
+function sauvegarderImage(base64, fileName) {
+   let link = document.createElement("a");
+   link.setAttribute("href", base64);
+   link.setAttribute("download", fileName);
+   link.click();
+}
