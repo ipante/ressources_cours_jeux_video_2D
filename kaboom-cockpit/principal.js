@@ -74,8 +74,8 @@ function creerEtoile() {
       cleanup(),
       {
          posz: posz,
-         posx: rand(-w / 2, w / 2),
-         posy: rand(-h / 2, h / 2),
+         posx: posx - w / 2,
+         posy: posy - h / 2,
       },
       "etoile",
    ]);
@@ -87,11 +87,13 @@ for (let i = 0; i < 300; i++) {
 }
 
 // // déplacer les étoiles
-// onUpdate("etoile", (e) => {
-//    e.zpos -= 2 * dt();
-//    e.pos.x = centreX + e.posx * (e.zpos * 0.001);
-//    e.pos.x = centreY + e.posy / (e.zpos * 0.001);
-// });
+onUpdate("etoile", (e) => {
+   // e.zpos -= 2 * dt();
+   e.pos.x = e.posx + 0.001; //centreX + e.posx * (e.zpos * 0.001);
+   e.posx += 0.001;
+   e.pos.y = e.posy * 0.001; //centreY + e.posy / (e.zpos * 0.001);
+   e.posy += 0.001;
+});
 
 onUpdate(() => {
    if (vitesse > 0 && carburant > 0) {
