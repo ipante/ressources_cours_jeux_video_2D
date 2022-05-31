@@ -25,7 +25,6 @@ loadSprite("planete", "planete.png");
 let moteur = loadSound("moteur", "space-sound-109576.mp3");
 
 // sauvegarder une donnée en localStorage
-
 // tester si la clef existe déjà
 if (localStorage.getItem("carburant") === null) {
    // puisqu'elle n'existe pas, créer la clef
@@ -42,6 +41,7 @@ let distancePlanete = Number(localStorage.distancePlanete);
 // ainsi que le layer par défaut
 layers(["fond", "zoneDeJeu", "planete", "interface"], "zoneDeJeu");
 
+// placer la planète
 let planete = add([
    sprite("planete"),
    pos(w / 2 - 100, h / 2 - 10),
@@ -85,9 +85,9 @@ let compteurVitesse = add([
 // création d'un ciel étoilé
 
 function creerEtoile(couche) {
-   let posx = rand(0, w);
-   let posy = rand(0, h);
-   let posz = rand(1000, 3000);
+   const posx = rand(0, w);
+   const posy = rand(0, h);
+   const posz = rand(1000, 3000);
 
    let etoile = add([
       rect(10, 10),
@@ -119,6 +119,8 @@ onUpdate(() => {
       distancePlanete += 0.01;
       planete.scale.x += 0.0001;
       planete.scale.y += 0.0001;
+      // diminuer la jauge de carburant
+      jaugeCarburant.width = map(carburant, 0, carburantMax, 0, 100);
    }
 });
 
@@ -153,6 +155,7 @@ onKeyPress("down", () => {
 // sauvegarder écran
 onKeyPress("p", () => {
    let imageEncodee = screenshot();
+   // Javascript pur
    navigator.clipboard
       .writeText(imageEncodee)
       .then(() => {
