@@ -138,6 +138,13 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 -  [Phaser sur StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
 -  [Demande de tutoriels](https://phaser.discourse.group/t/tutorial-requests/98/14)
 
+#### Annuaires de jeux en Kaboom JS
+
+- [Livre sur le développement Kaboom.js](https://makejsgames.com/)
+- [Jeux Kaboom sur itch.io](https://itch.io/games/tag-kaboomjs)
+- [Jeux Kaboom sur repl.it](https://replit.com/community/kaboom)
+- [Jeux Kaboom sur newgrounds](https://www.newgrounds.com/search/conduct/games?tags=kaboomjs)
+
 ---
 
 ### Logiciels
