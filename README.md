@@ -232,6 +232,7 @@ Dispensé le lundi, au SP, chaque semaine, de 16h15 à 17h45. Les informations s
 -  ["MuseeX"](https://github.com/raphaelgarnier/museeX) et son [archive](https://github.com/SLI-UNIL/museeX) : fiction interactive de médiation en histoire de l'art (Raphaël Garnier).
 -  ["Isolation"](https://github.com/DigitalDW/Isolation) et son [archive](https://github.com/SLI-UNIL/Isolation) : un jeu sur la déprivation sensorielle (Loris Rimaz)
 -  ["Simulateur d'entretien"](https://github.com/Clamclim/SimulateurEntretien) et son [archive](https://github.com/SLI-UNIL/SimulateurEntretien) : un visual novel de simulateur d'entretien en sciences sociales (Clémence Danesi et Antonin Wyss)
+-  [Vote now !](https://jrante.itch.io/vote-now) : variante de Reigns sur les votations suisses. Primé du Swiss Game Developer Award Junior 2022 (Joël Rimaz) 
 
 ---
 
