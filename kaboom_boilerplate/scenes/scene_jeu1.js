@@ -64,12 +64,14 @@ scene("principale",() =>{
 			perso.hidden = false
 			text_pause.hidden = true
 			k.setBackground(FOND_JEU);
+			k.usePostEffect("crt",effets["crt"]());
 		} else {
 			musique.paused = true
 			jeu.paused = true
 			perso.hidden = true
 			text_pause.hidden = false
 			k.setBackground([0,0,0]);
+			k.usePostEffect("vhs",effets["vhs"]());
 		}
 	})
 })

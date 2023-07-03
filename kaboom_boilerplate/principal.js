@@ -32,7 +32,23 @@ const sons = [
 const effets = {
 	crt: () => ({
 		"u_flatness": 3,
-	})
+	}),
+	vhs: () => ({
+		"u_intensity": 12,
+	}),
+	// pixelate: () => ({
+	// 	"u_resolution": vec2(width(), height()),
+	// 	"u_size": wave(2, 16, time() * 2),
+	// }),
+	// invert: () => ({
+	// 	"u_invert": 1,
+	// }),
+	// light: () => ({
+	// 	"u_radius": 64,
+	// 	"u_blur": 64,
+	// 	"u_resolution": vec2(width(), height()),
+	// 	"u_mouse": mousePos(),
+	// }),
 }
 
 // chargement de tous les sprites
