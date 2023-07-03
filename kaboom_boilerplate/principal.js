@@ -11,6 +11,12 @@ const LARGEUR = window.innerWidth;
 const HAUTEUR = window.innerHeight;
 const FOND_GENERAL = [ 0, 0, 255, ];
 const FOND_JEU = [ 255, 0, 255, ]
+const DIRECTIONS = {
+	"left": k.LEFT,
+	"right": k.RIGHT,
+	"up": k.UP,
+	"down": k.DOWN,
+}
 
 // lister les noms des sprites à charger : "perso1","dino"
 const sprites = [

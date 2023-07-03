@@ -25,6 +25,21 @@ scene("principale",() =>{
 		k.area({ scale: 0.8 }),
 	])
 
+	// déplacements du personnage
+	for (const dir in DIRECTIONS) {
+		k.onKeyDown(dir, () => {
+			if (jeu.paused) return
+			if (dir === "left"){
+				perso.flipX = true;
+				perso.move(DIRECTIONS[dir].scale(VITESSE))
+			}
+			else{
+				perso.flipX = false;
+				perso.move(DIRECTIONS[dir].scale(VITESSE))
+			}
+		})
+	}
+
 	// ajouter un élément d'interface, pause
 	const text_pause = ui.add([
 		k.pos(k.center()),
@@ -35,6 +50,11 @@ scene("principale",() =>{
 	])
 
 	text_pause.hidden = true;
+
+	// caméra qui suit le personnage
+	// k.onUpdate(() => {
+	// 	k.camPos(dino.pos)
+	// })
 
 	// fonction de pause
 	k.onKeyPress("escape", () => {
