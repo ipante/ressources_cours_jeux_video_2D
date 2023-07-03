@@ -36,10 +36,10 @@ const effets = {
 	vhs: () => ({
 		"u_intensity": 12,
 	}),
-	// pixelate: () => ({
-	// 	"u_resolution": vec2(width(), height()),
-	// 	"u_size": wave(2, 16, time() * 2),
-	// }),
+	pixelate: () => ({
+		"u_resolution": vec2(width(), height()),
+		"u_size": wave(2, 16, time() * 2),
+	}),
 	// invert: () => ({
 	// 	"u_invert": 1,
 	// }),

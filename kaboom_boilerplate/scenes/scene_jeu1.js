@@ -56,6 +56,13 @@ scene("principale",() =>{
 	// 	k.camPos(dino.pos)
 	// })
 
+	// adaptation couleur écran / position perso
+	onUpdate(p =>{
+		let x = mapc(perso.pos.x,0,LARGEUR,100,255)
+		let y = mapc(perso.pos.y,0,HAUTEUR,100,255)
+		k.setBackground([x,0,y])
+	})
+
 	// fonction de pause
 	k.onKeyPress("escape", () => {
 		if (jeu.paused) {
@@ -63,14 +70,12 @@ scene("principale",() =>{
 			jeu.paused = false
 			perso.hidden = false
 			text_pause.hidden = true
-			k.setBackground(FOND_JEU);
 			k.usePostEffect("crt",effets["crt"]());
 		} else {
 			musique.paused = true
 			jeu.paused = true
 			perso.hidden = true
 			text_pause.hidden = false
-			k.setBackground([0,0,0]);
 			k.usePostEffect("vhs",effets["vhs"]());
 		}
 	})
