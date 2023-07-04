@@ -49,6 +49,9 @@ const effets = {
 	// 	"u_resolution": vec2(width(), height()),
 	// 	"u_mouse": mousePos(),
 	// }),
+	poufpouf : () => ({
+		"u_intensity": 12
+	})
 }
 
 // chargement de tous les sprites
