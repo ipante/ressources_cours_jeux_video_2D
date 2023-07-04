@@ -22,8 +22,7 @@ scene("principale",() =>{
 		k.pos(LARGEUR / 2, HAUTEUR / 2),
 		k.sprite("dino"),
 		k.anchor("center"),
-		k.area({ scale: 0.8 }),
-		"cool"
+		k.area({ scale: 0.8 })
 	])
 
 	// déplacements du personnage
