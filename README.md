@@ -10,7 +10,7 @@
 
 # Formulaire d'annonce de projet
 
-Les projets doivent être annoncés au travers du formulaire en ligne ci-après : https://bit.ly/projet-jv2d. Pour un aperçu global avant remplissage, vous pouvez consulter [une version complète au format PDF](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/formulaire_annonce_jeu_video_cours_jv2d.pdf). 
+Les projets doivent être annoncés au travers du formulaire en ligne ci-après : https://bit.ly/projet-jv2d. Pour un aperçu global avant remplissage, vous pouvez consulter [une version complète au format PDF](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/formulaire_annonce_jeu_video_cours_jv.pdf). 
 
 **Attention : ce formulaire ne sert qu'à annoncer votre projet et à voir votre idée validée par l'enseignant. Pour voir votre travail évalué à une session, vous devez avoir envoyé un mail contenant le nom du projet et le lien github avant le début de la session durant laquelle vous souhaitez voir votre projet évalué. Des informations plus complètes vous attendent dans la [FAQ](https://bit.ly/faq-cours-ip).**
 
